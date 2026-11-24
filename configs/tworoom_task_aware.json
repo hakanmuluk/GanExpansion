@@ -1,0 +1,11 @@
+{
+  "family": "sum",
+  "objective": "task",
+  "regularizer": "gaussian",
+  "temporal": "warm",
+  "method": "random",
+  "initialization": "structured",
+  "candidates": 16,
+  "lookahead": 64,
+  "cuda_graph": true
+}

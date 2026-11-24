@@ -1,0 +1,11 @@
+[
+  {
+    "name": "route_s42",
+    "options": {
+      "execute": 1,
+      "actor": "cube_agreement_artifacts/action_adapter_v3/best.pt",
+      "keepout": "cube_agreement_artifacts/decoders/keepout_s42/best.pt",
+      "waypoint": "cube_agreement_artifacts/decoders/waypoint_s42/best.pt"
+    }
+  }
+]

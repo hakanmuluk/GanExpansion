@@ -1,0 +1,32 @@
+[
+  {
+    "name": "initial_only_s42",
+    "options": {
+      "batch": 64,
+      "model_seed": 42,
+      "action_starts": 1,
+      "action_steps": 0,
+      "action_interval": 1000000
+    }
+  },
+  {
+    "name": "initial_only_s43",
+    "options": {
+      "batch": 64,
+      "model_seed": 43,
+      "action_starts": 1,
+      "action_steps": 0,
+      "action_interval": 1000000
+    }
+  },
+  {
+    "name": "initial_only_s44",
+    "options": {
+      "batch": 64,
+      "model_seed": 44,
+      "action_starts": 1,
+      "action_steps": 0,
+      "action_interval": 1000000
+    }
+  }
+]

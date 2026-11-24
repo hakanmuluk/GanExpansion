@@ -1,0 +1,14 @@
+{
+  "source_checkpoint": "cube_agreement_artifacts/decoders/waypoint_s44/best.pt",
+  "checkpoint_sha256": "fb24492c7e747149994dfd434a92875bce040c0237ce1940a2ad1fad857e8e80",
+  "selected_step": 10000,
+  "historical_arguments": {
+    "skill": "waypoint",
+    "out": "cube_agreement_artifacts/decoders/waypoint_s44",
+    "steps": 10000,
+    "batch": 256,
+    "seed": 44,
+    "lr": 0.0005
+  },
+  "notes": "Training settings from the selected model. Referenced training/feedback data must be regenerated with the supplied collectors; optimizer states and research outputs are not part of this release."
+}

@@ -1,0 +1,10 @@
+{
+  "objective": "agreement",
+  "family": "keepout",
+  "regularizer": "gaussian",
+  "initialization": "encoder",
+  "temporal": "warm",
+  "method": "adam",
+  "steps": 15,
+  "starts": 4
+}

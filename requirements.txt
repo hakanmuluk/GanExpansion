@@ -1,0 +1,18 @@
+# Install a suitable PyTorch build first. Setup never replaces it.
+numpy>=1.24
+scipy>=1.10
+gymnasium
+matplotlib>=3.7
+Pillow>=9
+imageio
+imageio-ffmpeg
+pytest>=7
+pygame
+pymunk
+shapely
+tabulate
+einops
+tqdm
+typer
+rich
+hydra-core

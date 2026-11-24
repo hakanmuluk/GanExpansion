@@ -1,0 +1,24 @@
+[
+  {
+    "name": "independent_keepout_s43",
+    "options": {
+      "execute": 1,
+      "actor": "cube_agreement_artifacts/action_adapter_v3_s43/best.pt",
+      "keepout": "cube_agreement_artifacts/decoders/keepout_s43/best.pt",
+      "waypoint": "cube_agreement_artifacts/decoders/waypoint_s43/best.pt",
+      "method": "single_keepout",
+      "family": "keepout"
+    }
+  },
+  {
+    "name": "independent_waypoint_s43",
+    "options": {
+      "execute": 1,
+      "actor": "cube_agreement_artifacts/action_adapter_v3_s43/best.pt",
+      "keepout": "cube_agreement_artifacts/decoders/keepout_s43/best.pt",
+      "waypoint": "cube_agreement_artifacts/decoders/waypoint_s43/best.pt",
+      "method": "single_waypoint",
+      "family": "waypoint"
+    }
+  }
+]

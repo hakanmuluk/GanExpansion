@@ -1,0 +1,32 @@
+{
+  "source_checkpoint": "cube/artifacts/final/base_policy.pt",
+  "checkpoint_sha256": "94aa107f92e070b5f82764a4f95565e6b71978b778726ebf6f922d126ea0a8c8",
+  "selected_step": 3000,
+  "historical_arguments": {
+    "run": "artifacts/runs/aux_seed42",
+    "data": "artifacts/data",
+    "steps": 4000,
+    "batch": 64,
+    "chunks": 8,
+    "cycle_batch": 8,
+    "hidden": 384,
+    "seed": 42,
+    "lr": 0.0002,
+    "warmup": 500,
+    "rec_weight": 10.0,
+    "latent_weight": 1.0,
+    "kl_weight": 0.01,
+    "adv_weight": 0.05,
+    "style_weight": 2.0,
+    "known_rec_weight": 10.0,
+    "route_feature": true,
+    "eval_every": 1000,
+    "eval_contexts": 32,
+    "eval_latents": 4,
+    "feedback": null,
+    "feedback_weight": 5.0,
+    "resume": null,
+    "device": "cuda"
+  },
+  "notes": "Training settings from the selected model. Referenced training/feedback data must be regenerated with the supplied collectors; optimizer states and research outputs are not part of this release."
+}

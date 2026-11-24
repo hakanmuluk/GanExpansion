@@ -1,0 +1,35 @@
+GanExpansion uses these external projects:
+
+stable-worldmodel, GalilAI-group:
+https://github.com/galilai-group/stable-worldmodel
+Pinned source: 21446f1ede6d5284e981bd7b47f432b994e6d812
+License: MIT. The upstream license is retained in
+third_party/stable-worldmodel.LICENSE.
+The TwoRoom transition replica follows this upstream environment's collision
+convention. Native Cube execution uses its OGBench Cube wrapper.
+
+OGBench:
+https://github.com/seohongpark/ogbench
+Installed as an external dependency (version 1.2.2), not vendored here.
+Native robot/object assets remain distributed by the upstream dependencies.
+
+MuJoCo:
+https://github.com/google-deepmind/mujoco
+Installed as an external dependency (version 3.11.0), not vendored here.
+
+PyTorch:
+https://github.com/pytorch/pytorch
+Installed separately. The project retains the user's chosen CPU/CUDA build.
+
+Architecture background:
+Zhu et al., "Toward Multimodal Image-to-Image Translation" (BicycleGAN), 2017.
+https://arxiv.org/abs/1711.11586
+Karras et al., "A Style-Based Generator Architecture for Generative Adversarial
+Networks" (StyleGAN), 2019. https://arxiv.org/abs/1812.04948
+Hu et al., "LoRA: Low-Rank Adaptation of Large Language Models", 2021.
+https://arxiv.org/abs/2106.09685
+These are architectural influences. This repository contains trajectory-policy
+experiments and does not reproduce the official image-generation systems.
+
+No project-wide license for the original GanExpansion code or trained weights
+has been selected. The upstream notices above retain their own scope.

@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "repository": "hakanmuluk/GanExpansion",
+  "release": "v1.0.0",
+  "selections": {
+    "all": [
+      "tworoom-models",
+      "cube-models",
+      "cube-agreement-models",
+      "benchmark-inputs"
+    ],
+    "tworoom": [
+      "tworoom-models",
+      "benchmark-inputs"
+    ],
+    "cube": [
+      "cube-models",
+      "benchmark-inputs"
+    ],
+    "cube-agreement": [
+      "cube-agreement-models",
+      "benchmark-inputs"
+    ]
+  },
+  "bundles": {
+    "tworoom-models": {
+      "url": "https://github.com/hakanmuluk/GanExpansion/releases/download/v1.0.0/tworoom-models-v1.zip",
+      "archive": "tworoom-models-v1.zip",
+      "bytes": 17278873,
+      "sha256": "7f6724b5383cd478c474cea0844d24af3621d1749b5be9c45206347191166feb",
+      "requires": [],
+      "files": [
+        {
+          "path": "artifacts/final/base_policy.pt",
+          "bytes": 3003041,
+          "sha256": "1ae1be1011701f4502e617e8e7d6e8d64a90ac404c4af35ef41660d22d65f8fd"
+        },
+        {
+          "path": "artifacts/final/seeds/123/base_policy.pt",
+          "bytes": 3003361,
+          "sha256": "73763abdb6b3e3067e3bc71ee888e8274970b68ad9a3beabb6846602048ed1a2"
+        },
+        {
+          "path": "artifacts/final/seeds/2026/base_policy.pt",
+          "bytes": 3003361,
+          "sha256": "ba78bbb3f5451248f434e1a761cdb4bfd51e4111b23ce6f21d85c73f9cb9bba6"
+        },
+        {
+          "path": "addon_artifacts/final/keepout.pt",
+          "bytes": 1428165,
+          "sha256": "046bdf6d1f526ae4f47f39fad29237f616fdea737b6cd8e4c29901a0599a1aee"
+        },
+        {
+          "path": "addon_artifacts/final/waypoint.pt",
+          "bytes": 1645357,
+          "sha256": "fa30a7cbf503f3b0edc741e59f2109c2d48575d78a56cea0c4cc7de3dad9c40e"
+        },
+        {
+          "path": "addon_artifacts/runs/keepout_s123/best.pt",
+          "bytes": 1428101,
+          "sha256": "89ade46ed117bbac37e12a8bfa9d4856d740ba2489340bab47dd46e606caf530"
+        },
+        {
+          "path": "addon_artifacts/runs/keepout_s2026/best.pt",
+          "bytes": 1428165,
+          "sha256": "5ba682da2b61ca487ba4634189228fe464fe5a969ca5832eda7ef26dfc9a3bee"
+        },
+        {
+          "path": "addon_artifacts/runs/waypoint_s123/best.pt",
+          "bytes": 1645485,
+          "sha256": "60dd4fe4bd396f0d7b134bb12508ad46aec0a4e602200befb3c5f915d3bbf640"
+        },
+        {
+          "path": "addon_artifacts/runs/waypoint_s2026/best.pt",
+          "bytes": 1645485,
+          "sha256": "91591089a5f4578cb5743c7f53d4b0b347eaddd5c0f781b963cc82fcab23d4c9"
+        },
+        {
+          "path": "artifacts/final/discriminator.pt",
+          "bytes": 467422,
+          "sha256": "f1d82923585f5bdc97a126969dbeda05a1e31d5f82e929dba652c41507076358"
+        }
+      ]
+    },
+    "cube-models": {
+      "url": "https://github.com/hakanmuluk/GanExpansion/releases/download/v1.0.0/cube-models-v1.zip",
+      "archive": "cube-models-v1.zip",
+      "bytes": 29336210,
+      "sha256": "e9fb1a566f2c860316cbc9f8552d5d3c19eaf9638cbb6df1af7ba7dd6725f8cc",
+      "requires": [],
+      "files": [
+        {
+          "path": "cube/artifacts/final/base_policy.pt",
+          "bytes": 5115749,
+          "sha256": "94aa107f92e070b5f82764a4f95565e6b71978b778726ebf6f922d126ea0a8c8"
+        },
+        {
+          "path": "cube/artifacts/final/seed43/base_policy.pt",
+          "bytes": 5115749,
+          "sha256": "be76effcea2386ecc959a4ff24ecb4e7f005d1afed5c8cbe6b1b086b68e8b9d2"
+        },
+        {
+          "path": "cube/artifacts/final/seed44/base_policy.pt",
+          "bytes": 5115749,
+          "sha256": "f7ead6548d1f44421720b2dc2e833b0f3811d1d961d6b266e5b23dd715236b50"
+        },
+        {
+          "path": "cube_addon_artifacts/final/keepout_s42/adapter.pt",
+          "bytes": 2497237,
+          "sha256": "efa21ebba42888831409d618d08e96fecdd24b73cae7d60ea506f640bd1876af"
+        },
+        {
+          "path": "cube_addon_artifacts/final/keepout_s43/adapter.pt",
+          "bytes": 2497621,
+          "sha256": "56f32609c630695ac04644462008294eb4234b8b626d6e0e4ff743592cadb486"
+        },
+        {
+          "path": "cube_addon_artifacts/final/keepout_s44/adapter.pt",
+          "bytes": 2497621,
+          "sha256": "83590ca60303867fec9789da83954991ec3d0668dbed837b8a777240a406e2ba"
+        },
+        {
+          "path": "cube_addon_artifacts/final/waypoint_s42/adapter.pt",
+          "bytes": 2562389,
+          "sha256": "520d937d8a4d9a7daed144a6955dae3cfc1a9312e8f4d63c1f9174441456a7bc"
+        },
+        {
+          "path": "cube_addon_artifacts/final/waypoint_s43/adapter.pt",
+          "bytes": 2562389,
+          "sha256": "daceeb3fd99f6ff43f61e30fc8d7d0c80dd8c7d02bf753d7d89a49508d226d27"
+        },
+        {
+          "path": "cube_addon_artifacts/final/waypoint_s44/adapter.pt",
+          "bytes": 2562389,
+          "sha256": "21ac5a270902081a333572cdb1a8427d9bfdce8c74257b4e5bc6f51a8707ed0c"
+        },
+        {
+          "path": "cube/artifacts/final/discriminator.pt",
+          "bytes": 1124580,
+          "sha256": "c7274ecb53fd01506dc58ddddc3d56afc855afa92b7c7f6cb17ffe2cf33d2d89"
+        }
+      ]
+    },
+    "cube-agreement-models": {
+      "url": "https://github.com/hakanmuluk/GanExpansion/releases/download/v1.0.0/cube-agreement-models-v1.zip",
+      "archive": "cube-agreement-models-v1.zip",
+      "bytes": 8614140,
+      "sha256": "99c078e512efd6cc6c5239606359f5ad52f6ed494b49bd967d9b98d631d0cc9f",
+      "requires": [
+        "cube-models"
+      ],
+      "files": [
+        {
+          "path": "cube_agreement_artifacts/decoders/keepout_s42/best.pt",
+          "bytes": 418833,
+          "sha256": "e509c90c3dac928f280019a58e9390c045f482f4120e3a99eb63a9f0ae285e1c"
+        },
+        {
+          "path": "cube_agreement_artifacts/decoders/keepout_s43/best.pt",
+          "bytes": 420113,
+          "sha256": "f1250b6018b051655765b96b1436623da282520d0bac3e45549bf199dd09469f"
+        },
+        {
+          "path": "cube_agreement_artifacts/decoders/keepout_s44/best.pt",
+          "bytes": 420113,
+          "sha256": "7f05777b738db4425bd2de62f4d3cd5f354a03b5b49c03362d67e80ad80cd3b9"
+        },
+        {
+          "path": "cube_agreement_artifacts/decoders/waypoint_s42/best.pt",
+          "bytes": 415761,
+          "sha256": "f875a895ee4bbd3d3d51f34562d075c31ca2e71879c128db52aa082a3c8edfb0"
+        },
+        {
+          "path": "cube_agreement_artifacts/decoders/waypoint_s43/best.pt",
+          "bytes": 417041,
+          "sha256": "42250e7e17aef7c866306b36dc46c8d8fa0fe33966f52524ba3c509bcb3cf069"
+        },
+        {
+          "path": "cube_agreement_artifacts/decoders/waypoint_s44/best.pt",
+          "bytes": 417041,
+          "sha256": "fb24492c7e747149994dfd434a92875bce040c0237ce1940a2ad1fad857e8e80"
+        },
+        {
+          "path": "cube_agreement_artifacts/action_adapter_v2/best.pt",
+          "bytes": 1751461,
+          "sha256": "3b4ac5521352b6c737ead76259fa114221804a2806723788884a22280a862808"
+        },
+        {
+          "path": "cube_agreement_artifacts/action_adapter_v3/best.pt",
+          "bytes": 1861669,
+          "sha256": "379a695c2f7e96444c0bb9f38be77051eb872ffb5d7b632727085282af505780"
+        },
+        {
+          "path": "cube_agreement_artifacts/action_adapter_v3_s43/best.pt",
+          "bytes": 1861669,
+          "sha256": "8d89fc87e6cc41e0355222239dd5d6bc53f877a8f7bbfef044a945e794e6e0a7"
+        },
+        {
+          "path": "cube_agreement_artifacts/action_adapter_v3_s44/best.pt",
+          "bytes": 1861669,
+          "sha256": "db05cadad8aaa452630bd242a142c28986ba1e8a8a5b3e545292f43107bf5c08"
+        }
+      ]
+    },
+    "benchmark-inputs": {
+      "url": "https://github.com/hakanmuluk/GanExpansion/releases/download/v1.0.0/benchmark-inputs-v1.zip",
+      "archive": "benchmark-inputs-v1.zip",
+      "bytes": 19122779,
+      "sha256": "4d21fdf646ffc77a8e75bcf2fbbd3d9611cbfb801756f1141696dd750941456d",
+      "requires": [],
+      "files": [
+        {
+          "path": "artifacts/data_v2/val.npz",
+          "bytes": 281506,
+          "sha256": "f40c41b2cee9d4c2d79c169d58c788ef161610d71b17d373447f1e2a145ef335"
+        },
+        {
+          "path": "artifacts/data_v2/test.npz",
+          "bytes": 558283,
+          "sha256": "9c8ae043c825e2d8b9e1f2a6fa8b197654d04da8db5cf09fa3fbd4482f652ebb"
+        },
+        {
+          "path": "addon_artifacts/data/keepout/val.npz",
+          "bytes": 930280,
+          "sha256": "abc299c4f756635e13499167ac54d8e00fbc71e35aede8206b0a83a4aceace4b"
+        },
+        {
+          "path": "addon_artifacts/data/keepout/val_contexts.npz",
+          "bytes": 5091,
+          "sha256": "ab57143541efd1b2bdb08d1c289721a75b5a8a991c07c2264070c2d82890c859"
+        },
+        {
+          "path": "addon_artifacts/data/keepout/test.npz",
+          "bytes": 1794208,
+          "sha256": "c48fe1b9e03bdf4ed3bce44db846701cb2c64f0192517f66c4794acb17f21ee1"
+        },
+        {
+          "path": "addon_artifacts/data/keepout/test_contexts.npz",
+          "bytes": 9101,
+          "sha256": "c37d0287c51d1c7f7dd7e3e1e95642768b6cff19c0e7c076eb657471a5f26ed2"
+        },
+        {
+          "path": "addon_artifacts/data/waypoint/val.npz",
+          "bytes": 1115765,
+          "sha256": "ef1c95235b58d31a6d010daa804e2adbe65b7522afeb39e3fe2aec038808bef8"
+        },
+        {
+          "path": "addon_artifacts/data/waypoint/val_contexts.npz",
+          "bytes": 5156,
+          "sha256": "75848e95d76562d485132a56db86547745838257c3c868c7577f8b0d2a0d06e9"
+        },
+        {
+          "path": "addon_artifacts/data/waypoint/test.npz",
+          "bytes": 2120038,
+          "sha256": "ea93882622b838dbb600a43c6677119034e0d22431c87e4e2e7faadfba628ed7"
+        },
+        {
+          "path": "addon_artifacts/data/waypoint/test_contexts.npz",
+          "bytes": 9251,
+          "sha256": "b6ecdc2fee160bbe990b4b71868e6446739ac0e828517e46cf386f4d7b2421e0"
+        },
+        {
+          "path": "cube/artifacts/data/val.npz",
+          "bytes": 5041555,
+          "sha256": "4d83434cec02c9d2714dd0ecade3f829efb9f06dc6174da7881707ac55fdac88"
+        },
+        {
+          "path": "cube/artifacts/data/val_contexts.npz",
+          "bytes": 14293,
+          "sha256": "f5aa33e3e5ee64444c189c448f973e47128ebc5a58099d94893de2ae9a9abe9a"
+        },
+        {
+          "path": "cube/artifacts/data/test.npz",
+          "bytes": 7296099,
+          "sha256": "90001c212caa74ad52e422f7d2e5bcb7808186c7617976376a6863e38e8a48b2"
+        },
+        {
+          "path": "cube/artifacts/data/test_contexts.npz",
+          "bytes": 19334,
+          "sha256": "280fd0beddfc3f8a6ebd79ed9382c400e6a94d3babb872d7f2bb20ad339bccc1"
+        },
+        {
+          "path": "cube_addon_artifacts/data_force/keepout/val_contexts.npz",
+          "bytes": 12873,
+          "sha256": "10becb59b053e7f33fe7a1486a65fb0c8ab45e185acc001e0c099d334369e3ec"
+        },
+        {
+          "path": "cube_addon_artifacts/data_force/keepout/test_contexts.npz",
+          "bytes": 23860,
+          "sha256": "eac9e80ec94673042972c98928050e126ae80356ea6c27c030813c65aa5e7065"
+        },
+        {
+          "path": "cube_addon_artifacts/data_force/waypoint/val_contexts.npz",
+          "bytes": 12868,
+          "sha256": "74ea668a7aae882d908e4246af41ded46908e9c11dcea690879c672592e2e493"
+        },
+        {
+          "path": "cube_addon_artifacts/data_force/waypoint/test_contexts.npz",
+          "bytes": 23860,
+          "sha256": "372514a0618d28282cfdd5c0a0fad6a6388397c21fe7ee75c6e7064ca11bf793"
+        },
+        {
+          "path": "composition_artifacts/tasks/test_coupled_ood.npz",
+          "bytes": 7894,
+          "sha256": "9467b1dc240545b1847017963342dee60b55473efc143d7523820893625f7ab7"
+        },
+        {
+          "path": "composition_artifacts/tasks/test_infeasible.npz",
+          "bytes": 7777,
+          "sha256": "1ee5be192a4e842e890728abe68c0ed84d0939ac39e039a5bf0ef566f0a426d8"
+        },
+        {
+          "path": "composition_artifacts/tasks/test_supported_conflict.npz",
+          "bytes": 7860,
+          "sha256": "d875ad2fb22b4d08a951d69a801937a1bb2f780fc5dc682745254adda4dce088"
+        },
+        {
+          "path": "composition_artifacts/tasks/test_supported_easy.npz",
+          "bytes": 7855,
+          "sha256": "ca1aa0e7d85db66b9b209be97a3c3c3e24a02ada3ec7f5ffc0030a9a3c6bebd9"
+        },
+        {
+          "path": "composition_artifacts/tasks/val_coupled_ood.npz",
+          "bytes": 7911,
+          "sha256": "9943f85e110997b7bb860083e47f95c00c20c8dd2a68b5778f11caa603f30147"
+        },
+        {
+          "path": "composition_artifacts/tasks/val_infeasible.npz",
+          "bytes": 7818,
+          "sha256": "fbe7db69809f2ca390817bf8c83085fa85d23fa207123ca4908e0228b75f6e87"
+        },
+        {
+          "path": "composition_artifacts/tasks/val_supported_conflict.npz",
+          "bytes": 7854,
+          "sha256": "75b76e108c6b6de686b386e2ee05a2e49ca1d29fcbd92dde6aa425fe48dd071d"
+        },
+        {
+          "path": "composition_artifacts/tasks/val_supported_easy.npz",
+          "bytes": 7852,
+          "sha256": "c7d148b539bd91e3342592c4e3d2848fd4c048cb8e4bd83987f4cd023baf6fdf"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/test_coupled_ood.npz",
+          "bytes": 15132,
+          "sha256": "feda8bf811e9b264585da097d3b7ead54c6431c0582ab3897f7e43d1eadc0339"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/test_infeasible.npz",
+          "bytes": 15065,
+          "sha256": "e53f3874659f3df5b9e8431e9a26867cd297491c7560ee76d6ae4cb2b4309fe8"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/test_supported_conflict.npz",
+          "bytes": 15079,
+          "sha256": "465b77672c6fe9469915306bcbd13eb4212622c99d4c4e8d59bb810d361f0b99"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/test_supported_easy.npz",
+          "bytes": 15110,
+          "sha256": "62c16c42b680944ae7c60d9bf51dc39d6dd34ed1f72b85d20ab7a0d414b5f4dd"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/val_coupled_ood.npz",
+          "bytes": 15117,
+          "sha256": "74fe9bb7d9a3a904b2c28b54a1c14c341e4c2b5b04cf5e1a6ca7560e79aec53c"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/val_infeasible.npz",
+          "bytes": 15032,
+          "sha256": "34c89351d4a714e2ef316baa50f82b0b20ae56ddfec403d5770379e9e3d57261"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/val_supported_conflict.npz",
+          "bytes": 15092,
+          "sha256": "7d2849f0e1c5a13eb4cb9be0371538392aa5354f45bc52cb0bb7de97cbe3dc82"
+        },
+        {
+          "path": "cube_composition_artifacts/tasks_v2/val_supported_easy.npz",
+          "bytes": 15078,
+          "sha256": "a5616b47aba64c567a3dbfaf00b38d30cd3a48e5915f345f53bff87639ce459e"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/test_coupled_ood.npz",
+          "bytes": 15114,
+          "sha256": "fdc2d4cec9a9df06ed05d62e9978e90719bc560939da0fe54de81506f201c068"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/test_supported_conflict.npz",
+          "bytes": 15104,
+          "sha256": "9a9e4a8684ff597121c3aeb2507d79551a4e0c35e96589446eb135aecb4f0332"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/test_supported_easy.npz",
+          "bytes": 15101,
+          "sha256": "fd094c12091516f03e227465a0d631abc48bbcc84f49a68686812189da65335d"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/val_coupled_ood.npz",
+          "bytes": 15131,
+          "sha256": "aeeeed0c444b40dc48ee0f6956041fa5bbc3172527c188c9663aecd598e3cff6"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/val_supported_conflict.npz",
+          "bytes": 15106,
+          "sha256": "36f77656f460a98e5b4991a60b20686fdfca23c14381101b7591d45a8c4f6a5a"
+        },
+        {
+          "path": "cube_agreement_artifacts/tasks_v1/val_supported_easy.npz",
+          "bytes": 15064,
+          "sha256": "e6fcd2817f0bfa8c7d420a4ba7c31812b37d5a3635f0ad2379823c0d19ddbe8a"
+        },
+        {
+          "path": "composition_artifacts/priors/seed123.json",
+          "bytes": 9964,
+          "sha256": "fa374a4b2d0b7b16dc5ffe63a2d2e5f0a8d01686fb5dd181e7f2b521dbac3dae"
+        },
+        {
+          "path": "composition_artifacts/priors/seed2026.json",
+          "bytes": 9976,
+          "sha256": "51ef819ba4ffa7a88d9b85d12bf30396707b8e9cc35aa1b788b27c9766dd0d4f"
+        },
+        {
+          "path": "composition_artifacts/priors/seed42.json",
+          "bytes": 9970,
+          "sha256": "e715880400f7cf910df61cb0c3eec37dd3de11d8e7b78b8d2f8a7e2bb3f1481f"
+        },
+        {
+          "path": "cube_composition_artifacts/priors/seed42.json",
+          "bytes": 10391,
+          "sha256": "9ef0a99e4a1bd2e474a575c90c562cabe9d8cd17c707a5728fbbd4d26083a765"
+        },
+        {
+          "path": "cube_composition_artifacts/priors/seed43.json",
+          "bytes": 10333,
+          "sha256": "a8a2dca1e32b76196fb17ec2eb7777b21921dc1743962d11884f1e239eaf7e74"
+        },
+        {
+          "path": "cube_composition_artifacts/priors/seed44.json",
+          "bytes": 10395,
+          "sha256": "9792af4293885b440bf9a16be052f42767115e162154e5722173525c32797309"
+        },
+        {
+          "path": "cube_composition_artifacts/dynamics/seed42.json",
+          "bytes": 2533,
+          "sha256": "2175232ffe43d7b3f7cfa89d7a9d15dc27fd4abfb962a93a01593caf67348140"
+        },
+        {
+          "path": "cube_composition_artifacts/dynamics/seed43.json",
+          "bytes": 2524,
+          "sha256": "6a63307cb06bac0d1c2754e4afbe0f7f59446278d4c1421a4d61f94979cf3705"
+        },
+        {
+          "path": "cube_composition_artifacts/dynamics/seed44.json",
+          "bytes": 2528,
+          "sha256": "bfa78fc0fa4af27de7906cf440f7e4e76883b7b31d78ffdcaac8b95a31975f0a"
+        }
+      ]
+    }
+  }
+}
