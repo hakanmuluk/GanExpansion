@@ -1,0 +1,21 @@
+The public checkout provides portable examples and preserves the original public
+asset paths. New frozen composition weights install under research_assets/.
+
+Exact completed-study reruns use canonical /content layouts recorded by the
+scientific descriptors. The v1.1.0 single-gaussian-reproduction archive includes
+the exact original source/configuration snapshot and original checkpoint bytes.
+Extract it into an unused execution root and follow its REPRODUCE.txt; restore or
+regenerate the six protected banks and check their recorded hashes first.
+Do not unpack a canonical research snapshot over a working public checkout.
+
+The public checkout retains existing release compatibility edits: postponed
+Python annotations, published discriminator initialization paths and legacy CPU
+CLI support. These do not change the frozen models' numerical inference. Exact
+source-hash checks must use the supplied canonical source snapshot instead.
+
+The base/adapter training study has its own ablation_study/REPRODUCE.txt and
+recorded configurations. Its adapter-rank study uses published original bases;
+its broader-data Cube base study and current composition use later Cube weights.
+Keep checkpoint families and their training/evaluation banks separate.
+Full training needs the input archives named in those notes, in addition to
+selected inference weights. Raw observations/actions/poses are not distributed.

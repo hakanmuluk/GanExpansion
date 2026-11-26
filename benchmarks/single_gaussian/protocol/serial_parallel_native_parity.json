@@ -1,0 +1,13 @@
+{
+  "episodes": 64,
+  "outcomes_and_lengths_exact": true,
+  "maximum_absolute_differences": {
+    "states": 0,
+    "contexts": 0,
+    "poses": 0,
+    "actions": 0,
+    "continuous_actions": 0,
+    "micro_cube": 0
+  },
+  "scope": "Entire original reference rollouts, not only initial action probes."
+}

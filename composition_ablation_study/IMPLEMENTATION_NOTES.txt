@@ -1,0 +1,32 @@
+The old evaluate_regularized_latents CLI asserts agreement_horizon=execute=8.
+The new wrapper changes that CLI restriction only by calling its unchanged
+evaluate_tworoom/evaluate_cube functions directly with execute=8 and the
+predeclared H. Their source files and every model/task file are hash checked.
+Reference H8/N20 is compared against the entire original trajectories and
+outcomes, and every new TwoRoom trajectory receives original native replay.
+
+Positive-step sampling invokes the original RegularizedComposer.sample via
+inheritance. Detached tensor logging adds no model evaluation or objective
+term. Trace conversion happens when last_plan is read after the synchronized
+planner timer stops. A separate unchanged-runtime batch1 benchmark measures
+latency and compares recorder overhead. CUDA event intervals include host
+launch gaps; they are not sums of kernel busy time.
+
+The requested exact-grid N0 bypasses the legacy initial bound-logit round-trip.
+The legacy parameterized-zero diagnostic is evaluated separately, unchanged.
+Random search is the explicitly requested alternative search baseline, with
+unchanged grid, objective, bounds, previous candidate, outputs and execution.
+The number of additional samples is frozen from outcome-blind profiling of
+matrix-multiply arithmetic for actual original forward/input-gradient work.
+It is not assumed to have the same wall time or all hardware operations.
+
+Additional fixed-u=-.8 single-adapter rollouts reuse the original released
+single forward path. They use the composition monitor, including its strict
+waypoint-before-goal ordering in TwoRoom. They do not establish whether a
+different private code could succeed and do not replace any composition run.
+
+No raw observations, poses, control arrays, simulator snapshots, task banks,
+planning traces or individual episode outcomes are exported from the GPU.
+Only aggregate statistics, figures, source, weights and protocol metadata may
+be backed up locally. Native records remain on the execution host. Progress
+reports expose job liveness and number of completed episodes, not outcomes.

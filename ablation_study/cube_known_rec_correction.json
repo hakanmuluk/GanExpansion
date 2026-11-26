@@ -1,0 +1,493 @@
+{
+  "invalidated_jobs": [
+    "cube_original_base_adversarial_s42",
+    "cube_latest_initialize_adversarial_s42",
+    "cube_latest_base_adversarial_s42",
+    "rq1_cube_latest_adversarial_s42",
+    "original_gaussian_cube_adversarial_s42",
+    "cube_original_base_adversarial_s43",
+    "cube_latest_initialize_adversarial_s43",
+    "cube_latest_base_adversarial_s43",
+    "rq1_cube_latest_adversarial_s43",
+    "original_gaussian_cube_adversarial_s43",
+    "latent_consistency_s42",
+    "latent_consistency_second_seeds",
+    "base_side_by_side_figures_s42"
+  ],
+  "replacement_jobs": {
+    "cube_original_base_adversarial_s42": "cube_original_base_adversarial_s42_corrected_v2",
+    "cube_latest_initialize_adversarial_s42": "cube_latest_initialize_adversarial_s42_corrected_v2",
+    "cube_latest_base_adversarial_s42": "cube_latest_base_adversarial_s42_corrected_v2",
+    "rq1_cube_latest_adversarial_s42": "rq1_cube_latest_adversarial_s42_corrected_v2",
+    "original_gaussian_cube_adversarial_s42": "original_gaussian_cube_adversarial_s42_corrected_v2",
+    "cube_original_base_adversarial_s43": "cube_original_base_adversarial_s43_corrected_v2",
+    "cube_latest_initialize_adversarial_s43": "cube_latest_initialize_adversarial_s43_corrected_v2",
+    "cube_latest_base_adversarial_s43": "cube_latest_base_adversarial_s43_corrected_v2",
+    "rq1_cube_latest_adversarial_s43": "rq1_cube_latest_adversarial_s43_corrected_v2",
+    "original_gaussian_cube_adversarial_s43": "original_gaussian_cube_adversarial_s43_corrected_v2",
+    "latent_consistency_s42": "latent_consistency_s42_corrected_v2",
+    "latent_consistency_second_seeds": "latent_consistency_second_seeds_corrected_v2",
+    "base_side_by_side_figures_s42": "base_side_by_side_figures_s42_corrected_v2"
+  },
+  "reason": {
+    "issue": "Cube base loss ablation retained known_rec_weight=10 on a zero known_z, so it was not the requested removal of the combined latent/imitation scheme.",
+    "resolution": "Disable known_rec_weight explicitly; archive all affected Cube ablation models/evaluations and derived paired summaries; rerun both complete stages for both seeds using unchanged full-reference RNG traces and datasets.",
+    "excluded_from_results": true,
+    "invalidated_jobs": [
+      "cube_original_base_adversarial_s42",
+      "cube_latest_initialize_adversarial_s42",
+      "cube_latest_base_adversarial_s42",
+      "rq1_cube_latest_adversarial_s42",
+      "original_gaussian_cube_adversarial_s42",
+      "cube_original_base_adversarial_s43",
+      "cube_latest_initialize_adversarial_s43",
+      "cube_latest_base_adversarial_s43",
+      "rq1_cube_latest_adversarial_s43",
+      "original_gaussian_cube_adversarial_s43",
+      "latent_consistency_s42",
+      "latent_consistency_second_seeds",
+      "base_side_by_side_figures_s42"
+    ],
+    "corrected_jobs": [
+      "cube_original_base_adversarial_s42_corrected_v2",
+      "cube_latest_initialize_adversarial_s42_corrected_v2",
+      "cube_latest_base_adversarial_s42_corrected_v2",
+      "rq1_cube_latest_adversarial_s42_corrected_v2",
+      "original_gaussian_cube_adversarial_s42_corrected_v2",
+      "cube_original_base_adversarial_s43_corrected_v2",
+      "cube_latest_initialize_adversarial_s43_corrected_v2",
+      "cube_latest_base_adversarial_s43_corrected_v2",
+      "rq1_cube_latest_adversarial_s43_corrected_v2",
+      "original_gaussian_cube_adversarial_s43_corrected_v2",
+      "latent_consistency_s42_corrected_v2",
+      "latent_consistency_second_seeds_corrected_v2",
+      "base_side_by_side_figures_s42_corrected_v2"
+    ],
+    "valid_unaffected": "Full Cube controls, existing-checkpoint diagnostics, TwoRoom arms and all independent adapter recipes."
+  },
+  "invalidated_job_definitions": [
+    {
+      "id": "cube_original_base_adversarial_s42",
+      "priority": 3,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_original_base_adversarial_s42.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_original_base_s42.pt"
+      ],
+      "configs": [
+        "ablation_study/configs/cube_original_base_adversarial_s42.json"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "after_jobs": [
+        "cube_original_base_full_s42"
+      ],
+      "expected_files": [
+        "ablation_results/training/cube_original_base_adversarial_s42/completed.json",
+        "ablation_results/training/cube_original_base_adversarial_s42/controlled_ablation.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_original_base_adversarial_s42_corrected_v2"
+    },
+    {
+      "id": "cube_original_base_adversarial_s43",
+      "priority": 13,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_original_base_adversarial_s43.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_original_base_s43.pt"
+      ],
+      "configs": [
+        "ablation_study/configs/cube_original_base_adversarial_s43.json"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "after_jobs": [
+        "cube_original_base_full_s43"
+      ],
+      "expected_files": [
+        "ablation_results/training/cube_original_base_adversarial_s43/completed.json",
+        "ablation_results/training/cube_original_base_adversarial_s43/controlled_ablation.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_original_base_adversarial_s43_corrected_v2"
+    },
+    {
+      "id": "cube_latest_initialize_adversarial_s42",
+      "priority": 4,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.prepare_cube_stage_b",
+        "initialization",
+        "--parent",
+        "ablation_results/training/cube_original_base_adversarial_s42/best.pt",
+        "--discriminator-parent",
+        "cube/artifacts/final/training_resume.pt",
+        "--out",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s42.pt",
+        "--no-latent"
+      ],
+      "after_jobs": [
+        "cube_original_base_adversarial_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s42.pt",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s42.json"
+      ],
+      "configs": [],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_latest_initialize_adversarial_s42_corrected_v2"
+    },
+    {
+      "id": "cube_latest_base_adversarial_s42",
+      "priority": 5,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_latest_base_adversarial_s42.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_latest_base_s42.pt"
+      ],
+      "after_jobs": [
+        "cube_latest_initialize_adversarial_s42",
+        "cube_latest_validation_inputs",
+        "cube_latest_base_full_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/training/cube_latest_base_adversarial_s42/completed.json",
+        "ablation_results/training/cube_latest_base_adversarial_s42/controlled_ablation.json"
+      ],
+      "configs": [
+        "ablation_study/configs/cube_latest_base_adversarial_s42.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_latest_base_adversarial_s42_corrected_v2"
+    },
+    {
+      "id": "rq1_cube_latest_adversarial_s42",
+      "priority": 6,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_analysis",
+        "--environment",
+        "cube",
+        "--checkpoint",
+        "ablation_results/training/cube_latest_base_adversarial_s42/best.pt",
+        "--data",
+        "cube/artifacts/data",
+        "--workers",
+        "4",
+        "--out",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s42"
+      ],
+      "after_jobs": [
+        "cube_latest_base_adversarial_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s42/DONE.json",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s42/summary.json"
+      ],
+      "configs": [],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "rq1_cube_latest_adversarial_s42_corrected_v2"
+    },
+    {
+      "id": "cube_latest_initialize_adversarial_s43",
+      "priority": 14,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.prepare_cube_stage_b",
+        "initialization",
+        "--parent",
+        "ablation_results/training/cube_original_base_adversarial_s43/best.pt",
+        "--discriminator-parent",
+        "cube/artifacts/final/seed43/training_resume.pt",
+        "--out",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s43.pt",
+        "--no-latent"
+      ],
+      "after_jobs": [
+        "cube_original_base_adversarial_s43"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s43.pt",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s43.json"
+      ],
+      "configs": [],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_latest_initialize_adversarial_s43_corrected_v2"
+    },
+    {
+      "id": "cube_latest_base_adversarial_s43",
+      "priority": 15,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_latest_base_adversarial_s43.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_latest_base_s43.pt"
+      ],
+      "after_jobs": [
+        "cube_latest_initialize_adversarial_s43",
+        "cube_latest_validation_inputs",
+        "cube_latest_base_full_s43"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/training/cube_latest_base_adversarial_s43/completed.json",
+        "ablation_results/training/cube_latest_base_adversarial_s43/controlled_ablation.json"
+      ],
+      "configs": [
+        "ablation_study/configs/cube_latest_base_adversarial_s43.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "cube_latest_base_adversarial_s43_corrected_v2"
+    },
+    {
+      "id": "rq1_cube_latest_adversarial_s43",
+      "priority": 16,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_analysis",
+        "--environment",
+        "cube",
+        "--checkpoint",
+        "ablation_results/training/cube_latest_base_adversarial_s43/best.pt",
+        "--data",
+        "cube/artifacts/data",
+        "--workers",
+        "4",
+        "--out",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s43"
+      ],
+      "after_jobs": [
+        "cube_latest_base_adversarial_s43"
+      ],
+      "required_files": [],
+      "wait_for_processes": [
+        "ablation_results/train_tworoom_base_full_s42.process.json"
+      ],
+      "expected_files": [
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s43/DONE.json",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s43/summary.json"
+      ],
+      "configs": [],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "rq1_cube_latest_adversarial_s43_corrected_v2"
+    },
+    {
+      "id": "original_gaussian_cube_adversarial_s42",
+      "priority": 9,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.evaluate_base",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/original_gaussian_cube_adversarial_s42.json"
+      ],
+      "configs": [
+        "ablation_study/configs/original_gaussian_cube_adversarial_s42.json"
+      ],
+      "after_jobs": [
+        "cube_latest_base_adversarial_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [],
+      "expected_files": [
+        "ablation_results/evaluation/original_gaussian_cube_adversarial_s42/DONE.json",
+        "ablation_results/evaluation/original_gaussian_cube_adversarial_s42/study_summary.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "original_gaussian_cube_adversarial_s42_corrected_v2"
+    },
+    {
+      "id": "original_gaussian_cube_adversarial_s43",
+      "priority": 19,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.evaluate_base",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/original_gaussian_cube_adversarial_s43.json"
+      ],
+      "configs": [
+        "ablation_study/configs/original_gaussian_cube_adversarial_s43.json"
+      ],
+      "after_jobs": [
+        "cube_latest_base_adversarial_s43"
+      ],
+      "required_files": [],
+      "wait_for_processes": [],
+      "expected_files": [
+        "ablation_results/evaluation/original_gaussian_cube_adversarial_s43/DONE.json",
+        "ablation_results/evaluation/original_gaussian_cube_adversarial_s43/study_summary.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "original_gaussian_cube_adversarial_s43_corrected_v2"
+    },
+    {
+      "id": "base_side_by_side_figures_s42",
+      "priority": 9.5,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.make_base_figures",
+        "--seed",
+        "42",
+        "--out",
+        "ablation_results/figures/base_side_by_side_figures_s42"
+      ],
+      "configs": [],
+      "after_jobs": [
+        "original_gaussian_tworoom_full_s42",
+        "original_gaussian_tworoom_adversarial_s42",
+        "original_gaussian_cube_full_s42",
+        "original_gaussian_cube_adversarial_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [],
+      "expected_files": [
+        "ablation_results/figures/base_side_by_side_figures_s42/tworoom_full_vs_without_latent.pdf",
+        "ablation_results/figures/base_side_by_side_figures_s42/cube_full_vs_without_latent.pdf",
+        "ablation_results/figures/base_side_by_side_figures_s42/figure_provenance.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "base_side_by_side_figures_s42_corrected_v2"
+    },
+    {
+      "id": "latent_consistency_s42",
+      "priority": 19,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_consistency",
+        "--seed",
+        "42",
+        "--tworoom-seed",
+        "42",
+        "--out",
+        "ablation_results/aggregate/latent_consistency_s42.json"
+      ],
+      "configs": [],
+      "after_jobs": [
+        "rq1_tworoom_full_s42",
+        "rq1_tworoom_adversarial_s42",
+        "rq1_cube_latest_full_s42",
+        "rq1_cube_latest_adversarial_s42"
+      ],
+      "required_files": [],
+      "wait_for_processes": [],
+      "expected_files": [
+        "ablation_results/aggregate/latent_consistency_s42.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "latent_consistency_s42_corrected_v2"
+    },
+    {
+      "id": "latent_consistency_second_seeds",
+      "priority": 19,
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_consistency",
+        "--seed",
+        "43",
+        "--tworoom-seed",
+        "123",
+        "--out",
+        "ablation_results/aggregate/latent_consistency_second_seeds.json"
+      ],
+      "configs": [],
+      "after_jobs": [
+        "rq1_tworoom_full_s123",
+        "rq1_tworoom_adversarial_s123",
+        "rq1_cube_latest_full_s43",
+        "rq1_cube_latest_adversarial_s43"
+      ],
+      "required_files": [],
+      "wait_for_processes": [],
+      "expected_files": [
+        "ablation_results/aggregate/latent_consistency_second_seeds.json"
+      ],
+      "invalidated": true,
+      "invalidated_reason": "Cube ablation retained known-code reconstruction at zero code; superseded.",
+      "superseded_by": "latent_consistency_second_seeds_corrected_v2"
+    }
+  ]
+}

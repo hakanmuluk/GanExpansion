@@ -1,0 +1,73 @@
+Frozen-model composition ablations, 26 November 2026
+
+REFERENCE AND INVARIANTS
+Use the existing regularization_v142 final banks: 64 cases in each of
+supported_easy, supported_conflict and coupled_ood in each environment.
+Use the latest released selected=prior configuration: private prior .01,
+cycle 0, original base tether (TwoRoom1; Cube.0005), H8, four starts,
+20 Adam steps, lr.12, original bounds/grid/previous-solution candidate.
+No model training, normalization change, new scenes or task-success objective.
+Execute8/reobserve. TwoRoom clip(AW+AK-AB); Cube executesAW and thresholds grip.
+The existing bank has informed previous research; this is exploratory reuse.
+
+PREDEFINED EXPERIMENTS
+A: H4,8,12,16, N20. C: N0,5,10,20,40, H8. Share H8/N20 reference.
+B: primary predictor is NEGATIVE RAW action-MSE at the FIRST replan, before
+any controls are executed. Outcome is the original strict closed-loop success.
+Use H8/N20, one value per context. Total regularized objective is separate.
+Report within-category and pooled AUROC; pooled values can reflect difficulty.
+Also report category-adjusted mean AUROC where defined. Use outcome-blind
+quartiles of raw loss and report counts, success rates and Wilson intervals.
+First/middle/last active replans and issued-grip/executor-deformation metrics
+are secondary retrospective diagnostics, not independent observations or
+prospective predictors. Later/last scores have outcome/trajectory-length bias.
+
+UNCERTAINTY
+192 context identities per environment, 64 per category. No model-pair
+replication. Adam grid search has no stochastic draws; show actual seed
+invariance probes instead of treating repeated seeds as independent trials.
+Random search uses241/1241/2241. Average repeats per context before uncertainty.
+Use2000 fixed-seed(20261126) context bootstrap resamples, stratified by category
+for pooled estimates. Paired context resampling for method differences.
+Undefined AUROCs (all successes/all failures) are null with explicit counts;
+report number of valid bootstrap replicates, especially for sparse successes.
+Intervals describe context variation on these reused banks, not fresh
+confirmatory evidence. Replans/iterations are not additional sample units.
+
+ZERO-STEP TECHNICAL CONTROL
+N0 means exact best candidate from the unchanged coarse grid, with previous
+solution candidate on later replans. Positive-N calls original sample verbatim.
+Legacy steps0 still clips a bound fraction before a logit/sigmoid round-trip.
+Run legacy parameterized-zero as a separate diagnostic on all existing cases
+so any numerical-initialization effect is not attributed solely to gradients.
+
+RANDOM SEARCH BASELINE
+Retain original grid, objective, bounds, allowed signs, previous candidate and
+executor. Additional uniform bounded latent samples replace gradient updates.
+Select sample count outcome-blind by profiling actual frozen forward and
+input-gradient backward matrix-multiply FLOPs for original N20. Include grid
+and final forward work; verify <=1% profiled matrix-work mismatch. This is a
+neural-arithmetic proxy, NOT an assertion of identical wall time or every
+hardware operation. Report actual forward candidates, backward samples,
+batch-call counts, CUDA and synchronized wall time; random batching may be faster.
+
+ADDITIONAL DIAGNOSTICS
+Execute unchanged release single-adapter paths at fixed private code-.8 in
+the same contexts. These diagnose one reference behavior, not whether every
+possible code fails. Expert witnesses certify joint feasibility but are never
+provided to planning. No inference simulator queries or success-predicate calls.
+Quantify reduced disagreement with/without increased success; keep constraint,
+goal, grasp/drop and robot-table failures distinct. No causal attribution to
+skill-generalization alone without supporting matched single-skill evidence.
+
+RUNTIME AND REPRESENTATIVES
+Native TwoRoom evaluation is batch64; Cube is sequential batch1. Never label
+batch64 wall time as per-episode latency or compare it directly to Cube batch1.
+Measure an additional warmed batch1 fixed-observation benchmark, with paired
+method probes and randomized timing order, without changing rollout protocols.
+Keep original first-call cold time and report recording overhead separately.
+Representatives: first success and first failure in canonical context order
+per environment/category in the reference. For low-agreement failures, select
+the lowest initial-loss failure and explicitly label that diagnostic selection.
+Always retain failures in aggregates. Raw arrays and episode-level records stay
+on the GPU host; export aggregate tables/statistics, plots, code and protocols.

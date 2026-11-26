@@ -1,0 +1,4 @@
+{
+  "RQ2_CONCLUSION": "Rank 1 reaches 95.4--99.6\\% success and 93.0--99.2\\% coverage. Higher ranks offer no monotonic benefit; bars show the two-seed range. The style branch stays fixed, so this does not establish pure-LoRA sufficiency.",
+  "RQ3_CONCLUSION": "All eight pure models have exactly zero action response to private-code sign changes and zero private two-strategy coverage. TwoRoom joint success falls to 43.4\\% (keep-out) and 22.5\\% (waypoint). Cube keep-out retains 96.1\\% ordinary goal success but 0\\% joint success; waypoint retains 83.6\\% joint success as default behavior. The existing branch supplies both constraint conditioning and private control. This does not isolate the scale/shift functional form from the conditioning pathway it carries."
+}

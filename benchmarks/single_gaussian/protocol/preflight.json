@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "environments": {
+    "tworoom": {
+      "gaussian_matching_and_warm_start_checks": 15,
+      "one_start_legacy_Adam_parity_checks": 15,
+      "maximum_action_difference": 0.0,
+      "bitwise_actions_and_codes_equal": true,
+      "no_new_episode_grid_or_restarts": true
+    },
+    "cube": {
+      "gaussian_matching_and_warm_start_checks": 15,
+      "one_start_legacy_Adam_parity_checks": 15,
+      "maximum_action_difference": 0.0,
+      "bitwise_actions_and_codes_equal": true,
+      "no_new_episode_grid_or_restarts": true
+    }
+  },
+  "study_sha256": "a8362da49bf3608721f9744835c3d5905afaedbd0e0989b50217430c0438ffa5",
+  "scope": "Actual GPU neural probes only. Legacy-grid calls are correctness controls for its Adam loop; they do not initialize any new evaluated episode.",
+  "executed_for_study_sha256": "9ee415355a1e749ab76e34771b23e53bbea8072ef49c5364ae71791107ba5285",
+  "inherited_after_validation_only_fix": {
+    "original_preflight_sha256": "ef1ed4fc188859a8c46974a82e6e9a8ef714fd15e8413ebe61a0c9e87b6398db",
+    "planner_source_unchanged": true,
+    "planner_sha256": "6a1dba55126e25f065c4fe5cb182bba08a9e729fa2ed32ebc0fd1c34624e9f2d",
+    "changed": "Validator default-field materialization and independent-process scheduling only; no changed neural or optimizer logic."
+  }
+}

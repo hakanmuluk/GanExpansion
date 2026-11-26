@@ -112,7 +112,7 @@ def install_bundle(bundle, root, *, base_url=None, force=False, verify_only=Fals
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--bundle", default="all", help="all, tworoom, cube, or cube-agreement")
+    parser.add_argument("--bundle", default="all", help="Selection in --manifest (default: all, tworoom, cube, cube-agreement)")
     parser.add_argument("--manifest", type=Path, default=ROOT / "configs/assets.json")
     parser.add_argument("--root", type=Path, default=ROOT, help="Destination checkout root")
     parser.add_argument("--base-url", help="Optional release mirror containing the same archive filenames")

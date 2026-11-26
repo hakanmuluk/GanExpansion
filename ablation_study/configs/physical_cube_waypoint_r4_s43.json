@@ -1,0 +1,14 @@
+{
+  "checkpoint": "ablation_results/training/cube_waypoint_r4_s43/best.pt",
+  "skill": "waypoint",
+  "base": "cube/artifacts/final/base_policy.pt",
+  "contexts": "cube_addon_artifacts/data_force/waypoint/train_contexts.npz",
+  "count": 64,
+  "codes": 8,
+  "frames": 12,
+  "workers": 6,
+  "seed": 1731,
+  "out": "ablation_results/physical/cube_waypoint_r4_s43",
+  "rollouts_only": true,
+  "macro_waypoint": false
+}

@@ -1,0 +1,647 @@
+{
+  "complete": true,
+  "selected_count": 56,
+  "inventory_sha256": "684aaa6d671c6a6a27e076a4b8439b2c90cc8c8d56ce085e683db315a90ee773",
+  "cases": [
+    {
+      "case": "tworoom_base_full_s42",
+      "original_source_sha256": "96d5dfbb8c71e464cfd33dfbb0bf9700ce0980bcbf757e7ba8372c95cf2b0f50",
+      "compact_sha256": "43a8bc0c690ecc4a37eaba278c489b2e0e65a61539600bdab296b4c51fabd9d3",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "tworoom_base_full_s123",
+      "original_source_sha256": "39600bcb1396144c27f07a392e1ede1afeae0c69c52aa330849e07973fbb7930",
+      "compact_sha256": "472e33a372c76ee30f2aa844326abf591877b82bccaee40166b33d62a8199466",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "tworoom_base_adversarial_s42",
+      "original_source_sha256": "34fd723d1112eef13ee066bef8e4882cc79888b2c0a046b34de2549644cbe4ab",
+      "compact_sha256": "0774661a62968784ea30811fef3325e68afee8156665000ec25492acfecfcb6f",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "tworoom_base_adversarial_s123",
+      "original_source_sha256": "6374e9693129e131e8006f24a9c9f955fb94ecaba950b0399de0b6b50ef937ac",
+      "compact_sha256": "1706768e09e2eb25f2e34f14abf442bc715404ceb79d6955c0231961f22895b2",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "cube_latest_base_full_s42",
+      "original_source_sha256": "893f1adae892136bcbc4176d5a0abe09382515e63f1dd7ab154b692cf0ba8fd4",
+      "compact_sha256": "80086fb205ad38d176c21377266aa3cd071ee9bb7dcc387f49a35621cecd01a8",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "cube_latest_base_full_s43",
+      "original_source_sha256": "91436d12faab9dc8b074d2f3134344bc4922e7a342eba17dabc85dd900121f69",
+      "compact_sha256": "f70cf1810395bc51f8bb817a320e06b8e4c02a18fd0691e284aa5cc27bd3e1d2",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "cube_latest_base_adversarial_s42",
+      "original_source_sha256": "d2fe49995a2aeff88adc68f2b89088ad89303a697388d1240b975f7e572fd234",
+      "compact_sha256": "52650ba48e33cab245c9148a096523808af09e3e536f71147e0bc275f54e0557",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "cube_latest_base_adversarial_s43",
+      "original_source_sha256": "c54c4e83feb4f24b545217b7fb3a8c33454894837d86ab9b6ba820396f4e3aba",
+      "compact_sha256": "2c946c7575f64ff48c609ba2484090d70ff40b949a6d65c609742185a05128df",
+      "checks": {
+        "generator_raw": true,
+        "encoder_raw_inputs": true,
+        "generator_ema": true,
+        "encoder_ema_inputs": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r1_s123",
+      "original_source_sha256": "7a6a1619ee4e225c954b4d84d0f7ff4170a968eba4c662e7ffb94857fc931687",
+      "compact_sha256": "6c613f858db6ee9e63266d439034e138edc9c25a67372ee9c9d7d374e33b271b",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r1_s2026",
+      "original_source_sha256": "1d3aca4dec2982085250a3168466b9b120ca2768bcbade41792cb23b75aa62e6",
+      "compact_sha256": "8dcbb06dbf7420d42fa75dbae5d323b2cb2e5485534afdd6f543d27ee5c57114",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r2_s123",
+      "original_source_sha256": "20197c2ccccb1ac41fce1551a6756be3754289713d2606e6fde769d97c9be877",
+      "compact_sha256": "aa6fa8b17aa41d05e9f16e807284dd3ff67b84f26401ce2b7ba2f630ecc39851",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r2_s2026",
+      "original_source_sha256": "fd451519c4e2ab665053e9b48b5afcaa97fc54b61e188b28dd893c2d2cee17bd",
+      "compact_sha256": "b893d30d86cf8f3c618c6a266cec96a10487ba9d87c9e4576aa7fdcb3c843783",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r4_s123",
+      "original_source_sha256": "afb600cfb19c83b2902f03ec27bb5437bc5f6a631482d689f89206803b6ac14d",
+      "compact_sha256": "b34a85937c7a234fe386e4cf9f8ee0c860fc139832041d1b9beeeefa3c9e3dbc",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r4_s2026",
+      "original_source_sha256": "ca9e16439ca11aeab0ee89ab7fa5e14a48817ec4a97c1c3192d67a4706ec0606",
+      "compact_sha256": "15d8f02ee933776cfb39410a97482b09438a77c815b1672c76911671ce7375d1",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r8_s123",
+      "original_source_sha256": "e86def7236710be7d1af1a18ae08feabb06bb6098d1c218bcdd138236221678b",
+      "compact_sha256": "94338922c9331f16c5761aad2572120b9ada9845f4318f43ded5dbe9d754bc8c",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r8_s2026",
+      "original_source_sha256": "7d06be8b24d72bc9d1d65519937e2e1b19fad29b25917d9ff8de87a7022970c0",
+      "compact_sha256": "1e8d851ebebb464ed68b96b68bd4d148a3d86984bfdeb0f54d95b76f75388024",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r16_s123",
+      "original_source_sha256": "04bf5dd08d7fc6f360663f3c5efd0f052c5f23b6d054cedce437a5a20cd024e1",
+      "compact_sha256": "179aeadd75ec77252e5ebc3d54aea09cb1546a33d55694259abad83c97eca36a",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r16_s2026",
+      "original_source_sha256": "661f537611fd7ccdfefd7f8e176933d7af0b2cd3bc1618c2c891b1d838b853dc",
+      "compact_sha256": "ad44813b5571f875517f2dcf223c7ab5e7ed70c437de033fc3ae4a5e3586716b",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r8_lora_only_s123",
+      "original_source_sha256": "5a5cded5a0dd3be6f8da5dbefa3e31852205ecace1f961a5777a9c6e29656a8b",
+      "compact_sha256": "7609231923a3ab2cc70ff1eae188ae1eb37d40517005806f906a586dcd89d364",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "tworoom_keepout_r8_lora_only_s2026",
+      "original_source_sha256": "4139a15373b673a128c374b23324bc9f9eed26333c1483fba6b4e3e8a330d326",
+      "compact_sha256": "f73d04558f97a211b7c089bc54bad8500726124e71a1d2d5c1619b16c0dd7478",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r1_s123",
+      "original_source_sha256": "bc0c94c8e7896f31a1cf9f520b6c0f52b20100e9aa4d151c8aad4f4df9a6f8d6",
+      "compact_sha256": "89d2449afddbe81d08a3826c4a847fb67a162a17b1eb726bfa9c6429b1364be0",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r1_s2026",
+      "original_source_sha256": "8cda4d2d372f8e94b0907d73dfc5d765440a7a7ce4bd8c46406561309a46c98d",
+      "compact_sha256": "dc74a5272efec92c5fe9eab70f512154730f0f6e724829f46692aa04695c776e",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r2_s123",
+      "original_source_sha256": "de14d38e1abf34c2fafa52ee901fe0e832ee8de8f0678288a47d695b9e196040",
+      "compact_sha256": "7be17ae355c2e62dcc43860e77dd4c44ae5371899631cfa3ff6c95c7c513c311",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r2_s2026",
+      "original_source_sha256": "98924255525ee0d4b030e0102094dc8ad722f0ec86ba07e5a3c89f3b821d9591",
+      "compact_sha256": "0c469ce6bb24a8f40eaee63918e44fa70ec21f188a7bd9b1de18c6c80d95ca4c",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r4_s123",
+      "original_source_sha256": "8a167fd4e30fa6731a748ea11f6d6e36ad9208de7fd2b01255ec4ec04cc88afe",
+      "compact_sha256": "852e16c3a290cf686cca8c499818bfd4c7d8f4bf167becec3b9672a90640c9a8",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r4_s2026",
+      "original_source_sha256": "bd3078becd3aaed4199cfde005e13f113bb0dfd15903082e32fdd24329696db3",
+      "compact_sha256": "51a36592c955b826cdefc5fbc6a20355cf6495c12e380c07c2223645ded6e767",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r8_s123",
+      "original_source_sha256": "6c375ea19cc64e652e79f5273ac161a16eb9f5a40004c41dae9a4159800a44ef",
+      "compact_sha256": "5b20d6fa8683605cbc25c3f4563a32d97fce5ef7f006ce1dc681ee20745a929f",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r8_s2026",
+      "original_source_sha256": "228debf57306f339ad1136729a5a73688438502acad4c439714815bead06b351",
+      "compact_sha256": "112fab172a0ddbbcdda980c725f92448022cf19435ce4bc6965e4cf55385608c",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r16_s123",
+      "original_source_sha256": "6038f00b157343c2331deaed70ac3872d2281054d4b1ca84d52cbfe06b0c3de2",
+      "compact_sha256": "c658e06c1772675fd42df2c7f44c80bc8fcb02b35000854e996befe3d5c53ca1",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r16_s2026",
+      "original_source_sha256": "664e784536e8b7afe86ba23b2b5610660e05dcaf70131fba4835397efed402d0",
+      "compact_sha256": "374fd95e22a09e52eb9b172c2b0d658b5beee2bce4eeea3e36bac7f680c61d2d",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r8_lora_only_s123",
+      "original_source_sha256": "1ea5cb4a885b20b61a11261d1fe9a4620d01b623d4237e62c368d11fdffa1d12",
+      "compact_sha256": "2fe1220d7495028e8d84bb350bfac7407edb405a21fffcb876f9fda79ed61dbe",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "tworoom_waypoint_r8_lora_only_s2026",
+      "original_source_sha256": "7fc7f7f2ec9286560b2680721052d7c8731c4080857fe6e6f5bcd98fa70369be",
+      "compact_sha256": "57d13fb52bddcedb647a0a7dcbda8e373bf014bced9588dad76c695995699212",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "cube_keepout_r1_s42",
+      "original_source_sha256": "6f26586cda49b1bfa2d70ca59ce4661b1d6f00bfcd1cc13ef0de620aad8d51e1",
+      "compact_sha256": "300dc15c09bc04a1b5491c7bd54ca9d0a52edc851b7f6235e9a9b69600a0e704",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r1_s43",
+      "original_source_sha256": "a94e932bc4971985cdc7a179d74a9cb647ffd086d5ce5ad4039a8603a4a36522",
+      "compact_sha256": "58160f4a39c9a7ab52ff75dfc1e421cd114fb4cef252b7ed24a50965419a492e",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r2_s42",
+      "original_source_sha256": "be993c05eeaf90b0d421a7554083ea72d59ee815dac2b58dbde9fe2504b1a53b",
+      "compact_sha256": "7ca4c303c26a695b12bbcff72cef1951e76f39d573dc0285564bb72741a9b645",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r2_s43",
+      "original_source_sha256": "cc60c1a3d0c3a5d31eff336798dfa7b3dc828343682d7999851eaba0861d57b0",
+      "compact_sha256": "9bb96915c3a45fd54e49ebb18aa304d8457f1f87bada96ddd75acc7a202f4512",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r4_s42",
+      "original_source_sha256": "e21cb791a9c19071eb2e0edcf399a09481bb166dc4a6c6c112e32a2aba3a9d36",
+      "compact_sha256": "76a5e1b35b3bd764c13ce1718fc0e3276e1f789375d40156e3d78c3cbb88e6ab",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r4_s43",
+      "original_source_sha256": "1cc45356f0ba4bd3a70847a58619bd4f4408ed54de3440f4a30db34f8b2cf00b",
+      "compact_sha256": "9569bb5001a19e334e66b5c3675088227e4e4f58fccda650d9c574b18141c5ff",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r8_s42",
+      "original_source_sha256": "39dbc7faccbe1ecdee92af915c538b9c06d62f0cfcd7ffd4e98aa751b8bba9e6",
+      "compact_sha256": "eff7494d1dc8363dc6d0743f33039f0e12d562c97bf1c2d3a01d44d71c8a2035",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r8_s43",
+      "original_source_sha256": "dcc88bd3fe0e97069bfd3d7d71cad290b4fdecc64897a708cedca8916d214474",
+      "compact_sha256": "9b86b24b807d5ed9879a9cdc8611c817cefa965376001eee9eb1ceb4e154c480",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r16_s42",
+      "original_source_sha256": "0be8a26974affa250cfae4f0ddf009ca886b478437def2eb9112846f3743848d",
+      "compact_sha256": "01376ef80d27438d9c8d9efac1f0a411703659dedade1bdf51da05fc2389ade1",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r16_s43",
+      "original_source_sha256": "414a4833791e2d9870378717a2b7f1061d240c073dc7da2ac535fd00f9bfbe36",
+      "compact_sha256": "f9b8b6eb24fbef2d7f54ac956cd332b5b0c9a5eb5b82d6b3507cb0d601ce13c1",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_keepout_r8_lora_only_s42",
+      "original_source_sha256": "585b53891156e12f8eacfca38ac4e95bd85601238efb89b68a200e2aeff846a1",
+      "compact_sha256": "c87e235bfed8498ced4f3bdaf6f234a2f1a6c6f10ae763d92bf0f58899ceb51c",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "cube_keepout_r8_lora_only_s43",
+      "original_source_sha256": "b750582d378871559898059da86d005a3a2b9e7ed074572332944254b57d2897",
+      "compact_sha256": "0b76eb2885209a2a4d8db052214719a487f7f624716ee4845fefb0c7476d5281",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r1_s42",
+      "original_source_sha256": "6ea777e11c8ef61b8443590e2922c82f8033dde3c6a209a7575e74bcc1079ff0",
+      "compact_sha256": "16e593e0a21a4abee73a45a4b03913a474d952b459c743034267799655cf8ba4",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r1_s43",
+      "original_source_sha256": "98e3aaf1b071c8b9bd192339dc016b6a73be22897d2ae9dab639e5fe201f4bb4",
+      "compact_sha256": "141d7300e617c8c119dbc4b9d4ca98c34478c7199a0bf52d2b9b0b77a7dc2ce6",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r2_s42",
+      "original_source_sha256": "36d44dbf69a4dcc58161ea27dfb72449debaa40338f51288accf7933b5b4066f",
+      "compact_sha256": "f1ca10b99bed24f3deb83ae7326d5b1c2e151129b31fe386faab4672063366ae",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r2_s43",
+      "original_source_sha256": "e0c9ec8c38a61662294f1068c278861be807e5c9124d52d9d6d0dfcc10b71029",
+      "compact_sha256": "2ae5dcc4e9d82cf42d506983490b46c0461a45c00b30cafbe214454aef1e1e65",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r4_s42",
+      "original_source_sha256": "486003594bf02c1929359e03fa501247cd3bf0b6dbc425c650e6828a7975b880",
+      "compact_sha256": "c6bb836f43af3b9e7cbbd3758be4351a094ce19139c74d1130c14d196ea7f966",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r4_s43",
+      "original_source_sha256": "cc346261555fb80869c11203ec14ff7ad64a87def51e8ce1d9390aeec74c9142",
+      "compact_sha256": "df61ca7b306dd1a55f93f1f41be504a877efcb0e612c57b57f6e59f85aa62bd1",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r8_s42",
+      "original_source_sha256": "179987fd2b28a7675f7e3eb06fe91d54c6fce952537fa54854771e5deb4dbeba",
+      "compact_sha256": "439c6e0f3747672d1e2358a4db1c51f38b580e94c5624c60575c92df8e77dfe5",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r8_s43",
+      "original_source_sha256": "8ddbb6d1aa050aaddd8bff585779f3eacd576e410160aaebe5eb6be030e5e84e",
+      "compact_sha256": "afb7bd930926a5c7a3e9f918db18c9c2af31d43abd381a6dda8d83fff6d4f718",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r16_s42",
+      "original_source_sha256": "7853c0ec0e304c89cc24af71e42d0e4b317b2ff366ea8974d0df11b9ed5ee1cc",
+      "compact_sha256": "6cc8e7fe6b06e2841e9133ef297a4470522e7592228fac9f8b454fc23c6a7efe",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r16_s43",
+      "original_source_sha256": "67ef8f13cc78f146ca2238d25ec4dc0751442967c08cae0cdafac2e351df740f",
+      "compact_sha256": "541f712feac730285cf68419af7ced61fbf6aaf77c870c8e4545f8b86ebbbcc3",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r8_lora_only_s42",
+      "original_source_sha256": "d39bc469c74ea2200ffe984b13892bcfdcc4378b6171efec5f1020ab952441ad",
+      "compact_sha256": "4f237bde229a2bdad2f9728c7b18b57ff9e3fb7d96594878dae954705d15daf8",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    },
+    {
+      "case": "cube_waypoint_r8_lora_only_s43",
+      "original_source_sha256": "8aca5a69d2a7dc79f30b7d6b7bf52ab4c75bfece5383ea4e4b4eaaf20bd12fdf",
+      "compact_sha256": "81934f2290ab8a8a7ba2433050f1d72ad50cda9abe7d58e952afe5e79d2b64cb",
+      "checks": {
+        "disabled": true,
+        "enabled": true,
+        "disabled_base_bypass": true,
+        "encoder": true,
+        "pure_private_disconnection": true,
+        "pure_context_disconnection": true
+      }
+    }
+  ],
+  "scope": "Actual loaders and bitwise action/encoder equality on fixed synthetic CPU probes. Export-fidelity check only; not an extra task benchmark or performance claim.",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "device": "cpu",
+    "threads": 1
+  },
+  "raw_episode_data_exported": false
+}

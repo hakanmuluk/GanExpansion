@@ -1,0 +1,12 @@
+{
+  "scope": "Broader ORIGINAL-base data: fresh goal demos plus off-route recoveries.\n\nBase style labels and the original goal-only expert are unchanged. Recovery\nstarts are native replay states from independent skill demonstrations; their\nconstraints are not passed to the base expert or included in base inputs.\n",
+  "goal_contexts": 1000,
+  "goal_successes": 3947,
+  "recovery_requested": 2048,
+  "recovery_successes": 1989,
+  "training_episodes": 5805,
+  "maximum_native_prefix_replay_error_m": 2.977501567524854e-08,
+  "train_sha256": "78c350141eeb6d18f0d68a2d807b801de5f3fd0184cd7a973a7bb40f7a1aa798",
+  "source_sha256": "10c39c6d0fe4781afcbfda10301d4215c445c233c84a10594d108f2b1619eadd",
+  "seconds": 928.8265783786774
+}

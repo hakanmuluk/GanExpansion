@@ -1,0 +1,5 @@
+environment,skill,success,goal_success,episodes,contexts,both_successful_strategies
+cube,keepout,0.0,0.8828125,1024,128,0.0
+cube,waypoint,0.0,0.8828125,1024,128,0.0
+tworoom,keepout,0.0,1.0,2048,256,0.0
+tworoom,waypoint,0.0,1.0,2048,256,0.0

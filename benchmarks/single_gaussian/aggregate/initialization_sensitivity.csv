@@ -1,0 +1,196 @@
+environment,category,steps,group,matched_context_seed_pairs,success,first_raw_after,cutpoints,scope
+tworoom,supported_easy,0,raw_Gaussian_norm_quartile1,48,0.9583333333333334,0.1403010601643473,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,0,raw_Gaussian_norm_quartile2,48,0.9375,0.16404046358851096,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,0,raw_Gaussian_norm_quartile3,48,0.9375,0.1576229219790548,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,0,raw_Gaussian_norm_quartile4,48,0.9166666666666666,0.184180281823501,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,0,fixed_private_signs--,192,0.9375,0.16153618188885352,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_easy,5,raw_Gaussian_norm_quartile1,48,0.9583333333333334,0.1288431213470176,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,5,raw_Gaussian_norm_quartile2,48,0.9166666666666666,0.1474254900434365,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,5,raw_Gaussian_norm_quartile3,48,0.9375,0.14094632778627178,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,5,raw_Gaussian_norm_quartile4,48,0.9375,0.16467181841532388,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,5,fixed_private_signs--,192,0.9375,0.14547168939801244,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_easy,10,raw_Gaussian_norm_quartile1,48,0.9583333333333334,0.12613600915453085,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,10,raw_Gaussian_norm_quartile2,48,0.9166666666666666,0.14337256162737808,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,10,raw_Gaussian_norm_quartile3,48,0.9166666666666666,0.13379308162257075,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,10,raw_Gaussian_norm_quartile4,48,0.9375,0.15818886552006006,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,10,fixed_private_signs--,192,0.9322916666666666,0.14037262948113494,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_easy,20,raw_Gaussian_norm_quartile1,48,0.9791666666666666,0.1238920067359383,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,20,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.13797533341373006,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,20,raw_Gaussian_norm_quartile3,48,0.9375,0.1258255512608836,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,20,raw_Gaussian_norm_quartile4,48,0.9583333333333334,0.14714906217219928,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,20,fixed_private_signs--,192,0.9583333333333334,0.1337104883956878,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_easy,40,raw_Gaussian_norm_quartile1,48,0.9791666666666666,0.12269590108189732,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,40,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.13540039343448976,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,40,raw_Gaussian_norm_quartile3,48,0.9375,0.121316475328058,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,40,raw_Gaussian_norm_quartile4,48,0.9375,0.1364621833587686,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_easy,40,fixed_private_signs--,192,0.953125,0.12896873830080344,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_conflict,0,raw_Gaussian_norm_quartile1,48,0.9166666666666666,0.1476876960756878,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,0,raw_Gaussian_norm_quartile2,48,0.8958333333333334,0.17265437834430486,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,0,raw_Gaussian_norm_quartile3,48,0.875,0.16724876081570983,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,0,raw_Gaussian_norm_quartile4,48,0.875,0.1611507108900696,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,0,fixed_private_signs--,192,0.890625,0.16218538653144302,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_conflict,5,raw_Gaussian_norm_quartile1,48,0.8958333333333334,0.13296253044003,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,5,raw_Gaussian_norm_quartile2,48,0.9375,0.15407227503601462,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,5,raw_Gaussian_norm_quartile3,48,0.9166666666666666,0.14905303988295296,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,5,raw_Gaussian_norm_quartile4,48,0.8958333333333334,0.1457268027976776,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,5,fixed_private_signs--,192,0.9114583333333334,0.1454536620391688,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_conflict,10,raw_Gaussian_norm_quartile1,48,0.9166666666666666,0.1320546409309221,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,10,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.14881408400833607,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,10,raw_Gaussian_norm_quartile3,48,0.9375,0.14220568169063577,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,10,raw_Gaussian_norm_quartile4,48,0.9166666666666666,0.13904212248356393,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,10,fixed_private_signs--,192,0.9322916666666666,0.14052913227836447,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_conflict,20,raw_Gaussian_norm_quartile1,48,0.9166666666666666,0.12983959049840146,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,20,raw_Gaussian_norm_quartile2,48,0.9791666666666666,0.14355596457608044,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,20,raw_Gaussian_norm_quartile3,48,0.9583333333333334,0.13299597015914819,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,20,raw_Gaussian_norm_quartile4,48,0.9166666666666666,0.12826706661144271,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,20,fixed_private_signs--,192,0.9427083333333334,0.1336646479612682,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,supported_conflict,40,raw_Gaussian_norm_quartile1,48,0.8958333333333334,0.1286368624229605,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,40,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.14082572411280125,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,40,raw_Gaussian_norm_quartile3,48,0.9166666666666666,0.12842009775340557,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,40,raw_Gaussian_norm_quartile4,48,0.875,0.11754588288022205,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,supported_conflict,40,fixed_private_signs--,192,0.9114583333333334,0.12885714179234734,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,coupled_ood,0,raw_Gaussian_norm_quartile1,48,0.0,0.11809625072055496,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,0,raw_Gaussian_norm_quartile2,48,0.0,0.1562264262077709,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,0,raw_Gaussian_norm_quartile3,48,0.0,0.19277761036452526,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,0,raw_Gaussian_norm_quartile4,48,0.0,0.18354640662437305,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,0,fixed_private_signs--,192,0.0,0.16266167347930605,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,coupled_ood,5,raw_Gaussian_norm_quartile1,48,0.020833333333333332,0.10784433745235826,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,5,raw_Gaussian_norm_quartile2,48,0.020833333333333332,0.13464072845332944,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,5,raw_Gaussian_norm_quartile3,48,0.0,0.16867304483700232,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,5,raw_Gaussian_norm_quartile4,48,0.0,0.16754458290718807,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,5,fixed_private_signs--,192,0.010416666666666666,0.14467567341246954,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,coupled_ood,10,raw_Gaussian_norm_quartile1,48,0.020833333333333332,0.10613543518896525,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,10,raw_Gaussian_norm_quartile2,48,0.020833333333333332,0.12772073844098486,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,10,raw_Gaussian_norm_quartile3,48,0.041666666666666664,0.16072714436450042,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,10,raw_Gaussian_norm_quartile4,48,0.0,0.16382562316721305,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,10,fixed_private_signs--,192,0.020833333333333332,0.1396022352904159,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,coupled_ood,20,raw_Gaussian_norm_quartile1,48,0.020833333333333332,0.10450492971964802,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,20,raw_Gaussian_norm_quartile2,48,0.020833333333333332,0.12051820664783008,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,20,raw_Gaussian_norm_quartile3,48,0.041666666666666664,0.14855855230901702,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,20,raw_Gaussian_norm_quartile4,48,0.020833333333333332,0.1534259266142423,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,20,fixed_private_signs--,192,0.026041666666666668,0.13175190382268434,,Descriptive fixed sampled branches; no branch search or reselection.
+tworoom,coupled_ood,40,raw_Gaussian_norm_quartile1,48,0.020833333333333332,0.10365923960731986,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,40,raw_Gaussian_norm_quartile2,48,0.0,0.11790398947778158,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,40,raw_Gaussian_norm_quartile3,48,0.041666666666666664,0.14379521003381038,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,40,raw_Gaussian_norm_quartile4,48,0.0,0.14591878381907009,"[0.6877106211615889, 1.0651980046172924, 1.5903694578995702]",Descriptive groups of matched context-seed pairs; not independent episodes.
+tworoom,coupled_ood,40,fixed_private_signs--,192,0.015625,0.1278193057344955,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,0,raw_Gaussian_norm_quartile1,48,0.8958333333333334,0.0828580620145658,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,0,raw_Gaussian_norm_quartile2,48,0.875,0.08506780712438437,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,0,raw_Gaussian_norm_quartile3,48,0.5,0.07399309183044049,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,0,raw_Gaussian_norm_quartile4,48,0.25,0.08893054321136636,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,0,fixed_private_signs++,39,0.6666666666666666,0.09251299966723682,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,0,fixed_private_signs+-,50,0.58,0.08151171306613833,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,0,fixed_private_signs-+,51,0.7058823529411765,0.08710463102633025,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,0,fixed_private_signs--,52,0.5769230769230769,0.07220860342316043,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,5,raw_Gaussian_norm_quartile1,48,0.9791666666666666,0.07602664049651746,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,5,raw_Gaussian_norm_quartile2,48,0.9375,0.07657147133916926,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,5,raw_Gaussian_norm_quartile3,48,0.9583333333333334,0.06860551677406572,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,5,raw_Gaussian_norm_quartile4,48,0.9791666666666666,0.08397328049371329,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,5,fixed_private_signs++,39,0.9487179487179487,0.08731824891844717,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,5,fixed_private_signs+-,50,0.94,0.07387364996830001,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,5,fixed_private_signs-+,51,1.0,0.08138196031772989,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,5,fixed_private_signs--,52,0.9615384615384616,0.0653637972024556,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,10,raw_Gaussian_norm_quartile1,48,0.9791666666666666,0.07023400300143597,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,10,raw_Gaussian_norm_quartile2,48,0.9375,0.06884256022385671,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,10,raw_Gaussian_norm_quartile3,48,1.0,0.06463865719100188,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,10,raw_Gaussian_norm_quartile4,48,1.0,0.07957867306443707,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,10,fixed_private_signs++,39,0.9743589743589743,0.08206521773424286,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,10,fixed_private_signs+-,50,0.96,0.06661410906934179,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,10,fixed_private_signs-+,51,1.0,0.07688310696268637,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,10,fixed_private_signs--,52,0.9807692307692307,0.06049652859376063,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,20,raw_Gaussian_norm_quartile1,48,0.9791666666666666,0.06403754110700295,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,20,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.06155686204753389,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,20,raw_Gaussian_norm_quartile3,48,0.9791666666666666,0.05882206974274595,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,20,raw_Gaussian_norm_quartile4,48,1.0,0.07207722607806015,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,20,fixed_private_signs++,39,0.9743589743589743,0.07505784773130496,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,20,fixed_private_signs+-,50,0.98,0.06077504793298431,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,20,fixed_private_signs-+,51,1.0,0.06853972649311318,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,20,fixed_private_signs--,52,0.9615384615384616,0.05481082772110732,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,40,raw_Gaussian_norm_quartile1,48,0.9583333333333334,0.05844016550327069,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,40,raw_Gaussian_norm_quartile2,48,0.9375,0.05409682332053004,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,40,raw_Gaussian_norm_quartile3,48,1.0,0.05414038236873845,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,40,raw_Gaussian_norm_quartile4,48,1.0,0.06491113127291707,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_easy,40,fixed_private_signs++,39,0.9743589743589743,0.06830044599094738,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,40,fixed_private_signs+-,50,0.92,0.05568702978082001,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,40,fixed_private_signs-+,51,1.0,0.06019241353451256,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_easy,40,fixed_private_signs--,52,1.0,0.049968579719111755,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,0,raw_Gaussian_norm_quartile1,48,0.625,0.08760440002273147,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,0,raw_Gaussian_norm_quartile2,48,0.25,0.07312664367297354,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,0,raw_Gaussian_norm_quartile3,48,0.125,0.085163220045312,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,0,raw_Gaussian_norm_quartile4,48,0.0625,0.07814665018910698,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,0,fixed_private_signs++,39,0.28205128205128205,0.08037358429879905,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,0,fixed_private_signs+-,50,0.32,0.09216430637054146,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,0,fixed_private_signs-+,51,0.2549019607843137,0.07718819158389141,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,0,fixed_private_signs--,52,0.21153846153846154,0.07451117291706257,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,5,raw_Gaussian_norm_quartile1,48,0.9375,0.0806280581309693,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,5,raw_Gaussian_norm_quartile2,48,0.8541666666666666,0.06737092160862328,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,5,raw_Gaussian_norm_quartile3,48,0.7083333333333334,0.08021426338139766,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,5,raw_Gaussian_norm_quartile4,48,0.8333333333333334,0.07093935298811023,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,5,fixed_private_signs++,39,0.8205128205128205,0.07330740745871878,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,5,fixed_private_signs+-,50,0.96,0.08621715362649411,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,5,fixed_private_signs-+,51,0.803921568627451,0.07180871680725877,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,5,fixed_private_signs--,52,0.75,0.06783141315099783,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,10,raw_Gaussian_norm_quartile1,48,0.9166666666666666,0.07498249491497215,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,10,raw_Gaussian_norm_quartile2,48,0.8541666666666666,0.06288073269388406,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,10,raw_Gaussian_norm_quartile3,48,0.75,0.07588539123147105,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,10,raw_Gaussian_norm_quartile4,48,0.875,0.06563710643968079,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,10,fixed_private_signs++,39,0.8461538461538461,0.0685413125812864,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,10,fixed_private_signs+-,50,0.86,0.08120186794199981,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,10,fixed_private_signs-+,51,0.8627450980392157,0.06746154074904089,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,10,fixed_private_signs--,52,0.8269230769230769,0.06224560860517578,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,20,raw_Gaussian_norm_quartile1,48,1.0,0.0690936340749128,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,20,raw_Gaussian_norm_quartile2,48,0.875,0.05757654478414528,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,20,raw_Gaussian_norm_quartile3,48,0.7708333333333334,0.06825377011167195,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,20,raw_Gaussian_norm_quartile4,48,0.875,0.058369739289143276,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,20,fixed_private_signs++,39,0.8717948717948718,0.06296679863664441,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,20,fixed_private_signs+-,50,0.94,0.07483003078261391,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,20,fixed_private_signs-+,51,0.9019607843137255,0.06148895539580753,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,20,fixed_private_signs--,52,0.8076923076923077,0.05432603125630591,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,40,raw_Gaussian_norm_quartile1,48,0.9583333333333334,0.06382664502598345,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,40,raw_Gaussian_norm_quartile2,48,0.9583333333333334,0.055121177469118265,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,40,raw_Gaussian_norm_quartile3,48,0.8333333333333334,0.06028749514856221,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,40,raw_Gaussian_norm_quartile4,48,0.9166666666666666,0.05317744876083452,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,supported_conflict,40,fixed_private_signs++,39,0.9487179487179487,0.059001750484383546,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,40,fixed_private_signs+-,50,0.94,0.06937976344604976,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,40,fixed_private_signs-+,51,0.9019607843137255,0.056338046990134116,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,supported_conflict,40,fixed_private_signs--,52,0.8846153846153846,0.048317614417800754,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,0,raw_Gaussian_norm_quartile1,48,0.375,0.0973380853344376,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,0,raw_Gaussian_norm_quartile2,48,0.1875,0.07761316729011014,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,0,raw_Gaussian_norm_quartile3,48,0.125,0.08755925185687374,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,0,raw_Gaussian_norm_quartile4,48,0.08333333333333333,0.11187793193676043,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,0,fixed_private_signs++,39,0.358974358974359,0.09101354721814203,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,0,fixed_private_signs+-,50,0.2,0.10122179434634745,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,0,fixed_private_signs-+,51,0.09803921568627451,0.09009769457556746,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,0,fixed_private_signs--,52,0.15384615384615385,0.09163547049795923,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,5,raw_Gaussian_norm_quartile1,48,0.3958333333333333,0.08775553162558936,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,5,raw_Gaussian_norm_quartile2,48,0.3958333333333333,0.0698126695836739,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,5,raw_Gaussian_norm_quartile3,48,0.4375,0.07797649604617618,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,5,raw_Gaussian_norm_quartile4,48,0.4166666666666667,0.10506624342572952,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,5,fixed_private_signs++,39,0.5384615384615384,0.0820482137063757,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,5,fixed_private_signs+-,50,0.42,0.09281577347777784,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,5,fixed_private_signs-+,51,0.29411764705882354,0.08173794654544954,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,5,fixed_private_signs--,52,0.4230769230769231,0.08346193981616615,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,10,raw_Gaussian_norm_quartile1,48,0.375,0.07944705637055449,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,10,raw_Gaussian_norm_quartile2,48,0.375,0.06370990658858015,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,10,raw_Gaussian_norm_quartile3,48,0.4375,0.0712978632194184,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,10,raw_Gaussian_norm_quartile4,48,0.4375,0.09837388095911592,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,10,fixed_private_signs++,39,0.5128205128205128,0.07530756359203504,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,10,fixed_private_signs+-,50,0.42,0.08538884541718289,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,10,fixed_private_signs-+,51,0.3137254901960784,0.07612685525479417,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,10,fixed_private_signs--,52,0.40384615384615385,0.07551675141663648,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,20,raw_Gaussian_norm_quartile1,48,0.3958333333333333,0.06668789084263456,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,20,raw_Gaussian_norm_quartile2,48,0.375,0.05567355109572721,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,20,raw_Gaussian_norm_quartile3,48,0.4166666666666667,0.064628449397181,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,20,raw_Gaussian_norm_quartile4,48,0.4791666666666667,0.08707096564952128,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,20,fixed_private_signs++,39,0.5384615384615384,0.06633782321109603,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,20,fixed_private_signs+-,50,0.42,0.07437838946701959,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,20,fixed_private_signs-+,51,0.3137254901960784,0.06915732757097073,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,20,fixed_private_signs--,52,0.4230769230769231,0.06388082404961236,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,40,raw_Gaussian_norm_quartile1,48,0.3958333333333333,0.051773050695677135,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,40,raw_Gaussian_norm_quartile2,48,0.3333333333333333,0.05262640054327979,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,40,raw_Gaussian_norm_quartile3,48,0.4166666666666667,0.05802407614828553,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,40,raw_Gaussian_norm_quartile4,48,0.4583333333333333,0.07432565570828349,"[0.6995995664716966, 1.122604789127919, 1.5821928142210795]",Descriptive groups of matched context-seed pairs; not independent episodes.
+cube,coupled_ood,40,fixed_private_signs++,39,0.5128205128205128,0.058244106732905865,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,40,fixed_private_signs+-,50,0.38,0.06115163969108835,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,40,fixed_private_signs-+,51,0.3137254901960784,0.062441728452184035,,Descriptive fixed sampled branches; no branch search or reselection.
+cube,coupled_ood,40,fixed_private_signs--,52,0.4230769230769231,0.05481404789204065,,Descriptive fixed sampled branches; no branch search or reselection.

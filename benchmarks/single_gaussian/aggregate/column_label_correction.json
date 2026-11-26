@@ -1,0 +1,8 @@
+{
+  "all_30_summary_rows_numerically_identical_after_episode_length_metric_rename": true,
+  "all_210_flat_csv_rows_have_original_Adam_budgets": true,
+  "all_outcomes_losses_intervals_and_paired_counts_unchanged": true,
+  "original_artifacts_preserved": true,
+  "unchanged_figure_bytes_retained": true,
+  "raw_episode_data_exported": false
+}

@@ -1,0 +1,56 @@
+Original observation contracts
+
+All observations must come from actual measurements or the environment's
+current observation, not hypothetical rollouts. Original data generation and
+evaluation code is preserved separately in the final evidence archive. These
+packing routines describe observed state/context, not a task score optimized
+by the composition method. Native state features assume access to quantities
+such as object pose and velocity; an image-to-state estimator is not included.
+
+TwoRoom:
+  Original tworoom_gan.env.observation(pos, goal) returns
+  concatenate(pos[2], goal[2], [112,56,112,168,0,0]) / 112 - 1.
+  Keep the original physical pixel coordinates and action normalization.
+  tworoom_addons.geometry.skill_features supplies each independent 12-vector:
+  canonical region center /112 -1 (2), region radius /40 (1),
+  canonical episode start /112 -1 (2), canonical agent-minus-center /56 (2),
+  distance minus effective radius /56 (1), visited flag (1), time/240 (1),
+  outward unit direction (2). The original canonical frame reflects x for
+  right-to-left episodes. Keepout's effective radius includes agent radius;
+  waypoint's does not. Use the region and visited state for that skill only.
+  See original MAX_STEPS in tworoom_addons.geometry for time normalization.
+
+Cube:
+  Original cube.cube_gan.env.features concatenates the original native
+  CubeEnv single-block state observation with:
+  (goal - [0.425,0,0])*10,
+  (initial_cube - [0.425,0,0])*10,
+  (cube - end_effector)*10,
+  (goal - cube)*10,
+  cube translational velocity *5,
+  gripper velocity *0.2,
+  end-effector velocity *5 (finite difference /0.05; zero on first observation).
+  Retain initial_cube throughout the episode. This is exactly 47 features.
+
+  Original cube_addons.geometry.Observer.features supplies the 20-vector:
+  (region_center - [0.425,0,0.2]) / [0.2,0.3,0.2] (3), radius/0.1 (1),
+  (cube-region_center)/0.15 (3), (end_effector-region_center)/0.15 (3),
+  longitudinal progress from initial_cube to goal (1), lateral offset/0.15 (1),
+  (cube_z-0.2)/0.1 (1), holding flag (1), has-lifted flag (1), visited flag (1),
+  elapsed controls/240 (1), initial-to-goal unit direction XY (2),
+  initial-to-goal XY distance/0.4 (1).
+  Preserve each skill observer's history across replans. The adopted waypoint
+  adapter internally ignores elapsed time, exactly as during training.
+  Check the original Observer implementation for event-flag definitions.
+
+base_z:
+  Both original models use a two-dimensional Gaussian style input. Sample it
+  once at episode start and keep it through replans, as in the benchmarks.
+  Do not set Cube base_z[:,0] to exact zero: it defines the original route sign.
+  This is an input style code, not an encoder output recomputed from the state.
+  Cube composition may change each actor's amplitude magnitude internally;
+  it preserves the supplied common route sign and second speed-style input.
+
+Do not invent a different feature order or normalize the arrays again.
+Inference needs current observed features and the original task's control API;
+it does not need the simulator's step, restore, transition, or planning functions.

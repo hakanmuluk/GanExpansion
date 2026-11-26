@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "whole_study_complete": false,
+  "source_zip_sha256": "01586a55b0b1828cd229bc996144c1db4331df3302f38bb7ba1d0a5b6c11d9f0",
+  "source_files_verified": 276,
+  "entry_modules_imported": [
+    "tworoom_gan.train",
+    "tworoom_addons.train",
+    "cube.cube_gan.train",
+    "cube_addons.train",
+    "independent_composition.collect_cube_diverse",
+    "independent_composition.collect_cube_base_recovery",
+    "ablation_study.run_original",
+    "ablation_study.base_ablation",
+    "ablation_study.run_auxiliary",
+    "ablation_study.evaluate_base",
+    "ablation_study.evaluate_adapter",
+    "ablation_study.latent_analysis",
+    "ablation_study.latent_speed_diagnostic",
+    "ablation_study.build_report",
+    "ablation_study.checkpoint_inventory",
+    "ablation_study.verify_compact_inference",
+    "ablation_study.bind_base_evaluations",
+    "ablation_study.package_delivery"
+  ],
+  "project_module_origins": {
+    "ablation_study": {
+      "path": "ablation_study/__init__.py",
+      "sha256": "854db6e734c29d2f1b876023b592207dd3c25302b0e6fa8e496705d7c75d3943"
+    },
+    "ablation_study.base_ablation": {
+      "path": "ablation_study/base_ablation.py",
+      "sha256": "db34d7566697da27326576103f385008ecd806527f9310610fdf0522e9e27473"
+    },
+    "ablation_study.bind_base_evaluations": {
+      "path": "ablation_study/bind_base_evaluations.py",
+      "sha256": "bf57c1bc9fbbf58ec66785cddb56f57426111812c5bdcb004864ab096094beb6"
+    },
+    "ablation_study.build_report": {
+      "path": "ablation_study/build_report.py",
+      "sha256": "4723555562668280cbae00d31430207219ee06d1b364ca94b43de2afb524c521"
+    },
+    "ablation_study.checkpoint_inventory": {
+      "path": "ablation_study/checkpoint_inventory.py",
+      "sha256": "1477b9ae9e624d5e5f1fc83dc1ecf23ac3f601274635778483b01653acf50c97"
+    },
+    "ablation_study.evaluate_adapter": {
+      "path": "ablation_study/evaluate_adapter.py",
+      "sha256": "72c295b8dc71408328c7cc84171f63a3ee5b1dd97af43e22e3a596766ff4219d"
+    },
+    "ablation_study.evaluate_base": {
+      "path": "ablation_study/evaluate_base.py",
+      "sha256": "2cfd18627ceb52fb55f5a2791bc900bcffe4f9a6f6f58398dc10a3298b4e6d7f"
+    },
+    "ablation_study.evaluation": {
+      "path": "ablation_study/evaluation.py",
+      "sha256": "55adee89cfad6201ce333f06848802b46b3ef87f22278c1254cb5dcac60e11f3"
+    },
+    "ablation_study.export_completed": {
+      "path": "ablation_study/export_completed.py",
+      "sha256": "1fef209f930d8b442ea3bc53bf0eec11241311af269ec0bc3cbb05789ff72650"
+    },
+    "ablation_study.latent_analysis": {
+      "path": "ablation_study/latent_analysis.py",
+      "sha256": "ff3f666b55ef291a1335a5b211681a2ee554451ede28c0c55f3b84a93285aa60"
+    },
+    "ablation_study.latent_speed_diagnostic": {
+      "path": "ablation_study/latent_speed_diagnostic.py",
+      "sha256": "789e8cd97ffa8e2253ae83cc1ad2a2b359aac09e1874dc0ec0ab08fe29d7a993"
+    },
+    "ablation_study.model_factory": {
+      "path": "ablation_study/model_factory.py",
+      "sha256": "f49fca7b7a5400dcd72bf8fd324786c84903c660b7979a3a5ad01b5a2ab482e7"
+    },
+    "ablation_study.package_delivery": {
+      "path": "ablation_study/package_delivery.py",
+      "sha256": "ce90361640c8c72e2854a57bf368fe5e37a4e3f4f083a4b5a15afd6599c80241"
+    },
+    "ablation_study.rng_replay": {
+      "path": "ablation_study/rng_replay.py",
+      "sha256": "00e9fe765c74a8f6fb998b273ec56727a43086947e4be495600000fce600661b"
+    },
+    "ablation_study.run_auxiliary": {
+      "path": "ablation_study/run_auxiliary.py",
+      "sha256": "b50931658474d5c39e5a8ffa050269414d1bf1f12dcdf1912d452546396494e1"
+    },
+    "ablation_study.run_original": {
+      "path": "ablation_study/run_original.py",
+      "sha256": "ba4628be5802c544f94df0993c07e90b6d0c606aa42e3ed77911f1aaea4307bb"
+    },
+    "ablation_study.verify_compact_inference": {
+      "path": "ablation_study/verify_compact_inference.py",
+      "sha256": "dc15376d4e856eb4d818822ab48f0efe47a91119c80d5f740b6ac51c771d50bc"
+    },
+    "cube.cube_gan": {
+      "path": "cube/cube_gan/__init__.py",
+      "sha256": "400d9d5729fa9dd91dfcd5decc0f1385dda767a549e002b08f3be72a911e8a0c"
+    },
+    "cube.cube_gan.data": {
+      "path": "cube/cube_gan/data.py",
+      "sha256": "542ae30f76159f0873cfacae02e8377d573293b5397990dc0453a4197080cea0"
+    },
+    "cube.cube_gan.dataset": {
+      "path": "cube/cube_gan/dataset.py",
+      "sha256": "8ec798bd3e2bd3db09ca926c7461fd02ee58cdac2d2df8bfd0505691968adcfc"
+    },
+    "cube.cube_gan.env": {
+      "path": "cube/cube_gan/env.py",
+      "sha256": "2b04bd8af462015c13eb0b8223c60fee71b1a916f328c877cfac879e06157335"
+    },
+    "cube.cube_gan.evaluate": {
+      "path": "cube/cube_gan/evaluate.py",
+      "sha256": "8af6d4da639ecef68f3b6dedbd73ae7908ecf7ccf77ad1f8474466e1068e73b3"
+    },
+    "cube.cube_gan.expert": {
+      "path": "cube/cube_gan/expert.py",
+      "sha256": "06d4b85dc6fd93f283a54e2114fa879793bc388f4a1398e91119d62c49d7223b"
+    },
+    "cube.cube_gan.metrics": {
+      "path": "cube/cube_gan/metrics.py",
+      "sha256": "c7e5de8d26f9ec3b7b3043b08f39519d470c550204a95bb560f865b7de4afffd"
+    },
+    "cube.cube_gan.models": {
+      "path": "cube/cube_gan/models.py",
+      "sha256": "f47a12661a9af6c7ddc5b943e4ed110dadc65456bc36ea0c06a4bbafe681999e"
+    },
+    "cube.cube_gan.style": {
+      "path": "cube/cube_gan/style.py",
+      "sha256": "086d32a701df39a66749deea4dbcd0c9ae4aa6e7bbcf943a048e82254de09b67"
+    },
+    "cube.cube_gan.train": {
+      "path": "cube/cube_gan/train.py",
+      "sha256": "f848b4657b037abfa5a8e1ce015efcbb0e9b8eaf61d081bc20899f004d7e7c99"
+    },
+    "cube_addons": {
+      "path": "cube_addons/__init__.py",
+      "sha256": "262cfb34642b983173300117d68cca60d8390528f92629c6a147c3cd9234abfd"
+    },
+    "cube_addons.contacts": {
+      "path": "cube_addons/contacts.py",
+      "sha256": "9ee941795b67ee58d2011849fe9dddf3b0a555205685ce42468e5dcad464212b"
+    },
+    "cube_addons.data": {
+      "path": "cube_addons/data.py",
+      "sha256": "06106f6d04efb9bbf47e6e60d1ad3d042280880a9abaec3501508a1459ee053b"
+    },
+    "cube_addons.env": {
+      "path": "cube_addons/env.py",
+      "sha256": "a8b4b9d2ea099792e96cf0dbf6e807c03553b4c65f340a8192e72533cd413034"
+    },
+    "cube_addons.evaluate": {
+      "path": "cube_addons/evaluate.py",
+      "sha256": "b436daa03a5c199842abdca74c229e354707018e16ece526c1647f1f57a2ad32"
+    },
+    "cube_addons.expert": {
+      "path": "cube_addons/expert.py",
+      "sha256": "af59434d01eb6f62ec5a797d0e30325470565f8686db4ead5ddd856b07120c67"
+    },
+    "cube_addons.geometry": {
+      "path": "cube_addons/geometry.py",
+      "sha256": "34ca8ca2c7a2fe4b257ec221fe4179e658fab8878fec21aba62d4eb31e2c77ea"
+    },
+    "cube_addons.losses": {
+      "path": "cube_addons/losses.py",
+      "sha256": "82ed2807e23e35238fa95009306228ab90a3548cf904590e2c743dc3edf996c9"
+    },
+    "cube_addons.models": {
+      "path": "cube_addons/models.py",
+      "sha256": "0f3f4b73514a226972a3e960ec95e4256b800ee21faac2451d3c52693d8c6e3c"
+    },
+    "cube_addons.probe": {
+      "path": "cube_addons/probe.py",
+      "sha256": "851204cda92eca069fd3fe8fac2bb724170a2cde556628c033a547c3c42bc2e1"
+    },
+    "cube_addons.rollout": {
+      "path": "cube_addons/rollout.py",
+      "sha256": "579f0ed22a5c755907b3bcd655ebd6b8551e3f5536afd036d4fb61b72a063d86"
+    },
+    "cube_addons.train": {
+      "path": "cube_addons/train.py",
+      "sha256": "339186ce4d4b7f96fe62e93bac705f3564f62cbc01a85c5e3ebcfdcbb4da26df"
+    },
+    "independent_composition": {
+      "path": "independent_composition/__init__.py",
+      "sha256": "53bdd4917fc502c0673254e316d315f617873826f9abc6725d1f9000e165c3a7"
+    },
+    "independent_composition.collect_cube_base_recovery": {
+      "path": "independent_composition/collect_cube_base_recovery.py",
+      "sha256": "10c39c6d0fe4781afcbfda10301d4215c445c233c84a10594d108f2b1619eadd"
+    },
+    "independent_composition.collect_cube_diverse": {
+      "path": "independent_composition/collect_cube_diverse.py",
+      "sha256": "712f8f98824b268274e57598ccf3ebae000ee6e95b4072e8afc4ae94977ad380"
+    },
+    "independent_composition.cube_diverse_demonstrations": {
+      "path": "independent_composition/cube_diverse_demonstrations.py",
+      "sha256": "dfce93dc87dd2e4f9702a633b3fc3720e7aa1378ca504cc4ed5717b211c8c38f"
+    },
+    "independent_composition.legacy": {
+      "path": "independent_composition/legacy.py",
+      "sha256": "4e16c226cccc955b1135435fa5e7dae070c4f4b82999280b9b8a09b3a63eb750"
+    },
+    "tworoom_addons": {
+      "path": "tworoom_addons/__init__.py",
+      "sha256": "2dc3a77e47922e8c310a16bc92ca2b8a47fc2399b7ad4050b8070d9d55d7353c"
+    },
+    "tworoom_addons.data": {
+      "path": "tworoom_addons/data.py",
+      "sha256": "36f0650d761cd118b8d7d6e5e67c81bc38ab785406ade8fab787c2d6a0e1da35"
+    },
+    "tworoom_addons.evaluate": {
+      "path": "tworoom_addons/evaluate.py",
+      "sha256": "8686c65308b990cc844af3ef6ddfbeffe2ad183d6f5bcb81057b2739844bf9ba"
+    },
+    "tworoom_addons.feedback": {
+      "path": "tworoom_addons/feedback.py",
+      "sha256": "9b37702f602c17cc59da8d6a220b4cc80bc359df76328d820fb297d0040c7d08"
+    },
+    "tworoom_addons.geometry": {
+      "path": "tworoom_addons/geometry.py",
+      "sha256": "a770813307b75ba853e603c065c72280d021c54614d1fc3db238d71110768ec3"
+    },
+    "tworoom_addons.models": {
+      "path": "tworoom_addons/models.py",
+      "sha256": "12c0edf3fc493fbf025bd9a947aee05a0f41450dc251ffe3f394e7fcc949311a"
+    },
+    "tworoom_addons.rollout": {
+      "path": "tworoom_addons/rollout.py",
+      "sha256": "49889ba08c8f48ba6914101b6823d7e7c991bf53c09021cd9ab890eac123937b"
+    },
+    "tworoom_addons.train": {
+      "path": "tworoom_addons/train.py",
+      "sha256": "ad2cf13a00c6ed60d1091549a0115c33ca76590b24d49a98c7a3f13f4451835c"
+    },
+    "tworoom_gan": {
+      "path": "tworoom_gan/__init__.py",
+      "sha256": "2acfed55c60301dd1ddc714851f6dded11b9edc984f00adc006bf69deee9d71e"
+    },
+    "tworoom_gan.data": {
+      "path": "tworoom_gan/data.py",
+      "sha256": "11c402c6caac6c58c99737fdfbf2869b9d2f5a3b98dc1341e3e8e2f6da73a58d"
+    },
+    "tworoom_gan.env": {
+      "path": "tworoom_gan/env.py",
+      "sha256": "8c755b3ecc87bd1beade7156ade80739e204cb15df460c2e2cafc063b1b93857"
+    },
+    "tworoom_gan.evaluate": {
+      "path": "tworoom_gan/evaluate.py",
+      "sha256": "5e82a018bb49518ea5c7527420bdfe1983d901756a83ad7ca47667736e3b5a09"
+    },
+    "tworoom_gan.models": {
+      "path": "tworoom_gan/models.py",
+      "sha256": "fc600d5eb79774c0de9f815ca1d5162e6fc784b76eba3ad48b320d658c98e2ee"
+    },
+    "tworoom_gan.rollout_training": {
+      "path": "tworoom_gan/rollout_training.py",
+      "sha256": "574863debf21c88c8ab1b4f9d346d9861326a943cf78648cde7fda40f174e12c"
+    },
+    "tworoom_gan.style": {
+      "path": "tworoom_gan/style.py",
+      "sha256": "a03cefe58e6041a48a1dc14cf663d15b5dcc51fb3e8166e5b706d7e70608d995"
+    },
+    "tworoom_gan.train": {
+      "path": "tworoom_gan/train.py",
+      "sha256": "cd15807b8b54669973a26e08d3a74b10ee7c1079e538b48256b66616ac3e342a"
+    }
+  },
+  "scope": "Fresh data-free source archive, isolated current directory and project import paths. All imported project modules originate inside the verified archive. External installed dependencies use the recorded host environment. No training or rollout; final bundle may update report/receipt metadata only.",
+  "raw_episode_data_exported": false
+}

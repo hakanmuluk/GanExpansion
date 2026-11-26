@@ -1,0 +1,114 @@
+{
+  "method": "Original frozen prior-regularized grid/four-start Adam20, predict16/execute8.",
+  "rows": [
+    {
+      "environment": "tworoom",
+      "category": "supported_easy",
+      "steps": 20,
+      "success": 0.953125,
+      "goal_success": 1.0,
+      "keepout_satisfied": 0.96875,
+      "waypoint_satisfied": 1.0,
+      "keepout_full_success": 0.953125,
+      "waypoint_full_success": 0.984375,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "e2de40a64c918d323d126146fcb0230bbea8f90bca53085dc9e05c8194d6fbed"
+    },
+    {
+      "environment": "tworoom",
+      "category": "supported_conflict",
+      "steps": 20,
+      "success": 0.921875,
+      "goal_success": 1.0,
+      "keepout_satisfied": 0.953125,
+      "waypoint_satisfied": 0.984375,
+      "keepout_full_success": 0.9375,
+      "waypoint_full_success": 0.96875,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "de60ccbc9655ddfc1c9a3d4fdab469cc514e3b3e0bb73fbd2dece98bfb1fcffe"
+    },
+    {
+      "environment": "tworoom",
+      "category": "coupled_ood",
+      "steps": 20,
+      "success": 0.015625,
+      "goal_success": 0.96875,
+      "keepout_satisfied": 0.0625,
+      "waypoint_satisfied": 0.9375,
+      "keepout_full_success": 0.03125,
+      "waypoint_full_success": 0.859375,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "8e95be25bb153a12176928b9c089a64f257f970457cd381ca0598524308d3f91"
+    },
+    {
+      "environment": "cube",
+      "category": "supported_easy",
+      "steps": 20,
+      "success": 0.953125,
+      "goal_success": 0.953125,
+      "keepout_satisfied": 1.0,
+      "waypoint_satisfied": 0.984375,
+      "keepout_full_success": 0.953125,
+      "waypoint_full_success": 0.953125,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "7e44ebc626c17f7184a4b09d8b1797627e61c6c7a4a685c7876d66522fe42f1b"
+    },
+    {
+      "environment": "cube",
+      "category": "supported_conflict",
+      "steps": 20,
+      "success": 0.875,
+      "goal_success": 1.0,
+      "keepout_satisfied": 0.875,
+      "waypoint_satisfied": 1.0,
+      "keepout_full_success": 0.875,
+      "waypoint_full_success": 1.0,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "146889a45a6ed8e8b24466ae2276312675a9346d64896c4b65b66b3c1c9acd41"
+    },
+    {
+      "environment": "cube",
+      "category": "coupled_ood",
+      "steps": 20,
+      "success": 0.390625,
+      "goal_success": 0.984375,
+      "keepout_satisfied": 0.40625,
+      "waypoint_satisfied": 0.984375,
+      "keepout_full_success": 0.390625,
+      "waypoint_full_success": 0.984375,
+      "contexts": 64,
+      "reference": "Previously completed original grid/four-start method; deterministic, no new evaluations.",
+      "source_sha256": "10727b1aa3ba7fdff11c136464aff70b04756c606d498fc86dd2e1c715e95b60"
+    }
+  ],
+  "models": {
+    "tworoom": {
+      "base": "1ae1be1011701f4502e617e8e7d6e8d64a90ac404c4af35ef41660d22d65f8fd",
+      "keepout": "046bdf6d1f526ae4f47f39fad29237f616fdea737b6cd8e4c29901a0599a1aee",
+      "waypoint": "fa30a7cbf503f3b0edc741e59f2109c2d48575d78a56cea0c4cc7de3dad9c40e"
+    },
+    "cube": {
+      "base": "34864b592863c56faf75d55cd88fdd33178e2ef29cdd3f890d21c48ea035b46d",
+      "keepout": "ef5b972af23502ea0d2863f674a9a39419701429f57bce872858153fa02387b8",
+      "waypoint": "41c6580d87e693bfb851c878b73811f192c22998e6276266c3558a4c4b1e0e4d"
+    }
+  },
+  "banks": {
+    "tworoom": {
+      "supported_easy": "222f396b80a33b54727b84e3d352ee1ff3b7141c34e86366a89c1847cd46c8ab",
+      "supported_conflict": "b352aa03b4c933a65566f1eb6dfa37df0130853bd0618300036800ed2caa7b96",
+      "coupled_ood": "8110a85b1279f082d5f785bb89a9267c5651cb78ad6cee859ce76d5fe4fd287d"
+    },
+    "cube": {
+      "supported_easy": "4bb99654b071600994150b974e0397ad3cb03ddcdbf6f182ae985837fe24c38e",
+      "supported_conflict": "bf1f9f6f148bcf18f9edc6123f9a4ee8b7cebde7a496fc7991c9424a1e1e2e0e",
+      "coupled_ood": "60db556cf8a490354f7db5103fe0e1c734761e6eadd2fb4ca6ac45c5ce534490"
+    }
+  },
+  "raw_episode_data_exported": false
+}

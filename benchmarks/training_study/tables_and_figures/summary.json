@@ -1,0 +1,3023 @@
+{
+  "base": [
+    {
+      "environment": "cube",
+      "method": "adversarial",
+      "seed": 42,
+      "success": 0.7616666666666667,
+      "both_successful_routes": 0.06666666666666667,
+      "episodes": 1200,
+      "contexts": 150,
+      "within_scene_speed_variation": null,
+      "speed_spearman": 0.07676861615749933,
+      "amplitude_spearman": 0.0021788038164815655,
+      "encoder_recovery_applicable": false
+    },
+    {
+      "environment": "cube",
+      "method": "adversarial",
+      "seed": 43,
+      "success": 0.7375,
+      "both_successful_routes": 0.17333333333333334,
+      "episodes": 1200,
+      "contexts": 150,
+      "within_scene_speed_variation": null,
+      "speed_spearman": 0.00712751873529219,
+      "amplitude_spearman": -0.048525556271479336,
+      "encoder_recovery_applicable": false
+    },
+    {
+      "environment": "cube",
+      "method": "full",
+      "seed": 42,
+      "success": 0.9591666666666666,
+      "both_successful_routes": 0.9866666666666667,
+      "episodes": 1200,
+      "contexts": 150,
+      "within_scene_speed_variation": null,
+      "speed_spearman": -0.8238133512836616,
+      "amplitude_spearman": 0.8402686815023551,
+      "encoder_recovery_applicable": true
+    },
+    {
+      "environment": "cube",
+      "method": "full",
+      "seed": 43,
+      "success": 0.9633333333333334,
+      "both_successful_routes": 1.0,
+      "episodes": 1200,
+      "contexts": 150,
+      "within_scene_speed_variation": null,
+      "speed_spearman": -0.8005424655665908,
+      "amplitude_spearman": 0.8263263235262162,
+      "encoder_recovery_applicable": true
+    },
+    {
+      "environment": "tworoom",
+      "method": "adversarial",
+      "seed": 123,
+      "success": 0.420166015625,
+      "both_successful_routes": 0.01171875,
+      "episodes": 8192,
+      "contexts": 256,
+      "within_scene_speed_variation": 0.0017189244972541928,
+      "speed_spearman": null,
+      "amplitude_spearman": null,
+      "encoder_recovery_applicable": false
+    },
+    {
+      "environment": "tworoom",
+      "method": "adversarial",
+      "seed": 42,
+      "success": 0.434814453125,
+      "both_successful_routes": 0.00390625,
+      "episodes": 8192,
+      "contexts": 256,
+      "within_scene_speed_variation": 0.0029887075070291758,
+      "speed_spearman": null,
+      "amplitude_spearman": null,
+      "encoder_recovery_applicable": false
+    },
+    {
+      "environment": "tworoom",
+      "method": "full",
+      "seed": 123,
+      "success": 1.0,
+      "both_successful_routes": 1.0,
+      "episodes": 8192,
+      "contexts": 256,
+      "within_scene_speed_variation": 0.12675191462039948,
+      "speed_spearman": null,
+      "amplitude_spearman": null,
+      "encoder_recovery_applicable": true
+    },
+    {
+      "environment": "tworoom",
+      "method": "full",
+      "seed": 42,
+      "success": 1.0,
+      "both_successful_routes": 1.0,
+      "episodes": 8192,
+      "contexts": 256,
+      "within_scene_speed_variation": 0.12554185092449188,
+      "speed_spearman": null,
+      "amplitude_spearman": null,
+      "encoder_recovery_applicable": true
+    }
+  ],
+  "fixed_code_diagnostics": [
+    {
+      "environment": "cube",
+      "method": "adversarial",
+      "seed": 42,
+      "success": 0.7775,
+      "both_successful_routes": 0.09333333333333334,
+      "path_distance_all": 0.02909785626823928,
+      "path_distance_successful": 0.01531300182332962,
+      "path_distance_unit": "m",
+      "action_derivative_rms_z1": 0.009352385997772217,
+      "action_derivative_rms_z2": 0.00398991908878088,
+      "mean_successful_route_entropy_bits": 0.08550865816769362,
+      "same_code_mode_consistency": 0.5232584584786653,
+      "successful_scene_fraction": 0.9333333333333333,
+      "speed_spearman": 0.05210144871050739,
+      "amplitude_spearman": -0.05922736691090272
+    },
+    {
+      "environment": "cube",
+      "method": "adversarial",
+      "seed": 43,
+      "success": 0.7341666666666666,
+      "both_successful_routes": 0.15333333333333332,
+      "path_distance_all": 0.035871495106848436,
+      "path_distance_successful": 0.017052667462310257,
+      "path_distance_unit": "m",
+      "action_derivative_rms_z1": 0.003504781750962138,
+      "action_derivative_rms_z2": 0.002523790579289198,
+      "mean_successful_route_entropy_bits": 0.13151654042086192,
+      "same_code_mode_consistency": 0.6837976771460306,
+      "successful_scene_fraction": 0.9533333333333334,
+      "speed_spearman": -0.02838862280624308,
+      "amplitude_spearman": -0.06525510221410272
+    },
+    {
+      "environment": "cube",
+      "method": "full",
+      "seed": 42,
+      "success": 0.9616666666666667,
+      "both_successful_routes": 0.9866666666666667,
+      "path_distance_all": 0.032820793476746934,
+      "path_distance_successful": 0.02784706940025196,
+      "path_distance_unit": "m",
+      "action_derivative_rms_z1": 0.0093006556853652,
+      "action_derivative_rms_z2": 0.11448094248771667,
+      "mean_successful_route_entropy_bits": 0.9798350479575512,
+      "same_code_mode_consistency": 0.9964400589170845,
+      "successful_scene_fraction": 1.0,
+      "speed_spearman": -0.7774129749342914,
+      "amplitude_spearman": 0.8373168766318551
+    },
+    {
+      "environment": "cube",
+      "method": "full",
+      "seed": 43,
+      "success": 0.9716666666666667,
+      "both_successful_routes": 0.9933333333333333,
+      "path_distance_all": 0.029527630293385964,
+      "path_distance_successful": 0.025639065496220175,
+      "path_distance_unit": "m",
+      "action_derivative_rms_z1": 0.011583988554775715,
+      "action_derivative_rms_z2": 0.11448558419942856,
+      "mean_successful_route_entropy_bits": 0.9868274614036492,
+      "same_code_mode_consistency": 0.9956586471854806,
+      "successful_scene_fraction": 1.0,
+      "speed_spearman": -0.8021887025718593,
+      "amplitude_spearman": 0.8644093072469102
+    },
+    {
+      "environment": "tworoom",
+      "method": "adversarial",
+      "seed": 123,
+      "success": 0.41796875,
+      "both_successful_routes": 0.00390625,
+      "path_distance_all": 1.4209044002959028,
+      "path_distance_successful": 1.132828076580098,
+      "path_distance_unit": "pixels",
+      "action_derivative_rms_z1": 0.014015073888003826,
+      "action_derivative_rms_z2": 0.008451971225440502,
+      "mean_successful_route_entropy_bits": 0.00390625,
+      "same_code_mode_consistency": 0.5420615862212836,
+      "successful_scene_fraction": 0.43359375,
+      "speed_spearman": null,
+      "amplitude_spearman": null
+    },
+    {
+      "environment": "tworoom",
+      "method": "adversarial",
+      "seed": 42,
+      "success": 0.43310546875,
+      "both_successful_routes": 0.00390625,
+      "path_distance_all": 1.9692479036335668,
+      "path_distance_successful": 0.8810073586118481,
+      "path_distance_unit": "pixels",
+      "action_derivative_rms_z1": 0.009903697296977043,
+      "action_derivative_rms_z2": 0.016520000994205475,
+      "mean_successful_route_entropy_bits": 0.0021232986062484235,
+      "same_code_mode_consistency": 0.5901784602645459,
+      "successful_scene_fraction": 0.453125,
+      "speed_spearman": null,
+      "amplitude_spearman": null
+    },
+    {
+      "environment": "tworoom",
+      "method": "full",
+      "seed": 123,
+      "success": 1.0,
+      "both_successful_routes": 1.0,
+      "path_distance_all": 40.49632564740787,
+      "path_distance_successful": 40.49632564740787,
+      "path_distance_unit": "pixels",
+      "action_derivative_rms_z1": 0.1854170262813568,
+      "action_derivative_rms_z2": 0.12412814050912857,
+      "mean_successful_route_entropy_bits": 1.0,
+      "same_code_mode_consistency": 1.0,
+      "successful_scene_fraction": 1.0,
+      "speed_spearman": null,
+      "amplitude_spearman": null
+    },
+    {
+      "environment": "tworoom",
+      "method": "full",
+      "seed": 42,
+      "success": 1.0,
+      "both_successful_routes": 1.0,
+      "path_distance_all": 40.49512014178228,
+      "path_distance_successful": 40.49512014178228,
+      "path_distance_unit": "pixels",
+      "action_derivative_rms_z1": 0.18496422469615936,
+      "action_derivative_rms_z2": 0.11383675038814545,
+      "mean_successful_route_entropy_bits": 1.0,
+      "same_code_mode_consistency": 1.0,
+      "successful_scene_fraction": 1.0,
+      "speed_spearman": null,
+      "amplitude_spearman": null
+    }
+  ],
+  "adapters": [
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9296875,
+      "goal_success": 0.9873046875,
+      "both_successful_strategies": 0.9453125,
+      "code_strategy_agreement": 0.998046875,
+      "latent_recovery_rmse": 0.46526892379016077,
+      "latent_recovery_sign_accuracy": 0.9208984375,
+      "magnitude_response_correlation": 0.9083382026937455,
+      "successful_paired_vertical_separation_m": 0.1330101756269441,
+      "private_sign_action_rms": 0.1619451642036438,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 139896,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.584348501841305,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 345.1115527153015,
+      "private_physical_encoder_procedure_wall_seconds": 140.6550054550171,
+      "training_median_updates_per_second_excluding_validation": 15.11940741842352,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 647419,
+      "online_active_generator_parameters": 1210312
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.95703125,
+      "goal_success": 0.9658203125,
+      "both_successful_strategies": 0.9609375,
+      "code_strategy_agreement": 0.9814453125,
+      "latent_recovery_rmse": 0.4903988359046574,
+      "latent_recovery_sign_accuracy": 0.92578125,
+      "magnitude_response_correlation": 0.9113512601361073,
+      "successful_paired_vertical_separation_m": 0.1352167651294523,
+      "private_sign_action_rms": 0.199999138712883,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 139896,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.5635150013840757,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 333.2567207813263,
+      "private_physical_encoder_procedure_wall_seconds": 143.1399347782135,
+      "training_median_updates_per_second_excluding_validation": 15.716343026987587,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 647419,
+      "online_active_generator_parameters": 1210312
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9462890625,
+      "goal_success": 0.9755859375,
+      "both_successful_strategies": 0.9609375,
+      "code_strategy_agreement": 0.9833984375,
+      "latent_recovery_rmse": 0.6379038767203538,
+      "latent_recovery_sign_accuracy": 0.9208984375,
+      "magnitude_response_correlation": 0.8790397663516979,
+      "successful_paired_vertical_separation_m": 0.12930568572691362,
+      "private_sign_action_rms": 0.17590510845184326,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 80391,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.5832184983300976,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 352.6206839084625,
+      "private_physical_encoder_procedure_wall_seconds": 142.58870673179626,
+      "training_median_updates_per_second_excluding_validation": 14.572861490331789,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 587914,
+      "online_active_generator_parameters": 1150807
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.9609375,
+      "goal_success": 0.9755859375,
+      "both_successful_strategies": 0.96875,
+      "code_strategy_agreement": 0.9912109375,
+      "latent_recovery_rmse": 0.5038757074138585,
+      "latent_recovery_sign_accuracy": 0.9052734375,
+      "magnitude_response_correlation": 0.9115729769689489,
+      "successful_paired_vertical_separation_m": 0.13084358804067306,
+      "private_sign_action_rms": 0.1874513030052185,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 80391,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.553279002313502,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 329.5979218482971,
+      "private_physical_encoder_procedure_wall_seconds": 139.9831554889679,
+      "training_median_updates_per_second_excluding_validation": 15.85636454957163,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 587914,
+      "online_active_generator_parameters": 1150807
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9638671875,
+      "goal_success": 0.9775390625,
+      "both_successful_strategies": 0.9765625,
+      "code_strategy_agreement": 0.990234375,
+      "latent_recovery_rmse": 0.5115684240462431,
+      "latent_recovery_sign_accuracy": 0.8955078125,
+      "magnitude_response_correlation": 0.9014214962630117,
+      "successful_paired_vertical_separation_m": 0.1341281036067309,
+      "private_sign_action_rms": 0.17146596312522888,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 84358,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.563694000855321,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 332.1994004249573,
+      "private_physical_encoder_procedure_wall_seconds": 140.4040777683258,
+      "training_median_updates_per_second_excluding_validation": 15.992801092547037,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 591881,
+      "online_active_generator_parameters": 1154774
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.9677734375,
+      "goal_success": 0.974609375,
+      "both_successful_strategies": 0.9765625,
+      "code_strategy_agreement": 0.986328125,
+      "latent_recovery_rmse": 0.5336134913362167,
+      "latent_recovery_sign_accuracy": 0.94140625,
+      "magnitude_response_correlation": 0.8740410904743292,
+      "successful_paired_vertical_separation_m": 0.13135932874914036,
+      "private_sign_action_rms": 0.18067458271980286,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 84358,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.5634634985181037,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 334.0369186401367,
+      "private_physical_encoder_procedure_wall_seconds": 141.6962685585022,
+      "training_median_updates_per_second_excluding_validation": 15.639588441119619,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 591881,
+      "online_active_generator_parameters": 1154774
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9423828125,
+      "goal_success": 0.986328125,
+      "both_successful_strategies": 0.953125,
+      "code_strategy_agreement": 0.994140625,
+      "latent_recovery_rmse": 0.5824553799127374,
+      "latent_recovery_sign_accuracy": 0.87109375,
+      "magnitude_response_correlation": 0.8774990027620391,
+      "successful_paired_vertical_separation_m": 0.12866554564961458,
+      "private_sign_action_rms": 0.1671173870563507,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 92292,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.5097739999182522,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 335.0909080505371,
+      "private_physical_encoder_procedure_wall_seconds": 139.21010637283325,
+      "training_median_updates_per_second_excluding_validation": 15.71005210330281,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 599815,
+      "online_active_generator_parameters": 1162708
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.9521484375,
+      "goal_success": 0.9716796875,
+      "both_successful_strategies": 0.9765625,
+      "code_strategy_agreement": 0.9931640625,
+      "latent_recovery_rmse": 0.5173454856266291,
+      "latent_recovery_sign_accuracy": 0.921875,
+      "magnitude_response_correlation": 0.9089129038282904,
+      "successful_paired_vertical_separation_m": 0.1293471767577027,
+      "private_sign_action_rms": 0.18764004111289978,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 92292,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.600879503006581,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 329.9336371421814,
+      "private_physical_encoder_procedure_wall_seconds": 140.9541516304016,
+      "training_median_updates_per_second_excluding_validation": 15.882288515975684,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 599815,
+      "online_active_generator_parameters": 1162708
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 42,
+      "success": 0.0,
+      "goal_success": 0.9609375,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.25390625,
+      "latent_recovery_rmse": 1.007547673327078,
+      "latent_recovery_sign_accuracy": 0.5,
+      "magnitude_response_correlation": null,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 31736,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 1.6648374985379633,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 261.2066328525543,
+      "private_physical_encoder_procedure_wall_seconds": 138.7773847579956,
+      "training_median_updates_per_second_excluding_validation": 22.75484889011364,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 539259,
+      "online_active_generator_parameters": 1102152
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 43,
+      "success": 0.0,
+      "goal_success": 0.9609375,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.265625,
+      "latent_recovery_rmse": 1.0010544256426472,
+      "latent_recovery_sign_accuracy": 0.5,
+      "magnitude_response_correlation": null,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 31736,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 1.6093125013867393,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 270.53385519981384,
+      "private_physical_encoder_procedure_wall_seconds": 137.91853022575378,
+      "training_median_updates_per_second_excluding_validation": 21.11852230669121,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 539259,
+      "online_active_generator_parameters": 1102152
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9501953125,
+      "goal_success": 0.9833984375,
+      "both_successful_strategies": 0.96875,
+      "code_strategy_agreement": 0.9970703125,
+      "latent_recovery_rmse": 0.4980908298068281,
+      "latent_recovery_sign_accuracy": 0.9306640625,
+      "magnitude_response_correlation": 0.884309970992845,
+      "successful_paired_vertical_separation_m": 0.1324021890920736,
+      "private_sign_action_rms": 0.15722526609897614,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 108160,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.5426934989809524,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 354.45882868766785,
+      "private_physical_encoder_procedure_wall_seconds": 145.04948949813843,
+      "training_median_updates_per_second_excluding_validation": 14.544315400531312,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 615683,
+      "online_active_generator_parameters": 1178576
+    },
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.9541015625,
+      "goal_success": 0.9697265625,
+      "both_successful_strategies": 0.96875,
+      "code_strategy_agreement": 0.994140625,
+      "latent_recovery_rmse": 0.44702378755066197,
+      "latent_recovery_sign_accuracy": 0.927734375,
+      "magnitude_response_correlation": 0.8801131638451233,
+      "successful_paired_vertical_separation_m": 0.13613495962060196,
+      "private_sign_action_rms": 0.19961033761501312,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 108160,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.489277998392936,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 342.3744399547577,
+      "private_physical_encoder_procedure_wall_seconds": 141.46867871284485,
+      "training_median_updates_per_second_excluding_validation": 14.990153560961588,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 615683,
+      "online_active_generator_parameters": 1178576
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9619140625,
+      "goal_success": 0.9619140625,
+      "both_successful_strategies": 0.9609375,
+      "code_strategy_agreement": 0.904296875,
+      "latent_recovery_rmse": 0.4414577268933396,
+      "latent_recovery_sign_accuracy": 0.9599609375,
+      "magnitude_response_correlation": 0.9143010298268636,
+      "successful_paired_vertical_separation_m": 0.06219946376174145,
+      "private_sign_action_rms": 0.07207043468952179,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 156080,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.6478389991098084,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 747.4687285423279,
+      "private_physical_encoder_procedure_wall_seconds": 131.79343724250793,
+      "training_median_updates_per_second_excluding_validation": 15.480026630292894,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 663603,
+      "online_active_generator_parameters": 1226496
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.966796875,
+      "goal_success": 0.9677734375,
+      "both_successful_strategies": 0.9609375,
+      "code_strategy_agreement": 0.93359375,
+      "latent_recovery_rmse": 0.44819481288551255,
+      "latent_recovery_sign_accuracy": 0.9462890625,
+      "magnitude_response_correlation": 0.8527169050066716,
+      "successful_paired_vertical_separation_m": 0.06774398972708393,
+      "private_sign_action_rms": 0.07379987090826035,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 156080,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.649818005011184,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 735.6106452941895,
+      "private_physical_encoder_procedure_wall_seconds": 131.58383464813232,
+      "training_median_updates_per_second_excluding_validation": 16.068871797472198,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 663603,
+      "online_active_generator_parameters": 1226496
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9482421875,
+      "goal_success": 0.94921875,
+      "both_successful_strategies": 0.9375,
+      "code_strategy_agreement": 0.923828125,
+      "latent_recovery_rmse": 0.43990202204454215,
+      "latent_recovery_sign_accuracy": 0.962890625,
+      "magnitude_response_correlation": 0.9120721977341828,
+      "successful_paired_vertical_separation_m": 0.06577037036386368,
+      "private_sign_action_rms": 0.0882510095834732,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 96575,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.624716500577051,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 747.2009353637695,
+      "private_physical_encoder_procedure_wall_seconds": 135.68119096755981,
+      "training_median_updates_per_second_excluding_validation": 15.992321310634324,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 604098,
+      "online_active_generator_parameters": 1166991
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.958984375,
+      "goal_success": 0.958984375,
+      "both_successful_strategies": 0.9375,
+      "code_strategy_agreement": 0.939453125,
+      "latent_recovery_rmse": 0.42466525984249887,
+      "latent_recovery_sign_accuracy": 0.939453125,
+      "magnitude_response_correlation": 0.8802202304040558,
+      "successful_paired_vertical_separation_m": 0.06203211996791529,
+      "private_sign_action_rms": 0.0824640616774559,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 96575,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.7593705017352477,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 739.6819670200348,
+      "private_physical_encoder_procedure_wall_seconds": 131.58347010612488,
+      "training_median_updates_per_second_excluding_validation": 15.679709396324853,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 604098,
+      "online_active_generator_parameters": 1166991
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.953125,
+      "goal_success": 0.9560546875,
+      "both_successful_strategies": 0.96875,
+      "code_strategy_agreement": 0.9560546875,
+      "latent_recovery_rmse": 0.46009231833584535,
+      "latent_recovery_sign_accuracy": 0.927734375,
+      "magnitude_response_correlation": 0.9002428503031654,
+      "successful_paired_vertical_separation_m": 0.06512950741960548,
+      "private_sign_action_rms": 0.08516553789377213,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 100542,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.6372464999440126,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 753.8033277988434,
+      "private_physical_encoder_procedure_wall_seconds": 135.34199213981628,
+      "training_median_updates_per_second_excluding_validation": 16.01552287286745,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 608065,
+      "online_active_generator_parameters": 1170958
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.9560546875,
+      "goal_success": 0.95703125,
+      "both_successful_strategies": 0.9296875,
+      "code_strategy_agreement": 0.9287109375,
+      "latent_recovery_rmse": 0.46505840966889606,
+      "latent_recovery_sign_accuracy": 0.9287109375,
+      "magnitude_response_correlation": 0.9123532965331469,
+      "successful_paired_vertical_separation_m": 0.06337344501136052,
+      "private_sign_action_rms": 0.0802273154258728,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 100542,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.6150320009037387,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 735.8630249500275,
+      "private_physical_encoder_procedure_wall_seconds": 129.9267737865448,
+      "training_median_updates_per_second_excluding_validation": 15.831248698312496,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 608065,
+      "online_active_generator_parameters": 1170958
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.9794921875,
+      "goal_success": 0.9794921875,
+      "both_successful_strategies": 0.9375,
+      "code_strategy_agreement": 0.9140625,
+      "latent_recovery_rmse": 0.41054649888528016,
+      "latent_recovery_sign_accuracy": 0.953125,
+      "magnitude_response_correlation": 0.853121371872441,
+      "successful_paired_vertical_separation_m": 0.06338027032203779,
+      "private_sign_action_rms": 0.07618686556816101,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 108476,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.66862549688085,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 734.0568549633026,
+      "private_physical_encoder_procedure_wall_seconds": 131.96672296524048,
+      "training_median_updates_per_second_excluding_validation": 16.184045804883354,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 615999,
+      "online_active_generator_parameters": 1178892
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.958984375,
+      "goal_success": 0.958984375,
+      "both_successful_strategies": 0.8828125,
+      "code_strategy_agreement": 0.908203125,
+      "latent_recovery_rmse": 0.5730032888329545,
+      "latent_recovery_sign_accuracy": 0.857421875,
+      "magnitude_response_correlation": 0.8839333489649049,
+      "successful_paired_vertical_separation_m": 0.06053104328614073,
+      "private_sign_action_rms": 0.07446029782295227,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 108476,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.6985274998878594,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 734.6247832775116,
+      "private_physical_encoder_procedure_wall_seconds": 132.468421459198,
+      "training_median_updates_per_second_excluding_validation": 16.22329308878018,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 615999,
+      "online_active_generator_parameters": 1178892
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 42,
+      "success": 0.828125,
+      "goal_success": 0.96875,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.3125,
+      "latent_recovery_rmse": 1.0022459869178362,
+      "latent_recovery_sign_accuracy": 0.5,
+      "magnitude_response_correlation": null,
+      "successful_paired_vertical_separation_m": 0.0,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 31736,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 1.6150974988704547,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 583.9635162353516,
+      "private_physical_encoder_procedure_wall_seconds": 133.4039750099182,
+      "training_median_updates_per_second_excluding_validation": 22.563279251984333,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 539259,
+      "online_active_generator_parameters": 1102152
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 43,
+      "success": 0.84375,
+      "goal_success": 0.96875,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.3515625,
+      "latent_recovery_rmse": 1.0001408953266782,
+      "latent_recovery_sign_accuracy": 0.5,
+      "magnitude_response_correlation": null,
+      "successful_paired_vertical_separation_m": 0.0,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 31736,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 1.636756001971662,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 607.5070462226868,
+      "private_physical_encoder_procedure_wall_seconds": 130.71572422981262,
+      "training_median_updates_per_second_excluding_validation": 21.395740379272908,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 539259,
+      "online_active_generator_parameters": 1102152
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 42,
+      "success": 0.962890625,
+      "goal_success": 0.9677734375,
+      "both_successful_strategies": 0.96875,
+      "code_strategy_agreement": 0.8974609375,
+      "latent_recovery_rmse": 0.3551908225562736,
+      "latent_recovery_sign_accuracy": 0.947265625,
+      "magnitude_response_correlation": 0.8196494988959928,
+      "successful_paired_vertical_separation_m": 0.06532494213812348,
+      "private_sign_action_rms": 0.08092809468507767,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 124344,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.6066015016112942,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 785.319596529007,
+      "private_physical_encoder_procedure_wall_seconds": 129.94337344169617,
+      "training_median_updates_per_second_excluding_validation": 14.594747311021619,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 631867,
+      "online_active_generator_parameters": 1194760
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 43,
+      "success": 0.95703125,
+      "goal_success": 0.95703125,
+      "both_successful_strategies": 0.9296875,
+      "code_strategy_agreement": 0.91796875,
+      "latent_recovery_rmse": 0.48428415923525103,
+      "latent_recovery_sign_accuracy": 0.951171875,
+      "magnitude_response_correlation": 0.8869401089377458,
+      "successful_paired_vertical_separation_m": 0.068492416420639,
+      "private_sign_action_rms": 0.07787230610847473,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 124344,
+      "private_encoder_parameters": 221826,
+      "inference_median_ms": 2.676326002983842,
+      "episodes": 1024,
+      "contexts": 128,
+      "actor_training_wall_seconds_including_validation": 772.7382080554962,
+      "private_physical_encoder_procedure_wall_seconds": 135.47743344306946,
+      "training_median_updates_per_second_excluding_validation": 14.752367636254187,
+      "private_discriminator_parameters": 285697,
+      "actor_training_total_trainable_parameters": 631867,
+      "online_active_generator_parameters": 1194760
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.99755859375,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.4988362491130829,
+      "latent_recovery_sign_accuracy": 0.92333984375,
+      "magnitude_response_correlation": 0.6888851523399353,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5760484337806702,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 80384,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.668135999556398,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9970703125,
+      "actor_training_wall_seconds_including_validation": 327.9251732826233,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.78694401769533,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 381699,
+      "online_active_generator_parameters": 652320
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.99951171875,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.5372604727745056,
+      "latent_recovery_sign_accuracy": 0.90087890625,
+      "magnitude_response_correlation": 0.6375948190689087,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5625123381614685,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 80384,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7118820034957025,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9990234375,
+      "actor_training_wall_seconds_including_validation": 327.3660078048706,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.784410643976203,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 381699,
+      "online_active_generator_parameters": 652320
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.99560546875,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.98828125,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.6545641422271729,
+      "latent_recovery_sign_accuracy": 0.947265625,
+      "magnitude_response_correlation": 0.5077479481697083,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5578664541244507,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 41354,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.6438690001668874,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.99365234375,
+      "actor_training_wall_seconds_including_validation": 321.6780138015747,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.931092301255134,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 342669,
+      "online_active_generator_parameters": 613290
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.99560546875,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.5679106116294861,
+      "latent_recovery_sign_accuracy": 0.91259765625,
+      "magnitude_response_correlation": 0.5567735433578491,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5357673168182373,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 41354,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7294720021018293,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9970703125,
+      "actor_training_wall_seconds_including_validation": 324.03762197494507,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.87121950779839,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 342669,
+      "online_active_generator_parameters": 613290
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.986328125,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.984375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.5852140188217163,
+      "latent_recovery_sign_accuracy": 0.87744140625,
+      "magnitude_response_correlation": 0.5096713304519653,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.549000084400177,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 43956,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7052805016865022,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9892578125,
+      "actor_training_wall_seconds_including_validation": 327.2781491279602,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.729514738593569,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 345271,
+      "online_active_generator_parameters": 615892
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.98828125,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.98046875,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.6086063385009766,
+      "latent_recovery_sign_accuracy": 0.85791015625,
+      "magnitude_response_correlation": 0.5644093751907349,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5504637360572815,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 43956,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7389239985495806,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9892578125,
+      "actor_training_wall_seconds_including_validation": 329.79960203170776,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.746177398762718,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 345271,
+      "online_active_generator_parameters": 615892
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.99462890625,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 0.9999999403953552,
+      "latent_recovery_rmse": 0.6069638729095459,
+      "latent_recovery_sign_accuracy": 0.9228515625,
+      "magnitude_response_correlation": 0.6044411659240723,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5649964809417725,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 49160,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.661566002643667,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.99609375,
+      "actor_training_wall_seconds_including_validation": 349.2318799495697,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.271941130501432,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 350475,
+      "online_active_generator_parameters": 621096
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.99462890625,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 0.9999999403953552,
+      "latent_recovery_rmse": 0.6083090901374817,
+      "latent_recovery_sign_accuracy": 0.951171875,
+      "magnitude_response_correlation": 0.6275736093521118,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.568876326084137,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 49160,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.690692501346348,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.99658203125,
+      "actor_training_wall_seconds_including_validation": 326.5343415737152,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.774005589680188,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 350475,
+      "online_active_generator_parameters": 621096
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 123,
+      "success": 0.46875,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.4802083671092987,
+      "latent_recovery_rmse": 2.0725479125976562,
+      "latent_recovery_sign_accuracy": 0.478515625,
+      "magnitude_response_correlation": 0.0109895970672369,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 20816,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 1.8383664973953273,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.46875,
+      "actor_training_wall_seconds_including_validation": 277.13378953933716,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 10.385021149721986,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 322131,
+      "online_active_generator_parameters": 592752
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 2026,
+      "success": 0.3984375,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.47181373834609985,
+      "latent_recovery_rmse": 1.5244982242584229,
+      "latent_recovery_sign_accuracy": 0.4736328125,
+      "magnitude_response_correlation": 0.006681011524051428,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 20816,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 1.8655950007087085,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.3984375,
+      "actor_training_wall_seconds_including_validation": 296.1658411026001,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 9.681436409676296,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 322131,
+      "online_active_generator_parameters": 592752
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.994140625,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.5510826706886292,
+      "latent_recovery_sign_accuracy": 0.951171875,
+      "magnitude_response_correlation": 0.5751611590385437,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5688580870628357,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 59568,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7245150013186503,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.99609375,
+      "actor_training_wall_seconds_including_validation": 318.5029752254486,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 9.020934992495972,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 360883,
+      "online_active_generator_parameters": 631504
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.99365234375,
+      "goal_success": 1.0,
+      "both_successful_strategies": 0.99609375,
+      "code_strategy_agreement": 1.0,
+      "latent_recovery_rmse": 0.6323838829994202,
+      "latent_recovery_sign_accuracy": 0.876953125,
+      "magnitude_response_correlation": 0.4951758086681366,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.5389237999916077,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 59568,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7020634988730308,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.99462890625,
+      "actor_training_wall_seconds_including_validation": 324.4438934326172,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 8.825946319342627,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 360883,
+      "online_active_generator_parameters": 631504
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.92333984375,
+      "goal_success": 0.92431640625,
+      "both_successful_strategies": 0.875,
+      "code_strategy_agreement": 0.9666842818260193,
+      "latent_recovery_rmse": 0.43658673763275146,
+      "latent_recovery_sign_accuracy": 0.98486328125,
+      "magnitude_response_correlation": 0.46556636691093445,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011204717680811882,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 124016,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.793664996715961,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9267578125,
+      "actor_training_wall_seconds_including_validation": 527.7710094451904,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.236459429056064,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 425331,
+      "online_active_generator_parameters": 695952
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 16,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.970703125,
+      "goal_success": 0.970703125,
+      "both_successful_strategies": 0.91015625,
+      "code_strategy_agreement": 0.9592555165290833,
+      "latent_recovery_rmse": 0.4194769263267517,
+      "latent_recovery_sign_accuracy": 0.97802734375,
+      "magnitude_response_correlation": 0.6086149215698242,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011041542515158653,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 124016,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.814422496157931,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.96826171875,
+      "actor_training_wall_seconds_including_validation": 538.121419429779,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.137309655529207,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 425331,
+      "online_active_generator_parameters": 695952
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.96435546875,
+      "goal_success": 0.96533203125,
+      "both_successful_strategies": 0.9453125,
+      "code_strategy_agreement": 0.9762025475502014,
+      "latent_recovery_rmse": 0.5213826298713684,
+      "latent_recovery_sign_accuracy": 0.95849609375,
+      "magnitude_response_correlation": 0.5731975436210632,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011004279367625713,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 84986,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.8624465012399014,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.96435546875,
+      "actor_training_wall_seconds_including_validation": 537.0066113471985,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.144724323894474,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 386301,
+      "online_active_generator_parameters": 656922
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 1,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.9619140625,
+      "goal_success": 0.96337890625,
+      "both_successful_strategies": 0.9140625,
+      "code_strategy_agreement": 0.9512690305709839,
+      "latent_recovery_rmse": 0.49355390667915344,
+      "latent_recovery_sign_accuracy": 0.93212890625,
+      "magnitude_response_correlation": 0.6389506459236145,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011050257831811905,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 84986,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.824221501214197,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.96142578125,
+      "actor_training_wall_seconds_including_validation": 526.226936340332,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.23643104293193,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 386301,
+      "online_active_generator_parameters": 656922
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.9541015625,
+      "goal_success": 0.9541015625,
+      "both_successful_strategies": 0.9296875,
+      "code_strategy_agreement": 0.9892528057098389,
+      "latent_recovery_rmse": 0.5745875239372253,
+      "latent_recovery_sign_accuracy": 0.962890625,
+      "magnitude_response_correlation": 0.5907595157623291,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.01054113544523716,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 87588,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.8487700001278426,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.95068359375,
+      "actor_training_wall_seconds_including_validation": 523.7006733417511,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.30635758054728,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 388903,
+      "online_active_generator_parameters": 659524
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 2,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.94873046875,
+      "goal_success": 0.9501953125,
+      "both_successful_strategies": 0.91015625,
+      "code_strategy_agreement": 0.9650025963783264,
+      "latent_recovery_rmse": 0.43437138199806213,
+      "latent_recovery_sign_accuracy": 0.97119140625,
+      "magnitude_response_correlation": 0.6824535131454468,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011161871254444122,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 87588,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.859222498955205,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.947265625,
+      "actor_training_wall_seconds_including_validation": 545.491530418396,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.05901297221628,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 388903,
+      "online_active_generator_parameters": 659524
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.958984375,
+      "goal_success": 0.9599609375,
+      "both_successful_strategies": 0.94921875,
+      "code_strategy_agreement": 0.9857434034347534,
+      "latent_recovery_rmse": 0.5592584013938904,
+      "latent_recovery_sign_accuracy": 0.93603515625,
+      "magnitude_response_correlation": 0.682113528251648,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.010315202176570892,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 92792,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.8888745000585914,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9658203125,
+      "actor_training_wall_seconds_including_validation": 522.3724386692047,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.239726475296763,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 394107,
+      "online_active_generator_parameters": 664728
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 4,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.958984375,
+      "goal_success": 0.96044921875,
+      "both_successful_strategies": 0.94921875,
+      "code_strategy_agreement": 0.985234260559082,
+      "latent_recovery_rmse": 0.46780920028686523,
+      "latent_recovery_sign_accuracy": 0.98876953125,
+      "magnitude_response_correlation": 0.663823127746582,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.010504855774343014,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 92792,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.8743110015057027,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.9599609375,
+      "actor_training_wall_seconds_including_validation": 550.3421654701233,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.034502630652222,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 394107,
+      "online_active_generator_parameters": 664728
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 123,
+      "success": 0.2734375,
+      "goal_success": 0.2734375,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.4446428716182709,
+      "latent_recovery_rmse": 1.1078306436538696,
+      "latent_recovery_sign_accuracy": 0.49609375,
+      "magnitude_response_correlation": -0.012457657605409622,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 20816,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 1.8834365000657272,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.2734375,
+      "actor_training_wall_seconds_including_validation": 452.2848286628723,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 6.095329757235557,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 322131,
+      "online_active_generator_parameters": 592752
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": true,
+      "seed": 2026,
+      "success": 0.17578125,
+      "goal_success": 0.1796875,
+      "both_successful_strategies": 0.0,
+      "code_strategy_agreement": 0.3888888955116272,
+      "latent_recovery_rmse": 1.0815387964248657,
+      "latent_recovery_sign_accuracy": 0.484375,
+      "magnitude_response_correlation": 0.003620096715167165,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.0,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 20816,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 1.8030540013569407,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.17578125,
+      "actor_training_wall_seconds_including_validation": 491.2567539215088,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.614607944429363,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 322131,
+      "online_active_generator_parameters": 592752
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 123,
+      "success": 0.93994140625,
+      "goal_success": 0.9404296875,
+      "both_successful_strategies": 0.90234375,
+      "code_strategy_agreement": 0.9807791709899902,
+      "latent_recovery_rmse": 0.5119472146034241,
+      "latent_recovery_sign_accuracy": 0.93896484375,
+      "magnitude_response_correlation": 0.49558115005493164,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.00968915969133377,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 103200,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.8452550031943247,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.943359375,
+      "actor_training_wall_seconds_including_validation": 533.2662889957428,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.155561938079011,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 404515,
+      "online_active_generator_parameters": 675136
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "rank": 8,
+      "lora_only": false,
+      "seed": 2026,
+      "success": 0.958984375,
+      "goal_success": 0.958984375,
+      "both_successful_strategies": 0.91796875,
+      "code_strategy_agreement": 0.9638493061065674,
+      "latent_recovery_rmse": 0.47871559858322144,
+      "latent_recovery_sign_accuracy": 0.9765625,
+      "magnitude_response_correlation": 0.5866982340812683,
+      "successful_paired_vertical_separation_m": null,
+      "private_sign_action_rms": 0.011420122347772121,
+      "disabled_prediction_bitwise_equal": true,
+      "adapter_parameters": 103200,
+      "private_encoder_parameters": 184322,
+      "inference_median_ms": 2.7682569962053094,
+      "episodes": 2048,
+      "contexts": 256,
+      "quantile_success": 0.953125,
+      "actor_training_wall_seconds_including_validation": 527.076539516449,
+      "private_physical_encoder_procedure_wall_seconds": null,
+      "training_median_updates_per_second_excluding_validation": 5.212851168371049,
+      "private_discriminator_parameters": 116993,
+      "actor_training_total_trainable_parameters": 404515,
+      "online_active_generator_parameters": 675136
+    }
+  ],
+  "disabled_base_on_skill_banks": [
+    {
+      "environment": "cube",
+      "skill": "keepout",
+      "success": 0.0,
+      "goal_success": 0.8828125,
+      "episodes": 1024,
+      "contexts": 128,
+      "both_successful_strategies": 0.0
+    },
+    {
+      "environment": "cube",
+      "skill": "waypoint",
+      "success": 0.0,
+      "goal_success": 0.8828125,
+      "episodes": 1024,
+      "contexts": 128,
+      "both_successful_strategies": 0.0
+    },
+    {
+      "environment": "tworoom",
+      "skill": "keepout",
+      "success": 0.0,
+      "goal_success": 1.0,
+      "episodes": 2048,
+      "contexts": 256,
+      "both_successful_strategies": 0.0
+    },
+    {
+      "environment": "tworoom",
+      "skill": "waypoint",
+      "success": 0.0,
+      "goal_success": 1.0,
+      "episodes": 2048,
+      "contexts": 256,
+      "both_successful_strategies": 0.0
+    }
+  ],
+  "training_stability": {
+    "cube_keepout_r16_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 241.4838001728058,
+      "completed_run_wall_seconds_including_validation": 260.957236289978,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.11940741842352,
+        "p25": 14.95559612424381,
+        "p75": 16.02402893515645,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.946661914587021,
+        "minimum": 1.946661914587021,
+        "maximum": 4.056561839580536
+      },
+      "d_loss": {
+        "last": 1.8525091004371643,
+        "minimum": 0.0,
+        "maximum": 1.896046792268753
+      }
+    },
+    "cube_keepout_r16_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 231.42842626571655,
+      "completed_run_wall_seconds_including_validation": 250.6982936859131,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.716343026987587,
+        "p25": 15.593501014117475,
+        "p75": 16.514362323717698,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.9525810992717743,
+        "minimum": 1.9525810992717743,
+        "maximum": 3.944244313240051
+      },
+      "d_loss": {
+        "last": 1.8509729778766633,
+        "minimum": 0.0,
+        "maximum": 1.8968933057785033
+      }
+    },
+    "cube_keepout_r1_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 248.058269739151,
+      "completed_run_wall_seconds_including_validation": 267.52644443511963,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 14.572861490331789,
+        "p25": 14.401415022943716,
+        "p75": 15.530056491079758,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.244598913192749,
+        "minimum": 2.191501753330231,
+        "maximum": 4.746349034309387
+      },
+      "d_loss": {
+        "last": 1.8286094522476197,
+        "minimum": 0.0,
+        "maximum": 1.8884865546226501
+      }
+    },
+    "cube_keepout_r1_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 228.76975417137146,
+      "completed_run_wall_seconds_including_validation": 248.38994979858398,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.85636454957163,
+        "p25": 15.738188858565099,
+        "p75": 16.847976127250476,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.248067390918732,
+        "minimum": 2.223565286397934,
+        "maximum": 4.5030016374588016
+      },
+      "d_loss": {
+        "last": 1.8266383337974548,
+        "minimum": 0.0,
+        "maximum": 1.887746034860611
+      }
+    },
+    "cube_keepout_r2_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 228.7255461215973,
+      "completed_run_wall_seconds_including_validation": 248.2431080341339,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.992801092547037,
+        "p25": 15.834254566041004,
+        "p75": 16.62774980097009,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.1975632631778717,
+        "minimum": 2.175731757879257,
+        "maximum": 4.662884712219238
+      },
+      "d_loss": {
+        "last": 1.8342760241031646,
+        "minimum": 0.0,
+        "maximum": 1.8912224078178406
+      }
+    },
+    "cube_keepout_r2_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 232.63251423835754,
+      "completed_run_wall_seconds_including_validation": 252.41096544265747,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.639588441119619,
+        "p25": 15.474753787708543,
+        "p75": 16.56774391193518,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.219838744401932,
+        "minimum": 2.219838744401932,
+        "maximum": 4.445875058174133
+      },
+      "d_loss": {
+        "last": 1.8333498597145081,
+        "minimum": 0.0,
+        "maximum": 1.8879411339759826
+      }
+    },
+    "cube_keepout_r4_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 231.85923027992249,
+      "completed_run_wall_seconds_including_validation": 252.6710329055786,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.71005210330281,
+        "p25": 15.534833773521719,
+        "p75": 16.492689116897285,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.1508927190303804,
+        "minimum": 2.1508927190303804,
+        "maximum": 4.492640988826752
+      },
+      "d_loss": {
+        "last": 1.8341802537441254,
+        "minimum": 0.0,
+        "maximum": 1.891974582672119
+      }
+    },
+    "cube_keepout_r4_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 230.11847758293152,
+      "completed_run_wall_seconds_including_validation": 249.52228331565857,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 15.882288515975684,
+        "p25": 15.750774185129522,
+        "p75": 16.786006304739747,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.1436492669582368,
+        "minimum": 2.1436492669582368,
+        "maximum": 4.334244570732117
+      },
+      "d_loss": {
+        "last": 1.8333191180229187,
+        "minimum": 0.0,
+        "maximum": 1.8911969113349913
+      }
+    },
+    "cube_keepout_r8_lora_only_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 173.07258820533752,
+      "completed_run_wall_seconds_including_validation": 193.12095761299133,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 22.75484889011364,
+        "p25": 22.33829258273009,
+        "p75": 23.401407478092466,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.7499510788917543,
+        "minimum": 2.4670735716819765,
+        "maximum": 4.613776469230652
+      },
+      "d_loss": {
+        "last": 1.775635380744934,
+        "minimum": 0.0,
+        "maximum": 1.8765120649337768
+      }
+    },
+    "cube_keepout_r8_lora_only_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 181.49723172187805,
+      "completed_run_wall_seconds_including_validation": 201.05241870880127,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 21.11852230669121,
+        "p25": 20.876312165237607,
+        "p75": 22.142428455091135,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.7365223574638367,
+        "minimum": 2.535123426914215,
+        "maximum": 4.5901092004776
+      },
+      "d_loss": {
+        "last": 1.776505904197693,
+        "minimum": 0.0,
+        "maximum": 1.876540138721466
+      }
+    },
+    "cube_keepout_r8_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 248.05082821846008,
+      "completed_run_wall_seconds_including_validation": 267.5025281906128,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 14.544315400531312,
+        "p25": 14.432439652160825,
+        "p75": 15.59006246198932,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.0545078539848327,
+        "minimum": 2.0545078539848327,
+        "maximum": 4.30356761932373
+      },
+      "d_loss": {
+        "last": 1.843211852312088,
+        "minimum": 0.0,
+        "maximum": 1.894638205766678
+      }
+    },
+    "cube_keepout_r8_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 240.99461841583252,
+      "completed_run_wall_seconds_including_validation": 260.47125697135925,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 14.990153560961588,
+        "p25": 14.697124814910033,
+        "p75": 16.392363672401697,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.063236433267593,
+        "minimum": 2.063236433267593,
+        "maximum": 4.162912375926972
+      },
+      "d_loss": {
+        "last": 1.84136043548584,
+        "minimum": 0.0,
+        "maximum": 1.8933879590034486
+      }
+    },
+    "cube_latest_base_adversarial_s42": {
+      "last_logged_step": 6000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 212.1668083667755,
+      "completed_run_wall_seconds_including_validation": 241.45313715934753,
+      "training_intervals_excluding_validation": {
+        "windows": 56,
+        "median_updates_per_second": 47.438862291865824,
+        "p25": 46.73271852089403,
+        "p75": 48.278042311149726,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": -0.0018089004711146117,
+        "minimum": -0.0018372577903357978,
+        "maximum": 0.0006203718546021264
+      }
+    },
+    "cube_latest_base_adversarial_s43": {
+      "last_logged_step": 6000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 199.18686890602112,
+      "completed_run_wall_seconds_including_validation": 229.4944474697113,
+      "training_intervals_excluding_validation": {
+        "windows": 56,
+        "median_updates_per_second": 52.35388559357033,
+        "p25": 51.52127982790074,
+        "p75": 52.82234962133282,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 0.0013704490227445375,
+        "minimum": 0.0,
+        "maximum": 0.0032912631798535587
+      }
+    },
+    "cube_latest_base_full_s42": {
+      "last_logged_step": 6000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 360.71559023857117,
+      "completed_run_wall_seconds_including_validation": 388.6772301197052,
+      "training_intervals_excluding_validation": {
+        "windows": 56,
+        "median_updates_per_second": 21.312546937764473,
+        "p25": 20.505973694583837,
+        "p75": 22.070457210487305,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.1403761774301528,
+        "minimum": 1.1379202950000762,
+        "maximum": 1.7978961431980134
+      }
+    },
+    "cube_latest_base_full_s43": {
+      "last_logged_step": 6000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 351.78525400161743,
+      "completed_run_wall_seconds_including_validation": 379.97395372390747,
+      "training_intervals_excluding_validation": {
+        "windows": 56,
+        "median_updates_per_second": 21.77059862543363,
+        "p25": 20.875181085787116,
+        "p75": 22.655831999093344,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.0999770033359528,
+        "minimum": 1.0999770033359528,
+        "maximum": 1.7667212498188019
+      }
+    },
+    "cube_original_base_adversarial_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 190.7043435573578,
+      "completed_run_wall_seconds_including_validation": 227.7355227470398,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 47.340463052083024,
+        "p25": 46.160366431689454,
+        "p75": 48.70642590452945,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": -0.000368396112667142,
+        "minimum": -0.004636733876541257,
+        "maximum": 0.0015103102091234178
+      }
+    },
+    "cube_original_base_adversarial_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 212.07105946540833,
+      "completed_run_wall_seconds_including_validation": 257.0670783519745,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 52.00218829298137,
+        "p25": 51.09398347637593,
+        "p75": 52.664634007186635,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 0.002329247003654018,
+        "minimum": -0.004152761700070186,
+        "maximum": 0.0028343270230107008
+      }
+    },
+    "cube_original_base_full_s42": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 295.14043855667114,
+      "completed_run_wall_seconds_including_validation": 327.9132790565491,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 20.469249575769815,
+        "p25": 19.87788122564944,
+        "p75": 21.132184199471787,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.3643990051746369,
+        "minimum": 1.3621316921710969,
+        "maximum": 5.616948599815369
+      }
+    },
+    "cube_original_base_full_s43": {
+      "last_logged_step": 4000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 292.7744038105011,
+      "completed_run_wall_seconds_including_validation": 333.5536549091339,
+      "training_intervals_excluding_validation": {
+        "windows": 36,
+        "median_updates_per_second": 22.963460178134987,
+        "p25": 22.143979476086596,
+        "p75": 23.5960245893597,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.4212956988811494,
+        "minimum": 1.3942769515514373,
+        "maximum": 5.593270716667175
+      }
+    },
+    "cube_waypoint_r16_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 685.6519348621368,
+      "completed_run_wall_seconds_including_validation": 739.9432137012482,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 15.480026630292894,
+        "p25": 15.113851634789851,
+        "p75": 15.682040225813555,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.3147834134101868,
+        "minimum": 1.3147834134101868,
+        "maximum": 3.9240156173706056
+      },
+      "d_loss": {
+        "last": 1.8791243600845338,
+        "minimum": 0.0,
+        "maximum": 1.883604919910431
+      }
+    },
+    "cube_waypoint_r16_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 672.5956571102142,
+      "completed_run_wall_seconds_including_validation": 728.0929951667786,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 16.068871797472198,
+        "p25": 15.807104324264138,
+        "p75": 16.16636239423938,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.3233131527900697,
+        "minimum": 1.321973706483841,
+        "maximum": 3.9193379068374634
+      },
+      "d_loss": {
+        "last": 1.8820685851573944,
+        "minimum": 0.0,
+        "maximum": 1.8831487882137299
+      }
+    },
+    "cube_waypoint_r1_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 681.2665376663208,
+      "completed_run_wall_seconds_including_validation": 739.7074584960938,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 15.992321310634324,
+        "p25": 15.81236502115772,
+        "p75": 16.21135086524054,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.5793349158763885,
+        "minimum": 1.566510888338089,
+        "maximum": 4.106569170951843
+      },
+      "d_loss": {
+        "last": 1.8363535296916962,
+        "minimum": 0.0,
+        "maximum": 1.8556956768035888
+      }
+    },
+    "cube_waypoint_r1_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 676.3394997119904,
+      "completed_run_wall_seconds_including_validation": 732.1367137432098,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 15.679709396324853,
+        "p25": 15.495120976179816,
+        "p75": 15.899796617679016,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.5646093392372131,
+        "minimum": 1.5586335670948028,
+        "maximum": 4.09422167301178
+      },
+      "d_loss": {
+        "last": 1.8373131000995635,
+        "minimum": 0.0,
+        "maximum": 1.8515547764301301
+      }
+    },
+    "cube_waypoint_r2_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 688.6042904853821,
+      "completed_run_wall_seconds_including_validation": 746.2168908119202,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 16.01552287286745,
+        "p25": 15.870049885129541,
+        "p75": 16.146794302784667,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.5638096630573273,
+        "minimum": 1.5408696663379668,
+        "maximum": 4.089413607120514
+      },
+      "d_loss": {
+        "last": 1.8386912608146668,
+        "minimum": 0.0,
+        "maximum": 1.8563448226451873
+      }
+    },
+    "cube_waypoint_r2_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 673.0455303192139,
+      "completed_run_wall_seconds_including_validation": 728.3653216362,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 15.831248698312496,
+        "p25": 15.71280469759722,
+        "p75": 15.962974567544846,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.5388929951190948,
+        "minimum": 1.5265159285068512,
+        "maximum": 4.071866672039032
+      },
+      "d_loss": {
+        "last": 1.8416570484638215,
+        "minimum": 0.0,
+        "maximum": 1.852599514722824
+      }
+    },
+    "cube_waypoint_r4_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 669.6430053710938,
+      "completed_run_wall_seconds_including_validation": 726.6609284877777,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 16.184045804883354,
+        "p25": 16.034278453755537,
+        "p75": 16.38604660701446,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.4994457793235778,
+        "minimum": 1.4994457793235778,
+        "maximum": 4.055939514636993
+      },
+      "d_loss": {
+        "last": 1.8476181089878083,
+        "minimum": 0.0,
+        "maximum": 1.8580350720882415
+      }
+    },
+    "cube_waypoint_r4_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 670.0978634357452,
+      "completed_run_wall_seconds_including_validation": 727.127028465271,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 16.22329308878018,
+        "p25": 15.99012186831824,
+        "p75": 16.36073257228307,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.4902832591533661,
+        "minimum": 1.4901819610595703,
+        "maximum": 4.036220955848694
+      },
+      "d_loss": {
+        "last": 1.8484513556957245,
+        "minimum": 0.0,
+        "maximum": 1.854683631658554
+      }
+    },
+    "cube_waypoint_r8_lora_only_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 520.1456115245819,
+      "completed_run_wall_seconds_including_validation": 576.5183970928192,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 22.563279251984333,
+        "p25": 22.260804138083405,
+        "p75": 22.804315179975408,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.0585710680484772,
+        "minimum": 2.0486524975299836,
+        "maximum": 4.131579084396362
+      },
+      "d_loss": {
+        "last": 1.7448967969417573,
+        "minimum": 0.0,
+        "maximum": 1.8439002919197083
+      }
+    },
+    "cube_waypoint_r8_lora_only_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 542.5646812915802,
+      "completed_run_wall_seconds_including_validation": 599.8667838573456,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 21.395740379272908,
+        "p25": 21.162302399842073,
+        "p75": 21.66856583778696,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.0619126391410827,
+        "minimum": 2.0603776633739472,
+        "maximum": 4.13257488489151
+      },
+      "d_loss": {
+        "last": 1.7450486171245574,
+        "minimum": 0.0,
+        "maximum": 1.8400864171981812
+      }
+    },
+    "cube_waypoint_r8_s42": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 721.4426124095917,
+      "completed_run_wall_seconds_including_validation": 778.1944630146027,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 14.594747311021619,
+        "p25": 14.26583680445321,
+        "p75": 15.050907378681778,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.4331720423698426,
+        "minimum": 1.4306702864170076,
+        "maximum": 4.0013596367836
+      },
+      "d_loss": {
+        "last": 1.8606376934051514,
+        "minimum": 0.0,
+        "maximum": 1.8666034722328186
+      }
+    },
+    "cube_waypoint_r8_s43": {
+      "last_logged_step": 8000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 710.2934708595276,
+      "completed_run_wall_seconds_including_validation": 765.6970653533936,
+      "training_intervals_excluding_validation": {
+        "windows": 76,
+        "median_updates_per_second": 14.752367636254187,
+        "p25": 14.317435738418197,
+        "p75": 15.1460382364943,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.4294918024539947,
+        "minimum": 1.419988625049591,
+        "maximum": 3.9807915329933166
+      },
+      "d_loss": {
+        "last": 1.8630941033363342,
+        "minimum": 0.0,
+        "maximum": 1.8641163647174834
+      }
+    },
+    "tworoom_base_adversarial_s123": {
+      "last_logged_step": 5000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 200.53166317939758,
+      "completed_run_wall_seconds_including_validation": 200.91438794136047,
+      "training_intervals_excluding_validation": {
+        "windows": 40,
+        "median_updates_per_second": 24.156999901274546,
+        "p25": 24.01847561608636,
+        "p75": 24.441891309745728,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 0.0021550306139397433,
+        "minimum": -0.0036427507386542855,
+        "maximum": 0.0048432571021839975
+      },
+      "d_loss": {
+        "last": 1.99643577337265,
+        "minimum": 0.0,
+        "maximum": 2.0084140133857726
+      },
+      "grad_norm": {
+        "last": 0.004498014736454934,
+        "minimum": 0.000688256177236326,
+        "maximum": 0.013156438786536455
+      }
+    },
+    "tworoom_base_adversarial_s42": {
+      "last_logged_step": 5000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 218.99354004859924,
+      "completed_run_wall_seconds_including_validation": 219.38735008239746,
+      "training_intervals_excluding_validation": {
+        "windows": 40,
+        "median_updates_per_second": 22.292375519293838,
+        "p25": 21.71632844401236,
+        "p75": 23.16174949305732,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 0.0007552493761613733,
+        "minimum": -0.010192437986843288,
+        "maximum": 0.0007552493761613733
+      },
+      "d_loss": {
+        "last": 1.992959929704666,
+        "minimum": 0.0,
+        "maximum": 2.0166956686973574
+      },
+      "grad_norm": {
+        "last": 0.012076882673427462,
+        "minimum": 0.0006961364975722973,
+        "maximum": 0.023473707628436386
+      }
+    },
+    "tworoom_base_full_s123": {
+      "last_logged_step": 5000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 608.732476234436,
+      "completed_run_wall_seconds_including_validation": 609.125203371048,
+      "training_intervals_excluding_validation": {
+        "windows": 40,
+        "median_updates_per_second": 7.098963686119738,
+        "p25": 6.937263172732172,
+        "p75": 9.73494715692502,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.3347134518623351,
+        "minimum": 1.3347134518623351,
+        "maximum": 5.507207441329956
+      },
+      "d_loss": {
+        "last": 1.9028270435333252,
+        "minimum": 0.0,
+        "maximum": 1.969108681678772
+      },
+      "grad_norm": {
+        "last": 24.530241565704344,
+        "minimum": 19.724943046569823,
+        "maximum": 29.162245445251465
+      }
+    },
+    "tworoom_base_full_s42": {
+      "last_logged_step": 5000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 967.7517852783203,
+      "completed_run_wall_seconds_including_validation": 968.3294830322266,
+      "training_intervals_excluding_validation": {
+        "windows": 40,
+        "median_updates_per_second": 5.4247194154805465,
+        "p25": 4.8253878158333325,
+        "p75": 5.917520892864443,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 1.2976074826717376,
+        "minimum": 1.2976074826717376,
+        "maximum": 5.5869377732276915
+      },
+      "d_loss": {
+        "last": 1.9006925165653228,
+        "minimum": 0.0,
+        "maximum": 1.9718410468101502
+      },
+      "grad_norm": {
+        "last": 23.443279018402098,
+        "minimum": 19.746977853775025,
+        "maximum": 28.22843194961548
+      }
+    },
+    "tworoom_keepout_r16_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 322.5486147403717,
+      "completed_run_wall_seconds_including_validation": 323.1515748500824,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.78694401769533,
+        "p25": 8.697799831076505,
+        "p75": 9.395772903961802,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.2954695904254914,
+        "minimum": 2.285703885555267,
+        "maximum": 4.138738558292389
+      },
+      "d_loss": {
+        "last": 1.8773693346977234,
+        "minimum": 0.0,
+        "maximum": 1.948082160949707
+      }
+    },
+    "tworoom_keepout_r16_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 322.0462019443512,
+      "completed_run_wall_seconds_including_validation": 322.63583421707153,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.784410643976203,
+        "p25": 8.742332573166731,
+        "p75": 9.252189009003015,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3160699892044065,
+        "minimum": 2.280359773635864,
+        "maximum": 4.164469790458679
+      },
+      "d_loss": {
+        "last": 1.878772839307785,
+        "minimum": 0.0,
+        "maximum": 1.9514900851249695
+      }
+    },
+    "tworoom_keepout_r1_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 316.3940029144287,
+      "completed_run_wall_seconds_including_validation": 316.9839870929718,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.931092301255134,
+        "p25": 8.847150071290294,
+        "p75": 9.546133418446914,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.487093970775604,
+        "minimum": 2.487093970775604,
+        "maximum": 4.711991572380066
+      },
+      "d_loss": {
+        "last": 1.8727302956581116,
+        "minimum": 0.0,
+        "maximum": 1.9461295843124389
+      }
+    },
+    "tworoom_keepout_r1_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 318.6440074443817,
+      "completed_run_wall_seconds_including_validation": 319.2473101615906,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.87121950779839,
+        "p25": 8.74052516485503,
+        "p75": 9.427107376053936,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.5204458665847778,
+        "minimum": 2.479894697666168,
+        "maximum": 4.716608099937439
+      },
+      "d_loss": {
+        "last": 1.8732051718235017,
+        "minimum": 0.0,
+        "maximum": 1.9456276500225067
+      }
+    },
+    "tworoom_keepout_r2_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 321.945273399353,
+      "completed_run_wall_seconds_including_validation": 322.5488295555115,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.729514738593569,
+        "p25": 8.700832399211457,
+        "p75": 9.272184044309311,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.4466439414024355,
+        "minimum": 2.4230360412597656,
+        "maximum": 4.544790902137756
+      },
+      "d_loss": {
+        "last": 1.8706038856506348,
+        "minimum": 0.0,
+        "maximum": 1.9474644827842713
+      }
+    },
+    "tworoom_keepout_r2_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 324.28564977645874,
+      "completed_run_wall_seconds_including_validation": 324.90464973449707,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.746177398762718,
+        "p25": 8.544170815503179,
+        "p75": 9.390060329482653,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.4515751934051515,
+        "minimum": 2.407803590297699,
+        "maximum": 4.522327048778534
+      },
+      "d_loss": {
+        "last": 1.8719200921058654,
+        "minimum": 0.0,
+        "maximum": 1.9486801636219024
+      }
+    },
+    "tworoom_keepout_r4_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 343.95752716064453,
+      "completed_run_wall_seconds_including_validation": 344.59770822525024,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.271941130501432,
+        "p25": 7.993693344254208,
+        "p75": 9.039755398096718,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3814411318302153,
+        "minimum": 2.3799568152427675,
+        "maximum": 4.3654309749603275
+      },
+      "d_loss": {
+        "last": 1.8731417679786682,
+        "minimum": 0.0,
+        "maximum": 1.9459596693515777
+      }
+    },
+    "tworoom_keepout_r4_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 321.49986362457275,
+      "completed_run_wall_seconds_including_validation": 322.09709215164185,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.774005589680188,
+        "p25": 8.634328808165687,
+        "p75": 9.468307465896977,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.401335823535919,
+        "minimum": 2.3437253856658935,
+        "maximum": 4.512324233055114
+      },
+      "d_loss": {
+        "last": 1.8725491976737976,
+        "minimum": 0.0,
+        "maximum": 1.9488020527362824
+      }
+    },
+    "tworoom_keepout_r8_lora_only_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 271.82017946243286,
+      "completed_run_wall_seconds_including_validation": 272.37879252433777,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 10.385021149721986,
+        "p25": 10.28074199219166,
+        "p75": 11.124517058551273,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 3.0255849146842957,
+        "minimum": 3.0255849146842957,
+        "maximum": 4.577719147205353
+      },
+      "d_loss": {
+        "last": 1.8747147953510284,
+        "minimum": 0.0,
+        "maximum": 1.9247893249988557
+      }
+    },
+    "tworoom_keepout_r8_lora_only_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 290.5853328704834,
+      "completed_run_wall_seconds_including_validation": 291.16927671432495,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 9.681436409676296,
+        "p25": 9.558517016374115,
+        "p75": 10.36388498314549,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 3.0566212725639343,
+        "minimum": 3.015703480243683,
+        "maximum": 4.576088604927063
+      },
+      "d_loss": {
+        "last": 1.877088975906372,
+        "minimum": 0.0,
+        "maximum": 1.9312346684932709
+      }
+    },
+    "tworoom_keepout_r8_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 313.24300360679626,
+      "completed_run_wall_seconds_including_validation": 313.8363416194916,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 9.020934992495972,
+        "p25": 8.92819961376474,
+        "p75": 9.599688756035844,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.339661258459091,
+        "minimum": 2.339661258459091,
+        "maximum": 4.248921029567718
+      },
+      "d_loss": {
+        "last": 1.873341702222824,
+        "minimum": 0.0,
+        "maximum": 1.9490010511875153
+      }
+    },
+    "tworoom_keepout_r8_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 319.02001667022705,
+      "completed_run_wall_seconds_including_validation": 319.6001386642456,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 8.825946319342627,
+        "p25": 8.781013867989104,
+        "p75": 9.39213745709483,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3535261166095736,
+        "minimum": 2.312075436115265,
+        "maximum": 4.263710930347442
+      },
+      "d_loss": {
+        "last": 1.8728816568851472,
+        "minimum": 0.0,
+        "maximum": 1.9502205395698546
+      }
+    },
+    "tworoom_waypoint_r16_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 522.492259979248,
+      "completed_run_wall_seconds_including_validation": 523.0883967876434,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.236459429056064,
+        "p25": 5.0822481031187605,
+        "p75": 5.413139698251366,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.1944991552829745,
+        "minimum": 2.1944991552829745,
+        "maximum": 5.542896060943604
+      },
+      "d_loss": {
+        "last": 1.8950487411022185,
+        "minimum": 0.0,
+        "maximum": 1.9310949754714966
+      }
+    },
+    "tworoom_waypoint_r16_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 532.6666464805603,
+      "completed_run_wall_seconds_including_validation": 533.2790567874908,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.137309655529207,
+        "p25": 5.026581282589132,
+        "p75": 5.309982658592924,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.2096083664894106,
+        "minimum": 2.1950263667106626,
+        "maximum": 5.422793939113617
+      },
+      "d_loss": {
+        "last": 1.8961949038505554,
+        "minimum": 0.0,
+        "maximum": 1.931787189245224
+      }
+    },
+    "tworoom_waypoint_r1_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 531.6389951705933,
+      "completed_run_wall_seconds_including_validation": 532.260983467102,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.144724323894474,
+        "p25": 5.023033284300765,
+        "p75": 5.355178679624673,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.464854667186737,
+        "minimum": 2.4588736128807067,
+        "maximum": 6.410742740631104
+      },
+      "d_loss": {
+        "last": 1.8750747442245483,
+        "minimum": 0.0,
+        "maximum": 1.8954243099689483
+      }
+    },
+    "tworoom_waypoint_r1_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 520.7868182659149,
+      "completed_run_wall_seconds_including_validation": 521.3998880386353,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.23643104293193,
+        "p25": 5.135204312033072,
+        "p75": 5.430683642534101,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.471766365766525,
+        "minimum": 2.4707277488708494,
+        "maximum": 6.452433075904846
+      },
+      "d_loss": {
+        "last": 1.873970127105713,
+        "minimum": 0.0,
+        "maximum": 1.9206835448741912
+      }
+    },
+    "tworoom_waypoint_r2_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 518.3173742294312,
+      "completed_run_wall_seconds_including_validation": 518.9610116481781,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.30635758054728,
+        "p25": 5.150345801471881,
+        "p75": 5.487695578955957,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.43682510972023,
+        "minimum": 2.427613590955734,
+        "maximum": 6.270145950317382
+      },
+      "d_loss": {
+        "last": 1.8779649579524993,
+        "minimum": 0.0,
+        "maximum": 1.9025439786911011
+      }
+    },
+    "tworoom_waypoint_r2_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 539.9602398872375,
+      "completed_run_wall_seconds_including_validation": 540.5871632099152,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.05901297221628,
+        "p25": 4.958987545605429,
+        "p75": 5.226248580406694,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.408018981218338,
+        "minimum": 2.3933236527442934,
+        "maximum": 6.272625703811645
+      },
+      "d_loss": {
+        "last": 1.8792535650730133,
+        "minimum": 0.0,
+        "maximum": 1.9081223571300507
+      }
+    },
+    "tworoom_waypoint_r4_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 516.9149489402771,
+      "completed_run_wall_seconds_including_validation": 517.5242254734039,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.239726475296763,
+        "p25": 5.199358769777122,
+        "p75": 5.484537496359658,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3798978435993194,
+        "minimum": 2.375781569480896,
+        "maximum": 6.0820023584365845
+      },
+      "d_loss": {
+        "last": 1.8799454605579375,
+        "minimum": 0.0,
+        "maximum": 1.9085856449604035
+      }
+    },
+    "tworoom_waypoint_r4_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 544.9393332004547,
+      "completed_run_wall_seconds_including_validation": 545.5603837966919,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.034502630652222,
+        "p25": 4.888651173978552,
+        "p75": 5.227608697247566,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.4112481570243833,
+        "minimum": 2.4091177022457124,
+        "maximum": 6.057481079101563
+      },
+      "d_loss": {
+        "last": 1.8780878841876985,
+        "minimum": 0.0,
+        "maximum": 1.9187591433525086
+      }
+    },
+    "tworoom_waypoint_r8_lora_only_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 446.99013566970825,
+      "completed_run_wall_seconds_including_validation": 447.55649042129517,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 6.095329757235557,
+        "p25": 5.955135089220245,
+        "p75": 6.302283840396595,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 4.278441729545594,
+        "minimum": 4.188454608917237,
+        "maximum": 6.376823196411133
+      },
+      "d_loss": {
+        "last": 1.8206939053535462,
+        "minimum": 0.0,
+        "maximum": 1.8803595554828645
+      }
+    },
+    "tworoom_waypoint_r8_lora_only_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 485.86898589134216,
+      "completed_run_wall_seconds_including_validation": 486.45369362831116,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.614607944429363,
+        "p25": 5.423912848404774,
+        "p75": 5.948253438582655,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 4.239211390018463,
+        "minimum": 4.182910330295563,
+        "maximum": 6.342721447944641
+      },
+      "d_loss": {
+        "last": 1.8168784415721893,
+        "minimum": 0.0,
+        "maximum": 1.8875124216079713
+      }
+    },
+    "tworoom_waypoint_r8_s123": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 528.2065222263336,
+      "completed_run_wall_seconds_including_validation": 528.816887140274,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.155561938079011,
+        "p25": 5.070181227933043,
+        "p75": 5.395367430333529,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3025685811042784,
+        "minimum": 2.3004068887233733,
+        "maximum": 5.809615693092346
+      },
+      "d_loss": {
+        "last": 1.8876070034503938,
+        "minimum": 0.0,
+        "maximum": 1.9255750358104706
+      }
+    },
+    "tworoom_waypoint_r8_s2026": {
+      "last_logged_step": 3000,
+      "logged_nonfinite_fields": [],
+      "elapsed_seconds_last_training_log_including_validation": 521.8935000896454,
+      "completed_run_wall_seconds_including_validation": 522.489824295044,
+      "training_intervals_excluding_validation": {
+        "windows": 24,
+        "median_updates_per_second": 5.212851168371049,
+        "p25": 5.1276563098193595,
+        "p75": 5.457427889142519,
+        "scope": "Consecutive training-log intervals whose preceding step was not a validation boundary; retains original feedback/physics training work."
+      },
+      "loss": {
+        "last": 2.3087454867362975,
+        "minimum": 2.297350821495056,
+        "maximum": 5.767789330482483
+      },
+      "d_loss": {
+        "last": 1.8832649970054627,
+        "minimum": 0.0,
+        "maximum": 1.9243188166618348
+      }
+    }
+  },
+  "partial": false,
+  "interpretation": {
+    "error_bars": "Minimum and maximum across two training seeds; no population-level confidence claim.",
+    "skill_success": "Original held-out joint goal-and-named-skill criterion. TwoRoom strategy coverage additionally requires original doorway style, as in its original evaluator.",
+    "generalization": "Original unfiltered held-out context banks; no new task layouts or OOD claim.",
+    "efficiency": "CUDA warmed batch1 action-generator latency excludes encoder, simulator and loading; whole-run logs include validation."
+  }
+}

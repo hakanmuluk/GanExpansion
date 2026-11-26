@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=18mm,headheight=15pt]{geometry}
+\usepackage{amsmath,booktabs,array,graphicx,microtype,fancyhdr,xcolor,hyperref}
+\definecolor{ink}{HTML}{17354A}
+\hypersetup{colorlinks=true,urlcolor=ink,pdftitle={Controlled Latent Skill Composition}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\color{ink}TwoRoom and Cube}
+\fancyhead[R]{\small Frozen-model composition ablations}\fancyfoot[C]{\small\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\renewcommand{\arraystretch}{1.08}
+\setlength{\emergencystretch}{2em}\DeclareMathSizes{10}{10}{7}{7}
+\newcommand{\topic}[1]{\par\smallskip\textbf{#1}\quad}
+\begin{document}\fontsize{10}{12}\selectfont
+\begin{center}{\LARGE\bfseries\color{ink}Controlled Latent Skill Composition\par}
+{\large What to match, whether it matters, and how much to optimize\par}
+{\small 26 November 2026 | existing frozen models and benchmark contexts}\end{center}
+
+\topic{Common setup}
+Each frozen base-plus-adapter actor generates 16 actions from the current numerical
+state, its own skill context, base style and private scalar. Inputs have 10/47
+state features and 12/20 context features in TwoRoom/Cube. Composition searches
+four existing inputs: $u_K,u_W,a_K,a_W$. Actor $j$ receives base code
+$\tilde b_j=(\operatorname{sign}(b_1)a_j,b_2)$, preserving route sign and speed.
+Each fixed benchmark case supplies the original base style $b$.
+With $d=2$ or 5 action channels, the unchanged objective is
+\[
+ J_H=\underbrace{\frac1{Hd}\sum_{t=1}^H\|A_K(t)-A_W(t)\|_2^2}_{L_{\rm agree}}
+ +\frac{\lambda_a}{2}\sum_{j\in\{K,W\}}(a_j-|b_1|)^2
+ +\frac{.01}{2}(u_K^2+u_W^2).
+\]
+$\lambda_a=1$ in TwoRoom and $.0005$ in Cube. The selected release uses the
+private Gaussian point-prior; its optional encoder-cycle penalty is disabled.
+All networks, coefficients, bounds and inputs retain their existing definitions.
+The grid has 90/360 candidates in TwoRoom/Cube, plus the previous solution on
+later replans. Four starts use Adam at learning rate $.12$; code magnitudes lie
+in $[.01,2.5]$. TwoRoom retains its negative private-code branches; Cube searches
+both signs. Every method executes 8 controls and re-observes. TwoRoom issues
+$\operatorname{clip}(A_W+A_K-A_B,-1,1)$; Cube issues $A_W$, with its original
+gripper threshold. These different executors are preserved.
+
+\topic{Tasks and evidence}
+There are 64 existing contexts per category per environment. TwoRoom requires
+goal completion, swept-body keep-out and wall safety, and a waypoint visit before
+goal entry. Cube requires held waypoint transport, complete-cube keep-out,
+supported carrying, no drop/robot-table contact, and released, settled goal
+placement for 10 consecutive controls. Easy cases use the supported geometry;
+conflict cases tighten competing requirements. In TwoRoom a nominal waypoint
+approach can cross the goal early; in Cube larger keep-out spheres sit closer to
+the waypoint. Coupled/OOD moves TwoRoom keep-out into the second room, and widens
+Cube starts/goals/arm poses while shifting keep-out along transport. All cases
+have independent feasibility witnesses, unavailable to the planner.
+\textbf{These banks were used in earlier research; this is exploratory reuse.}
+After a Colab reset, all six banks were reconstructed to their exact original
+file hashes and all evaluations were rerun. Tables use the complete recovery
+run. Its uninstrumented reference was checked against the saved original
+aggregate results.
+
+\newpage
+\section{RQ1: Does the agreement horizon matter?}
+Only $H\in\{4,8,12,16\}$ changes; Adam retains 20 updates. The action MSE is
+averaged over $H$, and actual execution stays at 8.
+@@HORIZON_TABLE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/horizon_success.pdf}\end{center}
+@@RQ1_FINDING@@
+\textit{Table cells are strict joint-success percentages on the same 64 contexts;
+figure bars are 95\% Wilson intervals. Constraint/goal rates, horizon-specific
+and common-first8 disagreement, stability and timing are in the accompanying CSVs.}
+\topic{The same executed window}
+The following comparison measures raw disagreement over the common first eight
+commands at the first replan, regardless of the optimized horizon. Values are
+MSE multiplied by $10^3$. Per-action curves over all16 predicted commands are
+provided separately; later prediction agreement is not a physical task certificate.
+@@COMMON8_TABLE@@
+
+\newpage
+\section{RQ2: Does lower disagreement predict joint success?}
+The primary predictor is \emph{negative raw action disagreement after optimization
+at the first replan}, before executing any controls. The outcome is actual strict
+joint success under the reference $H=8,N=20$. Total $J_H$ is recorded separately.
+There is one score per context, not one independent sample per optimizer update.
+AUROCs measure ranking across contexts. RQ3 separately tests refinement within
+matched contexts.
+@@AUROC_TABLE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/agreement_predictiveness.pdf}\end{center}
+@@RQ2_FINDING@@
+Raw MSE, issued-gripper disagreement and executor deformation are separate
+diagnostics. Close actor proposals need not certify their own constraints, and
+TwoRoom's issued residual need not equal either proposal. Fixed-$u=-.8$
+single-adapter controls check one reference behavior, not the existence of a
+successful code anywhere in the policy family. Goal, keep-out, waypoint,
+wall/early-entry and Cube grasp/drop/table failures are retained separately.
+Later replans and fixed elapsed-control landmarks are descriptive: their cohorts
+change, and a violation may already have happened. Their AUROCs are not fresh
+prospective failure predictors.
+
+\newpage
+\section{RQ3: Does gradient refinement help, and what does it cost?}
+Only Adam updates $N\in\{0,5,10,20,40\}$ change, with $H=8$. Grid selection,
+learning rate, four starts, regularization and execution remain fixed.
+$N=0$ selects the exact best grid candidate. A separate legacy-zero diagnostic
+retains the original bounded logit/sigmoid initialization and four-start selection
+without updates; this separates initialization effects from gradient refinement.
+@@STEPS_TABLE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/steps_success.pdf}\end{center}
+@@RQ3_FINDING@@
+\begin{center}\includegraphics[width=\linewidth]{figures/success_vs_latency.pdf}\end{center}
+\textit{Random search retains the original grid and adds bounded uniform latent
+samples. Sample counts were fixed without outcomes by matching profiled matrix
+arithmetic to Adam20, including the grid, generator forwards and input-gradient
+backwards. This is a work proxy, not identical wall time. Three random seeds are
+averaged within each context before context-bootstrap uncertainty.}
+
+\newpage
+\topic{Runtime and computational accounting}
+@@WORK_TABLE@@
+@@TIME_TABLE@@
+The batch1 timing benchmark uses 12 fixed contexts per environment (four per
+category), initial and midpoint observed states, three timing repeats, randomized
+method order and warmup. Whole contexts are the bootstrap units. Native evaluation
+retains TwoRoom batch64 and Cube batch1; native batch time is not presented as
+single-agent latency. Runtime tables include grid work, model calls, backward
+samples, refinement intervals, cold calls and total rollout wall time. CUDA event
+intervals include host launch gaps and are not sums of kernel busy time.
+Native rollout wall times also include physics, recording and occasional CPU
+checkpoint processing; matched uncontended batch1 measurements support the
+inference-speed comparison.
+
+\topic{Native trajectories and failure interpretation}
+@@REPRESENTATIVE_NOTE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/representative_overview.pdf}\end{center}
+
+\topic{Controls, reproduction and limits}
+@@AUDIT_PARAGRAPH@@
+All original weights and sources are preserved; planning uses frozen neural
+proposals and zero simulator/task-success queries. TwoRoom uses its unchanged
+vectorized closed loop, with independent original-native replay of every path;
+Cube runs directly in MuJoCo. There is one frozen model pair per environment.
+Adam's grid-based planner is deterministic, so changing its unused RNG seed does
+not create independent trials. Success intervals use contexts, and AUROC/paired
+comparisons use 2,000 context bootstrap resamples (stratified for pooled results).
+Sparse-class intervals cannot resolve unseen class variation; one-class AUROCs
+are undefined and valid resample counts are supplied. Replans, repeated seeds and native replays do not increase the
+number of independent contexts.
+
+The supplied code/configuration manifest, model/task hashes, aggregate tables,
+figures and \texttt{REPRODUCE.txt} identify the exact experiment. Native arrays
+and individual episode records remain on the GPU host. Raw task banks must be
+restored or reproduced to the recorded hashes before rerunning. No neural model
+was retrained and no production configuration or public repository was changed.
+\end{document}

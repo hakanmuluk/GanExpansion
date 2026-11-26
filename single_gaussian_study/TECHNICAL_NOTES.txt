@@ -1,0 +1,35 @@
+The first serial Cube N0 cell completed64 native rollouts but its validator
+compared a sparse JSON configuration with a fully materialized dataclass.
+The unused grid seed_quantiles default was absent in the former. No actor,
+Gaussian sampler, objective, optimizer or executor error was detected.
+That technical pilot, old descriptor, logs and all7 original source files
+are preserved under study_v1 and excluded from the90-cell comparison.
+
+The corrected validator materializes the original dataclass defaults before
+comparing configurations. study_v2 is a fresh complete90-cell run. Its frozen
+planner source is byte-identical to the planner that passed all30 GPU legacy
+Adam parity checks. The preflight evidence is inherited with explicit hashes.
+Independent-process scheduling uses four of12 available CPU cores/one shared
+GPU to reduce wall time. No environments or policy state are shared. A complete
+serial/parallel native trajectory check precedes positive-step evaluations.
+Timing comparisons use a separate final uncontended benchmark, not concurrent
+rollout wall time. No data, neural model, optimizer or success rule was retuned.
+
+The first milestone audit completed its invariant checks and wrote its JSON,
+then its final progress print raised NameError because json was not imported
+under that name. The frozen audit.py bytes are retained unchanged. audit_cli.py
+supplies the standard-library json symbol before invoking the same main().
+This fixes logging only; audit_cell and all actual invariant tests are unchanged.
+The failed milestone receipt/log and idle original finish receipt are preserved.
+Repaired milestone exports and final processing use separate output directories.
+
+FINAL AGGREGATE COLUMN FIX
+Final QA found the native episode length metric named steps overwrote the
+Adam-budget steps column in flattened CSV exports (including seed rows).
+The corrected analyzer names that metric episode_steps and asserts every
+seed-row steps equals its frozen job Adam budget. JSON outer row budgets,
+all measured values, models, episode data and report success tables were
+already correct. Complete aggregates were regenerated from the same unchanged native records.
+Unchanged figure bytes were retained after exact metric-equality checks and
+their provenance was rebound to the corrected summary. Earlier exports/snapshots remain preserved
+as intermediate artifacts; use the final verified delivery.

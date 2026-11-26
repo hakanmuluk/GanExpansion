@@ -1,0 +1,55 @@
+{
+  "pairs": [
+    {
+      "environment": "tworoom",
+      "seed": 42,
+      "architecture_equal": true,
+      "generator_discriminator_normalization_equal": {},
+      "full_source": "ablation_results/backups/completed_20261126_a/checkpoints/tworoom_base_full_s42/latest.pt",
+      "removed_source": "ablation_results/backups/completed_20261126_a/checkpoints/tworoom_base_adversarial_s42/latest.pt",
+      "scope": "Serialized inference/training architecture and fixed normalization buffers, excluding the intentionally inactive encoder."
+    },
+    {
+      "environment": "tworoom",
+      "seed": 123,
+      "architecture_equal": true,
+      "generator_discriminator_normalization_equal": {},
+      "full_source": "ablation_results/backups/completed_20261126_a/checkpoints/tworoom_base_full_s123/latest.pt",
+      "removed_source": "ablation_results/backups/completed_20261126_a/checkpoints/tworoom_base_adversarial_s123/latest.pt",
+      "scope": "Serialized inference/training architecture and fixed normalization buffers, excluding the intentionally inactive encoder."
+    },
+    {
+      "environment": "cube",
+      "seed": 42,
+      "architecture_equal": true,
+      "generator_discriminator_normalization_equal": {
+        "generator.obs_mean": true,
+        "generator.obs_std": true,
+        "generator_ema.obs_mean": true,
+        "generator_ema.obs_std": true,
+        "discriminator.obs_mean": true,
+        "discriminator.obs_std": true
+      },
+      "full_source": "ablation_results/backups/completed_20261126_a/checkpoints/cube_latest_base_full_s42/best.pt",
+      "removed_source": "ablation_results/backups/completed_20261126_c/checkpoints/cube_latest_base_adversarial_s42_corrected_v2/best.pt",
+      "scope": "Serialized inference/training architecture and fixed normalization buffers, excluding the intentionally inactive encoder."
+    },
+    {
+      "environment": "cube",
+      "seed": 43,
+      "architecture_equal": true,
+      "generator_discriminator_normalization_equal": {
+        "generator.obs_mean": true,
+        "generator.obs_std": true,
+        "generator_ema.obs_mean": true,
+        "generator_ema.obs_std": true,
+        "discriminator.obs_mean": true,
+        "discriminator.obs_std": true
+      },
+      "full_source": "ablation_results/backups/completed_20261126_b/checkpoints/cube_latest_base_full_s43/best.pt",
+      "removed_source": "ablation_results/backups/completed_20261126_c/checkpoints/cube_latest_base_adversarial_s43_corrected_v2/best.pt",
+      "scope": "Serialized inference/training architecture and fixed normalization buffers, excluding the intentionally inactive encoder."
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "study_sha256": "a8362da49bf3608721f9744835c3d5905afaedbd0e0989b50217430c0438ffa5",
+  "renderer_sha256": "8b8c728c3dec1b4f52104e4b29c6bb69c3ea0913838c889677ba830a8b33d374",
+  "files": {
+    "recovery.pdf": "c1132604e80ed9ddd05b5639dfdf5a205c3c01d770e5fbc9603787e937d2ec37",
+    "recovery.png": "4492738d64a871cf62b29c080d9dcf351beceb6fe80b94505130b014664373c2",
+    "persistent_failure.pdf": "c2c6ee86ad40740db5983e6594b23900a931c90d8c102cb08faf10c60b0a89ee",
+    "persistent_failure.png": "ff50e5849dd2b2aec6019d9ec33437f1d993bc33a95563b1667d6082bf1ed0d7"
+  },
+  "selection": [
+    {
+      "environment": "tworoom",
+      "type": "recovery",
+      "available": true,
+      "category": "supported_easy",
+      "selection": "First matching category/seed/context in predeclared order. Individual identifiers and arrays not exported."
+    },
+    {
+      "environment": "cube",
+      "type": "recovery",
+      "available": true,
+      "category": "supported_easy",
+      "selection": "First matching category/seed/context in predeclared order. Individual identifiers and arrays not exported."
+    },
+    {
+      "environment": "tworoom",
+      "type": "persistent_failure",
+      "available": true,
+      "category": "supported_easy",
+      "selection": "First matching category/seed/context in predeclared order. Individual identifiers and arrays not exported."
+    },
+    {
+      "environment": "cube",
+      "type": "persistent_failure",
+      "available": true,
+      "category": "supported_easy",
+      "selection": "First matching category/seed/context in predeclared order. Individual identifiers and arrays not exported."
+    }
+  ],
+  "native_paths_rasterized_within_pdf": true,
+  "scope": "Outcome-selected paired illustrations, not prevalence estimates; Cube projection does not certify3D clearance. Red includes body bound; green waypoint; original strict monitors set labels.",
+  "raw_episode_data_exported": false
+}

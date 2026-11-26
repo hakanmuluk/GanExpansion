@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "environment": "tworoom",
+      "seed": 42,
+      "episodes": 8192,
+      "all_initial_observations_exact_across_methods_and_within_each_code_sweep": true,
+      "latent_codes_and_goals_exact_across_methods": true,
+      "initial_observation_sha256": "853b2425ea2fb4bd67b7930111913f5c77b905b5ed48caa8dee2af43462a88d9"
+    },
+    {
+      "environment": "tworoom",
+      "seed": 123,
+      "episodes": 8192,
+      "all_initial_observations_exact_across_methods_and_within_each_code_sweep": true,
+      "latent_codes_and_goals_exact_across_methods": true,
+      "initial_observation_sha256": "853b2425ea2fb4bd67b7930111913f5c77b905b5ed48caa8dee2af43462a88d9"
+    },
+    {
+      "environment": "cube",
+      "seed": 42,
+      "episodes": 1200,
+      "all_initial_observations_exact_across_methods_and_within_each_code_sweep": true,
+      "latent_codes_and_goals_exact_across_methods": true,
+      "initial_observation_sha256": "d235951ba6bc1f3d141915b9d50fd74c65bcf7e3d6b72fdd3892f3be3d9ddb49"
+    },
+    {
+      "environment": "cube",
+      "seed": 43,
+      "episodes": 1200,
+      "all_initial_observations_exact_across_methods_and_within_each_code_sweep": true,
+      "latent_codes_and_goals_exact_across_methods": true,
+      "initial_observation_sha256": "d235951ba6bc1f3d141915b9d50fd74c65bcf7e3d6b72fdd3892f3be3d9ddb49"
+    }
+  ],
+  "all_passed": true
+}

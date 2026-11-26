@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "published_selected_step": 3000,
+      "original_resume_step": 3000,
+      "retrained_selected_step": 3000,
+      "published_generator_vs_own_resume_exact": true,
+      "retrained_generator_equal_published": false,
+      "retrained_discriminator_equal_original_selected_resume": false
+    },
+    {
+      "seed": 43,
+      "published_selected_step": 4000,
+      "original_resume_step": 4000,
+      "retrained_selected_step": 4000,
+      "published_generator_vs_own_resume_exact": true,
+      "retrained_generator_equal_published": false,
+      "retrained_discriminator_equal_original_selected_resume": false
+    }
+  ],
+  "scope": "Original phase transfer uses selected G and its corresponding selected-step discriminator, not the final-step D unless that step was selected."
+}

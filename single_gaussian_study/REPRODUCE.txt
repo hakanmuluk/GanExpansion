@@ -1,0 +1,149 @@
+Single Gaussian start: frozen TwoRoom and Cube composition
+
+The completed grid study is a read-only dependency. All latest model paths,
+six original64-context banks, model/task/source hashes and original success
+monitors come from its frozen descriptor:
+  /content/cs585_composition_ablation_20261126/study_v1/study.json
+New code is separate:
+  /content/cs585_single_gaussian_20261127/single_gaussian_study
+The final experiment descriptor is study_v2/study.json in the new root.
+
+No training. One Gaussian pair per episode, fixed permitted/sampled sign branch,
+original base amplitudes, one bounded Adam trajectory, previous selected codes
+as the sole warm start. No grid, random candidate search, restart, sign search
+or seed selection. Original best-iterate retention along one trajectory stays.
+N=0/5/10/20/40,H8,predict16,execute8. Seeds241/1241/2241, all64 original contexts
+in each category and environment:90cells/5760evaluations on384 unique contexts.
+The original bounded logit/sigmoid fraction clamp applies also atN0. In TwoRoom
+fixed negative signs fold the Gaussian magnitudes; Cube retains sampled signs.
+See PLAN.txt and TECHNICAL_NOTES.txt, including the excluded validation pilot.
+
+Use the same recorded L4/Python3.13.16/Torch2.14.1+cu130/CUDA13 environment,
+NumPy2.4.6,MuJoCo3.11.0,OGBench1.2.2,dm-control1.0.44,gymnasium1.4.0,
+SciPy1.16.3,Matplotlib3.10.0 and original native dependencies.
+From /content/cs585_regularization:
+
+  export PYTHONPATH=/content/cs585_single_gaussian_20261127:/content/cs585_composition_ablation_20261126:/content/cs585_regularization:/content/cs585_regularization/cube
+  export MUJOCO_GL=egl
+  export OMP_NUM_THREADS=1
+  export OPENBLAS_NUM_THREADS=1
+
+On the preserved input host, make a path-only copy before rerunning:
+
+  python -m single_gaussian_study.copy_protocol \
+    --study /content/cs585_single_gaussian_20261127/study_v2/study.json \
+    --out /content/cs585_single_gaussian_repeat
+  python -u -m single_gaussian_study.run \
+    --study /content/cs585_single_gaussian_repeat/study.json
+
+run.py uses4 independent processes with separate env/RNG/output state. It waits
+for the matched N0 baseline before refined cells and verifies the serial pilot
+against the complete first parallel Cube0 trajectories. It refuses existing
+outputs or automatic restarts. Every individual episode has one initialization.
+The original serial pilot remains in study_v1; do not delete it on this host.
+
+In another process:
+
+  python -u -m single_gaussian_study.finish \
+    --study /content/cs585_single_gaussian_repeat/study.json
+
+This waits for all90 cells and then audits every plan/context/seed, measures
+uncontended batch1 timing, analyzes, renders3aggregate/2native figure families
+and exports aggregate-only artifacts. Native timing under concurrent evaluation
+is labeled separately; use the final uncontended benchmark for latency claims.
+Safe progress does not print episode outcomes:
+
+  python -m single_gaussian_study.progress \
+    --root /content/cs585_single_gaussian_repeat
+
+For a single case, use a separate path-only descriptor copy and:
+
+  python -m single_gaussian_study.evaluate --study STUDY_JSON \
+    --job cube_n20_s241_supported_conflict
+
+Do not run a single cell and then start the full queue into its populated output
+tree. N0 must exist before N>0 of the same context category/seed can be audited.
+For example first run cube_n0_s241_supported_conflict in that same copied study.
+
+FRESH HOST
+
+Restore the supplied unchanged original code/weights and the completed original
+grid study according to that study's REPRODUCE.txt. The same ten preserved
+checkpoint bytes and source archive accompany this follow-up; no checkpoint
+was changed. Six raw banks and native episode records are not distributed.
+Original bank recipes and exact hashes are supplied; a different regenerated
+bank is not an equivalent replication. The original grid study's recorded
+aggregate summaries and reference trajectories are dependencies of freeze and
+preflight. Recreate them with the original study scripts if not preserved.
+
+Extract this follow-up code/protocol archive under /content. If its technical
+serial pilot is missing, create a NEW pilot descriptor using freeze.py, run
+preflight.py and evaluate only cube_n0_s241_supported_easy serially. Then create
+the main fresh descriptor with --serial-pilot pointing to that pilot output:
+
+  python -m single_gaussian_study.freeze --reference ORIGINAL_STUDY_JSON \
+    --out FRESH_PILOT_DIR
+  python -m single_gaussian_study.preflight --study FRESH_PILOT_DIR/study.json
+  python -m single_gaussian_study.evaluate --study FRESH_PILOT_DIR/study.json \
+    --job cube_n0_s241_supported_easy
+  python -m single_gaussian_study.freeze --reference ORIGINAL_STUDY_JSON \
+    --out FRESH_MAIN_DIR --serial-pilot FRESH_PILOT_DIR/evaluations/cube_n0_s241_supported_easy
+  python -m single_gaussian_study.preflight --study FRESH_MAIN_DIR/study.json
+  python -m single_gaussian_study.run --study FRESH_MAIN_DIR/study.json
+
+Preflight's legacy-grid neural calls only check unchanged Adam arithmetic from
+a known input; those inputs never initialize a new evaluated episode. Its
+normal-start/warm-start probes also verify identical Gaussian initialization
+and optimizer prefixes across step counts. Technical probes are not trials.
+
+ANALYSIS AND INTERPRETATION
+
+results.csv has means plus paired context/initialization-seed uncertainty for
+joint/K/W/goal rates, before/after raw action MSE, total regularizedJ, first-
+replan improvement and failure diagnostics. seed_results.csv shows every seed.
+paired_recovery_regression.csv compares actual matched N0/native outcomes to
+each N>0, reporting recoveries, regressions and paired net changes. Bootstrap
+resamples64contexts and3seed indices, keeping methods paired,2000times.
+Context-only intervals are also supplied. Only3 seeds and one frozen model
+pair are available; reused research banks and sparse groups limit inference.
+Later/episode-mean losses reflect differing closed-loop observations/replan
+counts; the first-replan comparison holds observed inputs and initial codes
+fixed. Raw action agreement and totalJ are separate throughout.
+
+initialization_sensitivity.csv gives descriptive raw-Gaussian-magnitude bins
+and sampled sign branches. These groups do not constitute extra independent
+contexts and are never used for selecting an initialization or result.
+historical_grid_reference.csv reuses the completed original grid study, with
+its exact summary hashes, rather than rerunning or retuning that method.
+Native examples are outcome-selected illustrations, not success estimates.
+All variable paths/case geometry are rasterized inside PDF axes on the GPU;
+Cube projections do not replace the original strict3D physical monitor.
+
+Raw NPZs/observations/actions/poses/Gaussian values per episode/planning traces
+and individual records stay on the GPU. export.py transfers only whitelisted
+aggregate statistics, cell-level checks, figures, frozen configs and source.
+No public repository or previous study output is changed.
+
+REPORT REBUILD FROM DELIVERED AGGREGATES
+
+Extract aggregate_results_and_figures.zip into EVIDENCE_DIR and
+editable_latex_and_figures.zip into EDITABLE_DIR. With the new package on
+PYTHONPATH, its stdlib-only report builder can recreate the exact LaTeX/figures:
+
+  python -m single_gaussian_study.report --evidence EVIDENCE_DIR \
+    --findings EDITABLE_DIR/findings.json --out FRESH_REPORT_DIR
+
+FRESH_REPORT_DIR must not exist. Compile from that directory with:
+
+  tectonic single_gaussian_composition_report.tex
+
+The delivered LaTeX can also compile directly beside its figures folder.
+The final PDF must be rendered and inspected after any edits.
+For a standalone complete invariant audit, use the logging-corrected wrapper:
+
+  python -m single_gaussian_study.audit_cli --study STUDY_JSON \
+    --out FRESH_AUDIT_JSON --require-complete
+
+The wrapper supplies a missing standard-library JSON logging import. All
+frozen audit.py checks, actual controller code and scientific settings are
+unchanged; see TECHNICAL_NOTES.txt for the preserved failed logging receipt.

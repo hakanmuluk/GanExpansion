@@ -1,0 +1,19 @@
+{
+  "checkpoint": "ablation_results/training/cube_keepout_r1_s43/best.pt",
+  "physical_train": "ablation_results/physical/cube_keepout_r1_s43",
+  "base": "cube/artifacts/final/base_policy.pt",
+  "val_contexts": "cube_addon_artifacts/data_force/keepout/val_contexts.npz",
+  "skill": "keepout",
+  "out": "ablation_results/calibration/cube_keepout_r1_s43",
+  "steps": 1500,
+  "batch": 64,
+  "lr": 0.0003,
+  "eval_every": 250,
+  "val_count": 64,
+  "val_codes": 4,
+  "workers": 6,
+  "seed": 42,
+  "device": "cuda",
+  "resume": null,
+  "geometry_encoder": false
+}

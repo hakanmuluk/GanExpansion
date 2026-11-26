@@ -1,0 +1,7 @@
+Presentation-only revisions after all 84 cells, final audit, timing and analysis completed:
+- Shortened landmark and convergence y-axis labels to prevent title/row overlap.
+- Used linear, numbered raw-MSE axes for the narrow-range step comparison.
+- Moved its legend outside the data and separated native-trajectory captions from legends.
+- Recorded renderer source hashes in figure provenance.
+No outcomes, statistics, task selections, models, neural calls, optimizer settings or native paths changed.
+Original figure version remains on the GPU in study_v1/presentation_v1 and in finished_export_v1.

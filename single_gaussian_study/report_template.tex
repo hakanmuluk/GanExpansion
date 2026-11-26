@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=17mm,headheight=15pt]{geometry}
+\usepackage{amsmath,booktabs,array,graphicx,microtype,fancyhdr,xcolor,hyperref}
+\definecolor{ink}{HTML}{17354A}\hypersetup{colorlinks=true,urlcolor=ink,pdftitle={Single Gaussian Latent Initialization}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\color{ink}TwoRoom and Cube}\fancyhead[R]{\small Frozen models, one Gaussian start}\fancyfoot[C]{\small\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\renewcommand{\arraystretch}{1.08}\setlength{\emergencystretch}{2em}
+\DeclareMathSizes{10}{10}{7}{7}
+\newcommand{\topic}[1]{\par\smallskip\textbf{#1}\quad}
+\begin{document}\fontsize{10}{12}\selectfont
+\begin{center}{\LARGE\bfseries\color{ink}Can Adam discover skill composition\par from one Gaussian start?\par}
+{\small 27 November 2026 | single-start follow-up to the grid ablations}\end{center}
+
+\topic{Controlled setup}
+The same frozen base and independent keep-out/waypoint actors predict 16 actions
+from the current observation and their original skill context. Sample one pair
+$u_K,u_W\sim\mathcal N(0,1)$ per episode, project to the original bounds and
+permitted signs, and initialize $a_K=a_W=|b_1|$ from the supplied original base
+style. TwoRoom retains its negative branches; Cube retains the sampled signs.
+Code magnitudes lie in $[.01,2.5]$. The original bounded logit/sigmoid fraction
+clamp $[.001,.999]$ applies to every $N$, including zero, so all settings use
+exactly the same usable starting point. $N$ counts updates at \emph{every}
+replan. Each replan starts only from the
+previous selected codes, without further sampling. Adam moments reset per
+replan; learning rate $.12$ and best-iterate retention along that \emph{one}
+trajectory are unchanged. There is no grid, top-$k$, restart or best-seed choice.
+\[
+ J=\underbrace{\frac1{8d}\sum_{t=1}^{8}\|A_K(t)-A_W(t)\|_2^2}_{L_{\rm agree}}
+ +\frac{\lambda_a}{2}\sum_{j\in\{K,W\}}(a_j-|b_1|)^2
+ +\frac{.01}{2}(u_K^2+u_W^2).
+\]
+$\lambda_a=1$ / $.0005$ and $d=2$ / 5 in TwoRoom/Cube; the optional encoder
+cycle is disabled. All neural models and other coefficients remain frozen.
+Both execute 8 actions and re-observe: TwoRoom issues
+$\operatorname{clip}(A_W+A_K-A_B)$; Cube issues $A_W$ with its original gripper
+threshold. Their different executors and strict success monitors are preserved.
+
+\topic{Joint success (\%)}
+Each cell averages all three seeds on the same 64 contexts. Grid20 is the
+already-reported grid/four-start reference, with no new reference evaluations.
+@@SUCCESS_TABLE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/success_vs_steps.pdf}\end{center}
+@@MAIN_FINDING@@
+
+\newpage
+\topic{Agreement reduction and actual recovery}
+The first-replan comparison shares the Gaussian sample, observation and skill
+contexts across every $N$. Raw MSE is distinct from total $J$.
+@@LOSS_FINDING@@
+\begin{center}\includegraphics[width=\linewidth]{figures/disagreement_vs_steps.pdf}\end{center}
+R/G below counts \emph{recoveries} (N0 failure becomes success) and
+\emph{regressions} (N0 success becomes failure), among 192 matched context--seed
+pairs per row. These are 64 contexts with three initializations, not 192
+independent contexts. $\Delta$N40 is the paired net change in percentage points.
+@@RECOVERY_TABLE@@
+@@RECOVERY_FINDING@@
+
+\topic{Success versus latency}
+\begin{center}\includegraphics[width=\linewidth]{figures/success_vs_latency.pdf}\end{center}
+
+\newpage
+\topic{Runtime and initialization sensitivity}
+The uncontended batch1 benchmark uses 12 contexts/environment, all three seeds,
+initial/midpoint N20 observations and three repeats (216 calls/setting).
+Observed states and warm previous-code inputs match across $N$. Cold calls use
+production Gaussian sampling with common probe seeds; batch1 draws need not
+match TwoRoom's native batch64 RNG layout. Each call uses $2(N+2)$ actor-forward
+sample equivalents, one base forward and $N$ input backwards.
+@@TIME_TABLE@@
+All seeds are retained. Cube's N40 success ranges across seeds are
+96.9--98.4\% (easy), 90.6--93.8\% (conflict) and 39.1--40.6\% (OOD).
+Full per-seed results, individual K/W/goal rates, magnitude/sign diagnostics,
+latency intervals and p95 values accompany the report. Concurrent native rollout
+times include physics/recording and are separate from this timing comparison.
+
+\topic{Native recovery and failure examples}
+Panels select the first N0-failure/N40-success (top) and first N0-failure/N40-failure
+(bottom) in fixed category, seed and context order. A middle budget can succeed
+in the latter. Each panel uses the same context/Gaussian draw across N0/N20/N40.
+Solid paths succeed; dashed paths fail. Red includes body clearance; green is
+the waypoint. Cube is a projection; its original 3D monitor supplies the labels.
+Examples illustrate mechanisms, not prevalence.
+\begin{center}\includegraphics[width=.84\linewidth]{figures/recovery.pdf}\end{center}
+\begin{center}\includegraphics[width=.84\linewidth]{figures/persistent_failure.pdf}\end{center}
+
+\topic{Evidence and limits}
+All 90 cells (5,760 evaluations) use 384 reused contexts and three seeds;
+@@AUDIT@@ were checked for one initial draw, no grid/restart, unchanged bounds,
+objective and warm starts, and shared initial optimizer prefixes. Every TwoRoom
+path matched original-native replay; Cube ran in MuJoCo. All 64 parallel Cube0
+paths matched an excluded serial pilot, whose validator-default bug was fixed
+without changing the planner.
+
+Intervals resample contexts and initialization seeds independently, keeping
+methods paired, 2,000 times. Context-only and seed-conditional Wilson intervals
+are also supplied. Three seeds, one frozen model pair and previously used banks
+limit inference. Empirical intervals can collapse with no observed variation.
+Historical-grid contrasts combine initialization and one-versus-four-start
+differences. Full $J$ includes regularization; later/episode-mean losses also
+reflect differing observations. The results do not isolate the agreement term.
+Code/configs, hashes and editable source accompany the report; native arrays
+and individual records remain on the GPU.
+\end{document}

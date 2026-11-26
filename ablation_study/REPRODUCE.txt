@@ -1,0 +1,330 @@
+Controlled latent/adapter ablation study — reproduction notes
+
+Run in a NEW execution directory. Original models and the public GanExpansion
+checkout must remain unchanged. All outputs use ablation_results/ or
+ablation_recreated/. The queue never retunes a failed model.
+
+INPUTS
+
+The preserved original inputs are already available in this workspace:
+  tmp/ablation_bootstrap/bootstrap.tar.gz
+  tmp/ablation_bootstrap/adapter_inputs.tar.gz
+Their members/checksums are recorded in bootstrap_manifest.json and
+adapter_input_manifest.json. These archives were assembled from the preserved
+local originals, not downloaded from new GPU rollouts. The public v1.0.0 release
+contains weights and evaluation inputs, but not every full training dataset.
+Do not assume its downloader alone supplies the training inputs for this study.
+
+In an empty execution root, extract these two input archives, then overlay the
+delivered study code. Copy the existing latest Cube checkpoint to:
+  ablation_inputs/cube_latest_base.pt
+Its local source is:
+  independent_composition_artifacts/z_regularized_composition_release/weights/cube/base_policy.pt
+SHA256: 34864b592863c56faf75d55cd88fdd33178e2ef29cdd3f890d21c48ea035b46d
+
+Do not unpack the new study code over an original repository checkout.
+The source bundle includes the exact original policy/environment packages;
+ablation_study/ contains the wrappers and presentation tools only.
+
+ENVIRONMENT
+
+The execution host uses NVIDIA L4, Python 3.13, Torch 2.14.1+cu130,
+MuJoCo 3.11.0 and NumPy 2.4.6. See the environment receipt for full recorded
+versions. stable-worldmodel is pinned to:
+  21446f1ede6d5284e981bd7b47f432b994e6d812
+The original requirements.txt and cube dependency records accompany the code.
+Use a compatible CUDA-enabled Torch; Python >=3.10 is needed by type syntax.
+
+From the extracted execution root, retain the host's CUDA-enabled Torch and
+install the original dependencies and packages:
+  python -m pip install -r requirements.txt
+  (cd cube && bash setup.sh)
+  python -m pip install --no-deps -e .
+The Cube setup script pins the native simulator packages used by this study.
+For exact version accounting, compare the installed environment to the delivered
+environment receipt; the broad Python requirements alone are not a lockfile.
+These installation steps are for a fresh host, not a running experiment queue.
+
+Set these before running commands from the execution root:
+  export MUJOCO_GL=egl
+  export OMP_NUM_THREADS=1
+  export OPENBLAS_NUM_THREADS=1
+  export PYTHONPATH="$PWD:$PWD/cube${PYTHONPATH:+:$PYTHONPATH}"
+
+Verify all original files before training:
+  python -m ablation_study.audit_study --inputs-only \
+    --out ablation_study/adapter_inputs_verified.json
+This excludes the old ablation_study/ members from bootstrap_manifest.json
+because the delivered wrappers supersede those early versions, and verifies
+every adapter_input_manifest.json member. The command repeats the original
+file checks when used for the final audit below.
+
+RECREATE THE LOST LATEST CUBE BASE DATA
+
+Only this lost dataset was regenerated, with the user's explicit authorization.
+The resulting train.npz is byte-identical to the recorded historical file.
+In an empty execution root:
+
+  python -m independent_composition.collect_cube_diverse \
+    --out ablation_recreated/cube_diverse_v34_raw \
+    --contexts 512 --codes 8 --workers 6 --jitter 0.9 --seed 1701001
+
+  python -m independent_composition.collect_cube_base_recovery \
+    --out ablation_recreated/cube_base_recovery_v35_data \
+    --skill-raw ablation_recreated/cube_diverse_v34_raw \
+    --goal-contexts 1000 --recoveries-per-context 2 --workers 4
+
+Expected training episodes: 5805.
+Expected train.npz SHA256:
+  78c350141eeb6d18f0d68a2d807b801de5f3fd0184cd7a973a7bb40f7a1aa798
+The queue prepares the recorded validation data separately, using the original
+64-context seed2871 recipe. All other static training/test datasets are preserved files.
+Full Cube continuations retain the preserved original selected pretraining
+parents, with the corresponding selected-step discriminators. Repeated full
+pretraining runs supply the controlled batch traces. Each no-latent continuation
+uses its own no-latent pretraining parent. Parent hashes and selection steps are
+recorded in initialization receipts and original_phase_transfer_checked.json.
+
+EXISTING CHECKPOINT LATENT DIAGNOSTICS (NO TRAINING)
+
+  python -m ablation_study.latent_analysis --environment tworoom \
+    --checkpoint artifacts/final/base_policy.pt --data artifacts/data_v2 \
+    --out ablation_results/rq1_tworoom_existing
+
+  python -m ablation_study.latent_analysis --environment cube \
+    --checkpoint ablation_inputs/cube_latest_base.pt --data cube/artifacts/data \
+    --workers 4 --out ablation_results/rq1_cube_existing
+
+These use a fixed eight-code diagnostic sweep. They are separate from the
+original Gaussian-code benchmark, which is run by evaluate_base below.
+
+A supplementary one-factor speed-axis diagnostic holds z1=1 and varies z2
+through {-2,-1,-0.25,0,0.25,1,2}, using all original test scenes and the same
+unchanged checkpoints. This makes the magnitude intervention independent of
+the route code; it does not replace the fixed-eight or Gaussian benchmark.
+  python -m ablation_study.latent_speed_diagnostic \
+    --out ablation_results/figures/z2_magnitude_existing --workers 4
+The diagnostic verifies identical initial observations across codes, reports
+success and duration per code, and contrasts endpoint duration only in scenes
+where both endpoint codes succeed. All raw outputs stay on the execution host.
+
+FULL STUDY
+
+First record the existing full TwoRoom reference's exact training RNG stream:
+
+  python -m ablation_study.launch --name train_tworoom_base_full_s42 -- \
+    python -u -m ablation_study.run_original --module tworoom_gan.train \
+    --config ablation_study/configs/tworoom_base_full_s42.json \
+    --rng-trace ablation_results/rng/tworoom_base_s42.pt --rng-mode record
+
+The queue waits for that recorded process before starting another GPU trainer:
+
+  python -u -m ablation_study.run_queue \
+    --manifest ablation_study/queue_manifest.json \
+    --out ablation_results/training_queue_v2
+
+The manifest contains every exact command, dependency, configuration and expected
+output file. The current runner creates a new status directory and does not
+resume a previously interrupted queue automatically. Preserve its receipts and
+model files; do not relaunch an old run directory blindly.
+
+INDIVIDUAL CASES
+
+Base without latent losses, AFTER its full reference has recorded the RNG trace:
+
+  python -m ablation_study.base_ablation --environment tworoom \
+    --config ablation_study/configs/tworoom_base_adversarial_s42.json \
+    --rng-trace ablation_results/rng/tworoom_base_s42.pt
+
+The latest Cube base is a staged training recipe: original pretraining followed
+by the broader-data continuation. Follow the manifest's Stage-A, initialization,
+and Stage-B dependencies. The no-latent arm uses its own no-latent Stage-A parent;
+it never borrows the fully supervised generator initialization.
+
+Rank reference (TwoRoom keep-out originally uses rank4):
+
+  python -m ablation_study.run_original --module tworoom_addons.train \
+    --config ablation_study/configs/tworoom_keepout_r4_s123.json \
+    --rng-trace ablation_results/rng/tworoom_keepout_s123.pt \
+    --rng-mode record --rank 4 --reference-rank 4
+
+Another rank, after its reference:
+
+  python -m ablation_study.run_original --module tworoom_addons.train \
+    --config ablation_study/configs/tworoom_keepout_r1_s123.json \
+    --rng-trace ablation_results/rng/tworoom_keepout_s123.pt \
+    --rng-mode replay --rank 1 --reference-rank 4
+
+Pure branch removal, with the same original losses and data:
+
+  python -m ablation_study.run_original --module tworoom_addons.train \
+    --config ablation_study/configs/tworoom_keepout_r8_lora_only_s123.json \
+    --rng-trace ablation_results/rng/tworoom_keepout_s123.pt \
+    --rng-mode replay --rank 8 --reference-rank 4 --lora-only
+
+For Cube, follow the exact manifest command for the requested skill/rank/seed.
+Keep-out has the original1000-step phase followed by3000 further updates with
+the recorded feedback transition. Waypoint uses the original8000-step macro
+recipe. Each Cube actor then receives the ORIGINAL physical private-encoder
+calibration procedure, with its actor frozen. No new expert supervision is added.
+
+Evaluate a trained TwoRoom adapter:
+
+  python -m ablation_study.evaluate_adapter --environment tworoom \
+    --checkpoint ablation_results/training/tworoom_keepout_r1_s123/best.pt \
+    --base artifacts/final/base_policy.pt --skill keepout \
+    --data addon_artifacts/data \
+    --out ablation_results/evaluation/evaluate_tworoom_keepout_r1_s123
+
+Cube evaluation uses ablation_results/calibration/CASE/best.pt and the original
+cube/artifacts/final/base_policy.pt, not the latest broader-data base. These
+adapter ablations deliberately use the published adapter recipes and their
+corresponding published frozen bases. See protocol.json for the version scope.
+The evaluator restores the exact frozen base and automatically loads LoRA-only
+checkpoints from their ablation metadata. Ordinary inference calls:
+  actor(state, base_z, private_u, skill_context, gate=1)
+The original base path is gate=0. Its pretrained style modulation remains intact.
+Pure LoRA-only checkpoints ignore private_u and skill_context by construction;
+there is no replacement conditioner.
+
+AUDIT, TABLES AND FIGURES
+
+  python -m ablation_study.audit_study \
+    --out ablation_results/aggregate/final_control_audit.json --require-complete
+
+  python -m ablation_study.summarize_study \
+    --out ablation_results/aggregate/presentation
+
+  python -m ablation_study.checkpoint_inventory \
+    --out ablation_results/aggregate/final_checkpoint_inventory.json
+
+The final audit includes the full TwoRoom seed42 run launched before the queue,
+each actor-training phase, and Cube's separate physical-rollout collection and
+1500-update private-encoder calibration. It checks actor/normalization freezing,
+unchanged saved settings and the original rollout counts. The selected inventory
+also matches skill checkpoint hashes to their actual evaluation receipts.
+
+make_base_figures and make_adapter_figures run from the manifest. They select
+fixed first test scenes, match initial states/goals/codes exactly, and retain
+failed paths. Figures are supplied as vector PDF and PNG. Detailed rollouts
+remain on the execution host; exported results are aggregates and figures.
+
+The completed two-seed TwoRoom rank subset also has a standalone presentation
+figure. This reads the existing aggregate table and requires all20full-adapter
+TwoRoom cases (five ranks, two skills, two seeds); it performs no new evaluation:
+  python -m ablation_study.make_completed_tworoom_rank \
+    --summary ablation_results/aggregate/presentation/summary.json \
+    --out ablation_results/aggregate/tworoom_rank_presentation
+Its points/table are seed means and its bars show the two-seed range, not
+confidence intervals. This scoped figure does not stand for the entire study.
+
+All new evaluation outputs require an unused --out directory. Never silently
+overwrite an existing experiment. To repeat a case, choose a fresh study root
+or explicitly create a copy of its configuration with a new destination only.
+
+CHECKPOINTS AND LOGS
+
+Exported best/latest checkpoints retain the exact inference tensors, including
+the private encoder where relevant. Export manifests record both original-file
+and tensor hashes. Compact exports omit optimizer and RNG state; original full
+resume checkpoints remain on the execution host. RNG reference traces contain
+random-number states plus batch hashes, not observation/action arrays.
+
+For local archives, verify the announced SHA256 before using their contents:
+  python3 -m ablation_study.verify_backup \
+    --archive ablation_results/backups/EXPORT_NAME.tar.gz \
+    --expected-sha256 ANNOUNCED_ARCHIVE_SHA256
+The verifier checks every member and reuses byte-identical RNG snapshots through
+hard links to verified copies. To reclaim duplicate copies in older extractions,
+add --deduplicate-existing. Every path/checksum and original archive is retained;
+treat extracted backups as immutable. This utility changes no experiment data.
+
+TwoRoom base comparisons use the prespecified final step5000
+(snapshots/step_005000.pt), avoiding
+checkpoint ranking by an untrained encoder. Cube uses the original validation
+selection rule. Adapter models use their original validation selection rules.
+Do not interpret legacy placeholder-encoder diagnostics for no-latent bases.
+
+The original base evaluator did not record checkpoint file hashes. A separate
+retrospective CPU audit binds all8base comparisons to their exact selected files
+by matching the first8executed commands of all37,568saved Gaussian episodes:
+  python -m ablation_study.bind_base_evaluations \
+    --out ablation_results/aggregate/base_evaluation_checkpoint_binding.json
+Only aggregate counts/errors/checksums are exported. This does not rerun the
+environment, change scores, or claim to validate later commands. The original
+raw trajectories are needed on the execution host. The current evaluator
+wrapper records a direct file hash for future runs as well. TwoRoom's exact
+step5000snapshot files are exported and restored at the recorded CLI paths.
+
+The initial TwoRoom ablation attempt with a posterior-noise RNG mismatch was
+discarded. Its directory contains invalid_initial_rng_attempt in its name and
+is excluded from all study tables. The corrected run consumes the unused draw
+and verifies exact reference batches and retained stochastic inputs.
+
+The first Cube loss-ablation attempts accidentally retained known-code
+reconstruction at z=0. They are invalid for the requested comparison and are
+archived under invalid_cube_known_rec_20261126 on the execution host. Corrected
+jobs have the suffix _corrected_v2 in the manifest and explicitly zero
+known_rec_weight. Full Cube controls and all TwoRoom results are unaffected.
+The final audit verifies that every removed objective is zero in the corrected
+training logs. See cube_known_rec_correction.json for the discarded job history.
+
+No skill composition experiment or change to the public repository is part of
+this ablation study.
+
+FINAL DELIVERY
+
+After every queued job has completed and the final audit passes, export the
+completed evidence with export_completed.py (repeat --previous-manifest for
+earlier exports), verify its archive hash, and extract it into a fresh directory.
+Use the final export's aggregate/presentation/summary.json and results/ directory
+with build_report.py, plus --audit and an unused --out directory. Compile the
+generated LaTeX with Tectonic or a standard LaTeX installation; inspect all pages.
+The editable source and its figures must remain together.
+
+package_delivery.py accepts --inventory, --audit, --summary, --final-export,
+--report-source, --report-pdf, --smoke-proof and a fresh --out. Run with --verify-tensors using
+a Python environment with Torch. It selects prior compact model exports only
+when both original-source and tensor hashes match the final inventory, checks
+all final-export member hashes, and creates separate weights, code, evidence and
+editable-report archives plus one complete bundle. No raw GPU trajectories or
+simulator arrays are included. Unzip selected_weights.zip at the execution root
+to restore the canonical checkpoint paths used by the recorded evaluation CLIs.
+
+Before packaging, verify actual loading of all56selected compact checkpoints on
+the execution host, after their completed exports are available:
+  python -m ablation_study.verify_compact_inference \
+    --inventory ablation_results/aggregate/final_checkpoint_inventory.json \
+    --exports ablation_results/exports \
+    --out ablation_results/aggregate/final_compact_inference_checked.json
+This compares original and compact checkpoints through the actual loaders using
+fixed synthetic CPU probes: raw/EMA base actions, skill-enabled/disabled actions
+and encoder outputs. Pure adapters also retain their private/context
+disconnection. It is an export-fidelity check, not a new task benchmark.
+Download this small JSON receipt alongside the final archive and pass it to
+package_delivery.py as --smoke-proof. Packaging matches its model/source/file
+hashes to every selected weight file; all56inference checks must have passed.
+
+REBUILD THE REPORT FROM THE DELIVERED PACKAGES
+
+This step needs no training datasets or simulator. In an empty directory,
+extract code_and_configs.zip, then extract results_logs_and_protocol.zip into
+study_evidence/. To regenerate the five-page report source from the final tables:
+
+  python -m ablation_study.build_report \
+    --summary study_evidence/tables_and_figures/summary.json \
+    --results-root study_evidence/results \
+    --audit study_evidence/audit/final_control_audit.json \
+    --analysis-text ablation_study/report_analysis_text.json \
+    --out rebuilt_report
+
+Compile rebuilt_report/controlled_ablation_report.tex with Tectonic, or compile
+the source in editable_latex_and_figures.zip directly. Retain its figures/ folder.
+Presentation-only prose was shortened to fit five pages; the measured tables,
+figures and scientific configurations are unchanged. The source-import receipt
+checks module hashes, which are unchanged by these report-text/receipt updates.
+
+Full retraining additionally requires the two preserved input archives named
+at the beginning of this guide. They are separate inputs, not included in the
+study-output bundle. Extract those first, overlay code_and_configs.zip last,
+then follow the environment, data-recreation and full-study commands above.

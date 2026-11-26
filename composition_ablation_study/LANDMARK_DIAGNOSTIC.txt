@@ -1,0 +1,12 @@
+Additional diagnostic declared during implementation, before inspecting new
+agreement/outcome analyses: fixed elapsed-control landmarks0,32,64,96,128.
+The primary predictor remains first-replan raw disagreement as in ANALYSIS_PLAN.
+Record exactly the existing replans, without any new policy call or task change.
+At each landmark include only contexts that have not terminated; report eligible
+contexts and outcome-class counts. These are descriptive final-outcome
+associations in a changing cohort. Earlier violations may already have occurred;
+do not claim prospective prediction of a future failure or compare later-stage
+AUROCs as if the cohort were unchanged. Undefined one-class AUROCs remain null.
+This supplements the planned first/middle/last analysis and can expose periods
+before/after independently gated skills become active. It does not select a
+better controller or change any experiment.

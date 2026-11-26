@@ -1,0 +1,206 @@
+Controlled latent skill-composition ablations — 26 November 2026
+
+SCOPE
+
+No training. The exact latest selected=prior release is the reference:
+H=8, 20 Adam steps, four starts, lr=0.12, private prior=0.01, cycle=0, original bounds,
+base-amplitude tether=1 (TwoRoom) / 0.0005 (Cube), execute 8 actions and re-observe.
+TwoRoom executes clip(AW+AK-AB); Cube executes AW with its original grip threshold.
+The original benchmark case supplies its base style b; route sign and speed
+remain fixed, while the existing composer can change each actor's amplitude.
+Only H or Adam updates change in the predefined experiments. Random search and
+fixed-code single-skill controls are separately labeled additional comparisons.
+See ANALYSIS_PLAN.txt and IMPLEMENTATION_NOTES.txt for precise definitions.
+
+CURRENT EXECUTION HOST
+
+Original code/models/banks remain read-only under:
+  /content/cs585_regularization
+New code and outputs are separate:
+  /content/cs585_composition_ablation_20261126
+The exact frozen descriptor is study_v1/study.json in that new root. It contains
+all 84 cell commands/settings/paths, original input hashes and random-work budgets.
+5,376 evaluations reuse 384 distinct contexts (192/environment, 64/category).
+Do not count repeated methods, random seeds, replans or native replays as new
+independent contexts. These existing banks informed earlier research.
+
+ENVIRONMENT
+
+Recorded host: NVIDIA L4, Python 3.13.16, Torch 2.14.1+cu130, CUDA 13,
+NumPy 2.4.6, MuJoCo 3.11.0, OGBench 1.2.2, dm-control 1.0.44,
+gymnasium 1.4.0, SciPy 1.16.3, Matplotlib 3.10.0. The descriptor records versions.
+Retain the CUDA-enabled Torch and original native dependencies on this host.
+Do not reinstall libraries into a running experiment.
+
+From /content/cs585_regularization, set:
+
+  export PYTHONPATH=/content/cs585_composition_ablation_20261126:/content/cs585_regularization:/content/cs585_regularization/cube
+  export MUJOCO_GL=egl
+  export OMP_NUM_THREADS=1
+  export OPENBLAS_NUM_THREADS=1
+
+Every evaluation sets Torch CPU threads to 2. Neural parameters remain frozen;
+autograd is enabled for input codes only. Do not wrap planning in inference_mode.
+
+RERUN WITHOUT OVERWRITING THE ORIGINAL STUDY
+
+Create a fresh output-only copy; this verifies that only paths change:
+
+  python -m composition_ablation_study.copy_protocol \
+    --study /content/cs585_composition_ablation_20261126/study_v1/study.json \
+    --out /content/cs585_composition_ablation_repeat
+
+Then run the serial queue:
+
+  python -u -m composition_ablation_study.run_queue \
+    --study /content/cs585_composition_ablation_repeat/study.json \
+    --out /content/cs585_composition_ablation_repeat/queue
+
+In another process, finish.py waits for THAT existing queue and then runs the
+complete audit, uncontended batch 1 timing, aggregate analysis and figures:
+
+  python -u -m composition_ablation_study.finish \
+    --study /content/cs585_composition_ablation_repeat/study.json
+
+The queue is intentionally serial. It refuses existing outputs and does not
+automatically resume a missing process. An observation timeout is not a reason
+to relaunch a job. Check authoritative liveness and counts using:
+
+  python -m composition_ablation_study.progress \
+    --root /content/cs585_composition_ablation_repeat
+
+INDIVIDUAL CONTROLLED CASES
+
+Use the fresh copied descriptor above. Each job uses 64 original contexts:
+
+  python -m composition_ablation_study.evaluate \
+    --study /content/cs585_composition_ablation_repeat/study.json \
+    --job cube_h4_n20_supported_easy
+
+Other main IDs replace environment (cube/tworoom), H (4,8,12,16 with N=20),
+N (0,5,10,20,40 with H=8), and category (supported_easy/supported_conflict/coupled_ood).
+H8/N20 is shared by ExperimentsA/B/C. Never run a single case and then relaunch
+the full queue into its already-populated output tree.
+
+  cube_h8_n0_supported_conflict
+  tworoom_h8_n40_coupled_ood
+  cube_h8_n0_parameterized_supported_easy
+  cube_random_budget20_s241_supported_easy
+  cube_diagnostic_single_keepout_supported_easy
+
+The exact-grid zero is the requested no-gradient baseline. The separately
+named parameterized-zero retains the original four-start bound/logit round-trip
+and tie selection, making initialization effects visible. Positive steps call
+the original sample() verbatim. Random budgets are 155/152 additional candidates
+for TwoRoom/Cube, frozen from profiled original forward/input-gradient matrix
+work; actual latency is measured separately. Fixed single controls use u=-0.8.
+
+RAW BANKS AND ORIGINAL REFERENCE RECORDS
+
+Six protected final_*.npz case banks and all native per-episode records remain
+on the GPU host. They are not distributed. Source and weight packages restore
+their canonical layout by extraction under /content; weights retain exact bytes.
+The ten preserved checkpoints include six active base/adapter files and four
+optional skill-encoder checkpoints. The selected cycle=0 configuration does
+not use those optional encoders for its objective.
+REFERENCE_INPUT_MANIFEST.json records the omitted bank hashes. On the current
+host those original files already exist and must be preserved.
+
+On a genuinely fresh host, extract the two delivered archives (not on top of
+an existing research checkout):
+
+  unzip original_code_and_configs.zip -d /content -x SOURCE_MANIFEST.json
+  unzip frozen_reference_weights.zip -d /content -x SOURCE_MANIFEST.json
+
+Set the environment and PYTHONPATH above, then restore the exact six banks.
+If unavailable, the included ORIGINAL generators describe their deterministic recipes:
+
+  python -m independent_composition.generate_final_tworoom \
+    --protocol independent_composition_artifacts/regularization_v142_tworoom_protocol/freeze.json \
+    --out independent_composition_artifacts/regularization_v142_tworoom_bank \
+    --count 64
+
+  python -m independent_composition.generate_cube_frozen_bank \
+    --protocol independent_composition_artifacts/regularization_v142_cube_protocol/freeze.json \
+    --out independent_composition_artifacts/regularization_v142_cube_bank \
+    --count 64 --workers 4
+
+No parameters or selection rules may change. Both target bank directories must be unused.
+During recovery from the reset, these exact recipes reconstructed all six banks
+to their recorded hashes. On a fresh host, use them only to restore those exact files.
+Do not start comparisons unless all six file hashes match the frozen descriptor.
+The model/evaluation/scene-generation sources and native library versions must
+also match. A different generated bank is not an equivalent replication.
+
+Fresh hosts also need uninstrumented original reference rollouts for the
+full-trajectory parity checks. After exact inputs are restored, run:
+
+  python -m composition_ablation_study.rebuild_reference \
+    --study /content/cs585_composition_ablation_20261126/study_v1/study.json --run
+
+This uses the original H8/N20 CLI and checks its aggregate expectations. It
+refuses any pre-existing original reference output directory. Without --run,
+it only checks inputs and planned commands. Do not repeat it on the current host.
+The delivered preflight is already frozen; do not rerun preflight.py against the
+completed descriptor (that preparation step originally appended random jobs).
+
+ANALYSIS, FIGURES AND REPORT
+
+After all 84 cells complete:
+
+  python -m composition_ablation_study.audit --study STUDY_JSON \
+    --out STUDY_ROOT/final_audit.json --require-complete
+  python -m composition_ablation_study.analyze --study STUDY_JSON \
+    --out STUDY_ROOT/aggregate
+  python -m composition_ablation_study.representatives --study STUDY_JSON \
+    --out STUDY_ROOT/aggregate/representatives
+
+finish.py already performs audit, timing and aggregate figures, so do not run
+those concurrently with the GPU sweep. Timing requires all 84 cells terminal.
+The representative renderer reads native records on-host; its PDF/PNG paths
+are rasterized within vector axes and never exported as coordinate arrays.
+It renders canonical success/failure examples, a compact preview, and a separate
+lowest-initial-disagreement failure diagnostic. The latter is selected from
+failures and is not an estimate of their frequency.
+
+To rebuild the report from the delivered aggregate evidence, extract
+aggregate_results_and_figures.zip into a fresh directory EVIDENCE_DIR and
+editable_latex_and_figures.zip into EDITABLE_DIR. With this package on PYTHONPATH:
+
+  python -m composition_ablation_study.build_report \
+    --aggregate EVIDENCE_DIR/aggregate \
+    --latency EVIDENCE_DIR/latency/summary.json \
+    --audit EVIDENCE_DIR/protocol/final_audit.json \
+    --study EVIDENCE_DIR/protocol/study.json \
+    --representatives EVIDENCE_DIR/aggregate/representatives \
+    --findings EDITABLE_DIR/findings.json --out FRESH_REPORT_DIR
+
+FRESH_REPORT_DIR must not exist. From that new directory, compile:
+
+  tectonic latent_composition_ablation_report.tex
+
+Alternatively, the delivered editable LaTeX can be compiled directly beside its
+figures directory. The builder uses only Python's standard library; analysis and
+figure generation require the numerical/native environment listed above.
+Native rollout elapsed times include physics/recording and occasional CPU
+checkpoint work. Use the separate uncontended matched batch-one benchmark
+for inference-speed comparisons.
+All percentages and table entries come from the aggregate JSON; conclusions
+are explicitly limited to the existing banks and one frozen model pair.
+
+BACKUP AND VERIFICATION
+
+The runtime was reset during the first execution. The final recovery run
+reconstructed all six banks to the exact original SHA256 values, restored the
+unchanged checkpoints/source/configs, repeated GPU parity checks on a disposable
+descriptor copy, checked the uninstrumented reference against saved aggregate
+expectations, and reran all 84 cells. The final tables use that complete run;
+pre-reset evaluations are not additional independent trials. Recovery metadata
+is included under protocol/recovery in the aggregate-results archive.
+
+export.py copies only whitelisted cell-level summaries/configurations/checks,
+aggregate statistics/figures and source. It excludes raw NPZs, native state/
+action/pose arrays, planning traces, individual outcomes and per-episode logs.
+verify_export.py checks the archive SHA and every member before extraction.
+Original model checkpoints/source are separately preserved with exact hashes.
+The public repository and production configuration are unchanged.

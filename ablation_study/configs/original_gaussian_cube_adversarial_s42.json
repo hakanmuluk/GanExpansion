@@ -1,0 +1,15 @@
+{
+  "checkpoint": "ablation_results/training/cube_latest_base_adversarial_s42/best.pt",
+  "data": "cube/artifacts/data",
+  "split": "test",
+  "contexts": 0,
+  "latents": 8,
+  "workers": 6,
+  "seed": 8291,
+  "out": "ablation_results/evaluation/original_gaussian_cube_adversarial_s42",
+  "resample": false,
+  "shared_codes": false,
+  "zero": false,
+  "raw": false,
+  "execute": 8
+}

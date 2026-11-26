@@ -1,0 +1,231 @@
+% Replaced with verified results by the final report builder. This is a template.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=18mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,microtype,graphicx,hyperref,fancyhdr,xcolor}
+\definecolor{ink}{HTML}{17354A}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=ink,pdftitle={Controlled Latent and Adapter Ablations}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.1}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\color{ink}TwoRoom and Cube}
+\fancyhead[R]{\small Controlled ablations | 26 November 2026}\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}
+\newcommand{\topic}[1]{\par\smallskip\textbf{#1}\quad}
+\newcommand{\E}{\mathbb E}\newcommand{\Lcal}{\mathcal L}
+\DeclareMathSizes{10}{10}{7}{7}
+\begin{document}\fontsize{10}{12}\selectfont
+\begin{center}{\LARGE\bfseries\color{ink}Controlled Latent and Adapter Ablations\par}
+{\large Existing TwoRoom and Cube action policies\par}\end{center}
+\textbf{Scope.} Three questions: whether the full training scheme encourages useful
+latent control; how LoRA rank affects independent skills; and what happens when
+the additional skill modulation is removed. Trajectory figures show executed
+closed-loop paths. \textbf{Inputs are numerical simulator states, not images.}
+
+\section{RQ1: Does the training scheme encourage meaningful latent use?}
+\topic{Tasks and inputs}
+TwoRoom is continuous navigation in a $224\times224$ arena, with two doorways
+and a goal radius of 16 pixels. Its 10 state features contain agent XY, goal XY,
+door coordinates and padding. Cube uses native OGBench single-cube manipulation
+in MuJoCo. Its 47 features contain robot/object state, the goal, initial cube
+position, relative positions and velocities. Its primary score requires released,
+settled placement within 4\,cm for 10 consecutive steps, rather than proximity alone. These are the project's original
+test protocols; added skill constraints are custom benchmarks.
+
+\topic{Unchanged base architecture}
+The generator predicts 16 actions from the observed state $s$ and $z\in\mathbb R^2$:
+\[
+ w=M_\theta([z,\operatorname{sign}(z_1)]),\qquad
+ h_{\ell+1}=\frac{h_\ell+\operatorname{LReLU}\!\left(
+ \operatorname{LN}(W_\ell h_\ell)\odot(1+\gamma_\ell(w))+\beta_\ell(w)\right)}{\sqrt2}.
+\]
+$M$ is a three-layer width 128 MLP. A state projection initializes $h_0$. Four residual blocks use hidden width 256
+(TwoRoom) or 384 (Cube), followed by a tanh output of size $16\times2$ or
+$16\times5$. Cube's action channels are XYZ, yaw and gripper.
+The controller executes 8 actions, re-observes, and plans another chunk;
+the sampled code stays fixed throughout each episode. The model outputs actions,
+while the environment produces the position trajectories shown in the figures.
+TwoRoom's fixed coordinate scaling and left/right reflection, and Cube's stored
+feature mean/std normalization, remain unchanged.
+
+\begin{center}\begin{tabular}{lrrr}\toprule
+Environment & Generator $G$ & Episode encoder $E$ & Discriminator $D$\\\midrule
+TwoRoom &571,936&174,084&113,921\\
+Cube &1,070,416&204,420&277,249\\\bottomrule
+\end{tabular}\end{center}
+$E$ uses temporal convolutions and masked pooling of full state/action episodes
+to output $(\mu,\log\sigma^2)$. It is a training/recovery encoder, not an online
+state-to-code proposer. $D$ is a conditional MLP used only during training.
+
+\topic{The objective ablation}
+Full training combines posterior action reconstruction, latent recovery,
+Gaussian KL, known-code reconstruction, synthetic code labels and the GAN:
+\[
+\begin{aligned}
+ L_{\rm rec}&=\E\,\ell(G(s,\mu+\sigma\epsilon),A^*),&
+ L_z&=\E\operatorname{MAE}(\mu_E(\tau_G(z)),z),\\
+ L_{\rm KL}&=\tfrac12\E\sum_j(\mu_j^2+\sigma_j^2-1-\log\sigma_j^2),&
+ L_{\rm adv}&=-\E D(s,\widetilde A).
+\end{aligned}
+\]
+Full training mixes posterior and prior proposals in $\widetilde A$; the
+encoder-free ablation uses prior proposals alone. The ordinary latent cycle pairs generated actions with recorded teacher states;
+closed-loop recovery is evaluated separately. Here $\ell$ is masked action L1; Cube uses XYZ/yaw L1 plus $.15$ gripper BCE.
+Full coefficients
+$(\lambda_{\rm rec},\lambda_z,\lambda_{\rm KL},\lambda_{\rm label},
+\lambda_{\rm known},\lambda_{\rm adv})$ are
+$(10,.1,.005,2,10,.05)$ for TwoRoom and $(10,1,.01,2,10,.05)$ for Cube.
+TwoRoom also has the original on-policy cycle ($.5$) and encoder-dependent
+feedback ($5$) terms.
+The ablation removes \emph{all} these latent/imitation objectives, retaining the
+conditional hinge GAN, lazy R1, original warmup and TwoRoom's $.01$ action
+smoothness. Pretrained-style architecture, optimizer, data and budgets are fixed.
+MAE averages latent coordinates. The label term is
+$\E\operatorname{MAE}(\mu_E(\tau^*),z^*)$. Known-code reconstruction matches
+style-labeled actions: TwoRoom queries its fixed expert for sampled prior codes;
+Cube uses the recorded codes. The discriminator retains
+\[
+ L_D=\E[1-D(s,A^*)]_+ +\E[1+D(s,\widetilde A)]_+
+ +8\,\mathbf1_{\{16\mid t\}}\E\|\nabla_{A^*}D(s,A^*)\|_2^2.
+\]
+
+\newpage
+\topic{Existing checkpoints, without retraining}
+Eight shared codes intervene on sign, magnitude and one coordinate at a time:
+$(-1,\pm1),(1,\pm1),(-2,0),(-.25,0),(.25,0),(2,0)$.
+Each scene is restored to exactly the same start and goal for every code.
+@@EXISTING_TABLE@@
+TwoRoom's first coordinate selects a doorway and crossing offset; its second
+controls speed. In Cube, the first selects transport side and lateral amplitude,
+and the second controls timing. Cube's height is measured as a diagnostic; it
+is not an independently prescribed base-latent factor.
+@@SPEED_SWEEP_NOTE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/existing_latent_examples.pdf}\end{center}
+\smallskip
+\textit{First test scene in each environment; no outcome filtering. Solid paths
+succeed and dashed paths fail. Larger versions and additional scenes accompany
+the report.}
+
+\topic{Full training versus removal of the combined objectives}
+Two training seeds are compared using the original Gaussian-code tests:
+256 TwoRoom contexts with 32 codes each;150 Cube contexts with 8 codes each.
+Success is the episode fraction; both-route coverage is the context fraction
+with a successful rollout on each route.
+The table gives the mean and training-seed range, not an IID episode confidence
+interval. Fixed-code diagnostics are a separate result panel in the CSV files.
+@@BASE_TABLE@@
+@@RQ1_CONCLUSION@@
+This is a bundled objective ablation. It cannot attribute the difference to KL,
+the latent cycle or another single term, and does not establish what longer or
+retuned GAN-only training could achieve.
+
+\newpage
+\topic{Matched trajectories and stability}
+The following comparisons use the first original Gaussian test scene and its
+first 8 codes, identical for both policies. Paths are retained regardless of outcome.
+\begin{center}\includegraphics[width=\linewidth]{figures/base_full_vs_without_latent_compact.pdf}\end{center}
+@@STABILITY_PARAGRAPH@@
+@@DIAGNOSTICS_TABLE@@
+\topic{Control of the comparison}
+TwoRoom uses 5,000 updates. Cube follows the recorded 4,000-update pretraining
+and 6,000-update broader-data continuation. Full continuations retain the
+preserved original selected pretraining checkpoints; each no-latent continuation
+starts from its own no-latent pretraining. Parent hashes and selection steps are recorded.
+The recreated latest Cube training file contains 5,805 episodes and matches
+the historical SHA256 byte for byte. Unchanged normalization and original
+validation rules are retained. TwoRoom's main comparison uses the prespecified
+final step 5,000 so that an untrained encoder cannot rank checkpoints.
+
+Random-number replay verifies identical sampled batches. The removed posterior
+noise draw is consumed unused to preserve the retained augmentation/prior stream.
+The unused base encoder remains serialized for initialization/checkpoint
+compatibility; its recovery metrics are inapplicable to the ablation.
+
+\newpage
+\section{RQ2: How does LoRA rank affect capacity, diversity and efficiency?}
+\topic{Unchanged skill logic}
+Each skill adds static updates $\Delta W=UV$ and the existing
+$(u,c)$-conditioned scale/shift branch to a frozen base. The private code is
+$u\in\mathbb R$; observed context $c$ supplies the new constraint (12 features
+in TwoRoom, 20 in Cube). Original 10/47 base inputs are unchanged.
+Context includes region geometry, relative position and progress/visit flags;
+Cube also observes holding/lift state.
+The sign of $u$ selects disk-detour side or waypoint-entry side in TwoRoom,
+and above/below transport or waypoint entry in Cube. Its magnitude controls
+clearance/excursion.
+
+Keep-out requires avoiding a disk (TwoRoom agent body) or virtual sphere
+(Cube's conservative complete-cube bound), while reaching the goal. Waypoint
+requires visiting the region and completing the goal; Cube also enforces the
+original held-transport conditions. TwoRoom uses the original visit-plus-goal
+definition, which does not require the waypoint before the first goal-region entry.
+
+\topic{One-factor experiment}
+Only $r\in\{1,2,4,8,16\}$ changes. Published frozen bases and adapter recipes
+are used, rather than the later composition-focused Cube versions.
+References: TwoRoom keep-out rank 4; others rank 8.
+Shared initial weights, sample ordering, style branch, encoder, losses, data,
+learning rates and budgets match. Updates: TwoRoom 3,000; Cube keep-out
+1,000+3,000 and waypoint 8,000. Seeds: TwoRoom 123/2026, Cube 42/43.
+All ranks share one frozen base per environment.
+Skill tests use eight private codes per context: 256 contexts in TwoRoom and
+128 in Cube, with the original Gaussian sampling rules.
+
+@@RANK_TABLE@@
+\begin{center}\includegraphics[width=\linewidth]{figures/rank_ablation.pdf}\end{center}
+@@RQ2_CONCLUSION@@
+The action-adapter count is $C+2{,}602r$ in TwoRoom and $C+3{,}967r$ in Cube.
+The fixed style-branch intercepts $C$ are 38,752/82,384 (keep-out/waypoint)
+and 76,424/92,608, respectively. Original private encoders/discriminators add
+184,322/116,993 trainable parameters in TwoRoom and 221,826/285,697 in Cube.
+They are not part of online action-generator inference.
+
+\newpage
+\section{RQ3: Does additional style modulation help beyond LoRA alone?}
+\topic{Pure branch removal}
+The rank 8 comparison removes the additional skill-specific scale/shift branch,
+including its now-unused mapping/context modules. Original base style modulation,
+LoRA updates and all training losses remain unchanged. Mechanically:
+\[
+ G_{\rm full}(s,z,u,c)\quad\longrightarrow\quad
+ G_{\rm LoRA}(s,z),\qquad
+ \frac{\partial G_{\rm LoRA}}{\partial u}=0.
+\]
+\textbf{Both $u$ and the new skill context $c$ become disconnected.}
+No replacement conditioner is introduced. Thus this tests removal of the
+existing branch, not whether a differently conditioned LoRA architecture could
+replace scale/shift modulation. The original base code $z$ remains active.
+
+@@MODULATION_TABLE@@
+@@RQ3_CONCLUSION@@
+Pure LoRA-only adds 20,816 action parameters in TwoRoom and 31,736 in Cube.
+The private episode encoder reads states, actions, contexts and base $z$,
+returning $(\mu_u,\log\sigma_u^2)$. It retains its original losses and is used
+only for training/recovery. Cube's existing physical-encoder calibration is
+repeated on each frozen actor using identical context/code seeds and its original
+1,500-update recipe. Only the encoder changes in calibration, so it cannot improve
+the actor's success. Static demonstration files and sampled indices match.
+Policy-generated feedback/calibration states vary with the actor under the
+same original procedures and seeds.
+
+\topic{Preservation, efficiency and scope}
+@@PRESERVATION_PARAGRAPH@@
+Generalization means the original held-out start/goal/constraint banks.
+No composition or out-of-distribution test is included.
+Timing uses an NVIDIA L4: 100 warmed batch 1 calls for generator latency;
+training-log intervals exclude validation boundaries, while total run time
+includes validation. Seeds provide descriptive ranges, not a population-level
+variance estimate. Full per-seed success, coverage, latent recovery, parameters
+and timings are in the supplied CSV/JSON tables.
+
+\topic{Reproduction and audit}
+\texttt{REPRODUCE.txt} gives the input archives, hashes and commands. The source
+bundle includes immutable original policy/environment code and separate wrappers,
+with every job/configuration in \texttt{queue\_manifest.json}. Compact weights
+preserve exact inference tensors; logs and manifests identify their source.
+@@AUDIT_PARAGRAPH@@
+Two control errors were corrected before final analysis: a removed posterior
+noise draw initially shifted the RNG stream, and initial Cube ablations retained
+known-code reconstruction. Affected attempts were archived, excluded and rerun;
+their histories remain in the correction receipts. No original checkpoint or
+public-repository source was overwritten.
+\end{document}

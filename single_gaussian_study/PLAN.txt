@@ -1,0 +1,56 @@
+Single Gaussian initialization study, 27 November 2026
+
+One standard-normal pair (uK,uW) per episode, no candidate grid, no extra samples,
+no seed selection and no multiple restarts. Seeds241/1241/2241; same original
+64 contexts in each of easy/conflict/coupled-OOD in both environments.
+NAdam=0,5,10,20,40; H8, predict16, execute8/reobserve unchanged.
+Total90 cells/5760 evaluations on384 distinct contexts.
+Four independent evaluation processes use separate environments, RNGs and
+output directories. Each episode still has exactly one initialization/path.
+The first parallel Cube0 cell must match all64 full serial-pilot native paths
+and outcomes before positive-step cells are admitted. Native timers include
+contention; the dedicated final batch1 benchmark runs without evaluations.
+
+Gaussian magnitudes are projected to original [.01,2.5] bounds. TwoRoom uses
+its original negative/negative branches (folded Gaussian magnitudes); Cube
+retains each sampled sign pair for the entire episode. Base amplitudes start
+from abs(original base first code); route sign and speed remain unchanged.
+The original fraction clamp[.001,.999], logit/sigmoid map and float32 roundtrip
+apply at all N including0. This makes the usable first optimization point equal
+across step counts. Small boundary projection is documented, not hidden.
+
+Every replan starts ONLY from the previous selected four existing inputs; no
+new Gaussian sample is taken. Reset Adam moments each replan, as in the original.
+Original optimizer default settings, lr.12 and best-iterate retention along
+that single trajectory are preserved; this is not choosing among starts.
+The old constructor assumes multiple sign starts. Its guards are installed
+using its old config; the actual planner config/trace has exactly1 start.
+No construction-time neural forwards or initialization search occurs.
+
+Frozen original models/objective/private prior.01/amplitude tether1 or.0005.
+TwoRoom executor clip(AW+AK-AB), Cube AW and original grip threshold.
+Strict native monitors/termination unchanged; no physics queries in planner.
+Existing84-cell study is read-only, with grid-based results reused as reference.
+Technical preflight invokes legacy one-start Adam from a known grid point only
+to establish identical loop arithmetic; no such point enters evaluated episodes.
+
+Analysis: task-context by initialization-seed matrices, all seeds shown.
+For each stratum resample64 contexts and3 seeds independently, retaining paired
+methods,2000 times. Also report context-only intervals and seed-specific rates.
+Pool with equal categories and stratified context resampling/shared seed draw.
+N0-fail -> refined-success and N0-success -> refined-fail count actual matched
+closed-loop outcomes, not inferred loss labels. First-replan raw/J comparisons
+share exactly observed inputs; episode means/later phases are descriptive.
+Raw agreement and total regularized J stay separate. Sparse/seed limitations
+and previous benchmark reuse remain explicit. No retuning from outcomes.
+
+Measure total native planning time, optimizer-loop CUDA intervals and model
+forward/backward work; after all evaluations measure uncontended batch1 latency
+at matched observed initial/midpoint states,3 repeats,12 contexts/environment.
+Original grid reference runtime is already measured, shown as historical.
+
+Deliver concise PDF+LaTeX, full joint/K/W/goal tables, seed variability and
+paired recovery/regression estimates, required3plots plus native success/failure
+examples, reproducible source/configs/aggregate statistics/figures and reference
+model hashes. Raw NPZ/observations/actions/poses/planning/individual outcomes
+stay on GPU. Only aggregates, code, weights and render-only figures may transfer.

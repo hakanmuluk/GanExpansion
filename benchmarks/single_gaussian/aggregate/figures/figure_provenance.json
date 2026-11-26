@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "renderer_sha256": "04cdc93dec65a519af71fbd2d918208392804f78ae4227ce11079455f9a70a1e",
+  "summary_sha256": "0bd2333b3cb9727d50fb3b707fbf0e8a05f01594f0787bb4ce8267c871669d46",
+  "latency_sha256": "94b533ab20490123642dc98c5c36b6968a68e6c827307ddaeff74c6977cfaa4f",
+  "files": {
+    "success_vs_steps.pdf": "ff6e7656ad2b1fd622e9f79ec9c2a7b4e0fe1d2136369b199ce973975cc6d856",
+    "success_vs_steps.png": "1d2f50ef539d225dd2f4f44e10660bc2aeba4767fc209717f794e0d693a283c6",
+    "disagreement_vs_steps.pdf": "76dbcdcde0be764d89b191466972fd3458db79cff90b606456c716305ec8c507",
+    "disagreement_vs_steps.png": "5b6e36cbc1b5a678e398a96975d315e345825f52cbfd8139617f0d0853d2ca60",
+    "success_vs_latency.pdf": "56ca237f82a87812ce77ad5040f51f5f866419731d0a5a0a42e66cba48bfd986",
+    "success_vs_latency.png": "fb7d6e38327e1397fba1f17f262bfc93122003ba6256d5dcc8cec64a8e16c410"
+  },
+  "raw_episode_data_exported": false
+}

@@ -1,0 +1,14 @@
+{
+  "checkpoint": "ablation_results/training/cube_keepout_r16_s42/best.pt",
+  "skill": "keepout",
+  "base": "cube/artifacts/final/base_policy.pt",
+  "contexts": "cube_addon_artifacts/data_force/keepout/train_contexts.npz",
+  "count": 64,
+  "codes": 8,
+  "frames": 12,
+  "workers": 4,
+  "seed": 1731,
+  "out": "ablation_results/physical/cube_keepout_r16_s42",
+  "rollouts_only": true,
+  "macro_waypoint": false
+}

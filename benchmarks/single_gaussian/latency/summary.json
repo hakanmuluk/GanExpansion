@@ -1,0 +1,480 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "environment": "tworoom",
+      "steps": 0,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.016058355997301987,
+      "p95_wall_seconds": 0.0169696192479023,
+      "median_cuda_event_elapsed_seconds": 0.016025599479675294,
+      "median_context_seed_bootstrap95": [
+        0.015971741823295815,
+        0.016094027549843303
+      ],
+      "actor_forward_candidate_equivalents_per_call": 4,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 0,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "tworoom",
+      "steps": 5,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.09155039100005524,
+      "p95_wall_seconds": 0.09711356375191826,
+      "median_cuda_event_elapsed_seconds": 0.09151897811889648,
+      "median_context_seed_bootstrap95": [
+        0.09070260699809296,
+        0.09236236400101916
+      ],
+      "actor_forward_candidate_equivalents_per_call": 14,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 5,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "tworoom",
+      "steps": 10,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.16663534849976713,
+      "p95_wall_seconds": 0.1775734917509908,
+      "median_cuda_event_elapsed_seconds": 0.16660121154785157,
+      "median_context_seed_bootstrap95": [
+        0.165049301002,
+        0.16775122408430435
+      ],
+      "actor_forward_candidate_equivalents_per_call": 24,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 10,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "tworoom",
+      "steps": 20,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.31607391350189573,
+      "p95_wall_seconds": 0.33254440250038897,
+      "median_cuda_event_elapsed_seconds": 0.31604173278808595,
+      "median_context_seed_bootstrap95": [
+        0.31358998600262566,
+        0.3178286432385448
+      ],
+      "actor_forward_candidate_equivalents_per_call": 44,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 20,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "tworoom",
+      "steps": 40,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.617500847500196,
+      "p95_wall_seconds": 0.6473306520001643,
+      "median_cuda_event_elapsed_seconds": 0.6174684143066407,
+      "median_context_seed_bootstrap95": [
+        0.6146661995007889,
+        0.6240650580002693
+      ],
+      "actor_forward_candidate_equivalents_per_call": 84,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 40,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "cube",
+      "steps": 0,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.015236961000482552,
+      "p95_wall_seconds": 0.016001092249098292,
+      "median_cuda_event_elapsed_seconds": 0.01520793628692627,
+      "median_context_seed_bootstrap95": [
+        0.015179750000243075,
+        0.015278113998647314
+      ],
+      "actor_forward_candidate_equivalents_per_call": 4,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 0,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "cube",
+      "steps": 5,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.09139661799963505,
+      "p95_wall_seconds": 0.09898423899994668,
+      "median_cuda_event_elapsed_seconds": 0.0913643684387207,
+      "median_context_seed_bootstrap95": [
+        0.0908537831016929,
+        0.09206475154842338
+      ],
+      "actor_forward_candidate_equivalents_per_call": 14,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 5,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "cube",
+      "steps": 10,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.16713939900182595,
+      "p95_wall_seconds": 0.17959328924735019,
+      "median_cuda_event_elapsed_seconds": 0.16711061096191404,
+      "median_context_seed_bootstrap95": [
+        0.1663567649993638,
+        0.16811407999921357
+      ],
+      "actor_forward_candidate_equivalents_per_call": 24,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 10,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "cube",
+      "steps": 20,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.319627117998607,
+      "p95_wall_seconds": 0.33614010749897716,
+      "median_cuda_event_elapsed_seconds": 0.31959301757812497,
+      "median_context_seed_bootstrap95": [
+        0.3181733940000413,
+        0.32058000937536235
+      ],
+      "actor_forward_candidate_equivalents_per_call": 44,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 20,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    },
+    {
+      "environment": "cube",
+      "steps": 40,
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "initialization_seeds": 3,
+      "observed_phases_per_context_seed": 2,
+      "repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "measured_calls": 216,
+      "median_wall_seconds": 0.6238989009998477,
+      "p95_wall_seconds": 0.6516637907488985,
+      "median_cuda_event_elapsed_seconds": 0.623867401123047,
+      "median_context_seed_bootstrap95": [
+        0.6204965384611114,
+        0.6277342649991624
+      ],
+      "actor_forward_candidate_equivalents_per_call": 84,
+      "base_forward_equivalents_per_call": 1,
+      "input_backward_candidate_equivalents_per_call": 40,
+      "coarse_grid_candidates": 0,
+      "starts": 1,
+      "scope": "Same actual initial/midpoint N20 observation and previous-code input for every N. Cold calls include production randn with a common per-probe seed; batch1 TwoRoom draws need not equal native batch64 RNG layout. Outcome-independent first4 contexts/category."
+    }
+  ],
+  "actual_GPU_fidelity_checks": [
+    {
+      "environment": "tworoom",
+      "actual_observation_action_identity_checks": 6,
+      "all_bitwise_equal": true
+    },
+    {
+      "environment": "cube",
+      "actual_observation_action_identity_checks": 6,
+      "all_bitwise_equal": true
+    }
+  ],
+  "recorder_overhead": [
+    {
+      "environment": "tworoom",
+      "matched_probes": 24,
+      "plain_median_seconds": 0.315622006999547,
+      "recorded_median_seconds": 0.3147394829993573,
+      "recorded_to_plain_median_ratio": 0.9972038578406511
+    },
+    {
+      "environment": "cube",
+      "matched_probes": 24,
+      "plain_median_seconds": 0.3235030095002003,
+      "recorded_median_seconds": 0.3213525600003777,
+      "recorded_to_plain_median_ratio": 0.9933526136182012
+    }
+  ],
+  "historical_grid_latency_sha256": "065d8170fda9fcd447506c202608cb4fb2c016780f1c6a126a1badc25a8a20c1",
+  "historical_grid_latency": [
+    {
+      "environment": "tworoom",
+      "setting": "h8_n0",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.01735313849985687,
+      "p95_wall_seconds": 0.01813837150020845,
+      "mean_wall_seconds": 0.017452603277661183,
+      "median_cuda_event_elapsed_seconds": 0.017321759223937985,
+      "median_context_bootstrap95": [
+        0.017281768999964697,
+        0.017385925037547167
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "tworoom",
+      "setting": "h8_n5",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.09828234049928142,
+      "p95_wall_seconds": 0.10384280995085647,
+      "mean_wall_seconds": 0.09905812730562502,
+      "median_cuda_event_elapsed_seconds": 0.09825273895263673,
+      "median_context_bootstrap95": [
+        0.09792369200113171,
+        0.09925976399972569
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "tworoom",
+      "setting": "h8_n10",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.17267357499895297,
+      "p95_wall_seconds": 0.18215470909917714,
+      "mean_wall_seconds": 0.1736750967777425,
+      "median_cuda_event_elapsed_seconds": 0.17264593505859377,
+      "median_context_bootstrap95": [
+        0.1719506495001042,
+        0.17324791850023757
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "tworoom",
+      "setting": "h8_n20",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.32095322600071086,
+      "p95_wall_seconds": 0.33300328235000054,
+      "mean_wall_seconds": 0.32176083419441665,
+      "median_cuda_event_elapsed_seconds": 0.32092251586914067,
+      "median_context_bootstrap95": [
+        0.31941274649943807,
+        0.32255417499982286
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "tworoom",
+      "setting": "h8_n40",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.6144928140001866,
+      "p95_wall_seconds": 0.6475727392507906,
+      "mean_wall_seconds": 0.6192517825695126,
+      "median_cuda_event_elapsed_seconds": 0.6144578857421875,
+      "median_context_bootstrap95": [
+        0.6130547665006816,
+        0.619653935000315
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "cube",
+      "setting": "h8_n0",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.01634652949996962,
+      "p95_wall_seconds": 0.017579289949753732,
+      "mean_wall_seconds": 0.016533687638911942,
+      "median_cuda_event_elapsed_seconds": 0.016308480262756348,
+      "median_context_bootstrap95": [
+        0.016259600000012142,
+        0.01646019600048021
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "cube",
+      "setting": "h8_n5",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.10060000750036124,
+      "p95_wall_seconds": 0.10593783789981899,
+      "mean_wall_seconds": 0.10112329922225803,
+      "median_cuda_event_elapsed_seconds": 0.10057025527954103,
+      "median_context_bootstrap95": [
+        0.09991852949951863,
+        0.10137823150125769
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "cube",
+      "setting": "h8_n10",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.17661144599969703,
+      "p95_wall_seconds": 0.1863874945996031,
+      "mean_wall_seconds": 0.17738452422213413,
+      "median_cuda_event_elapsed_seconds": 0.17658443450927735,
+      "median_context_bootstrap95": [
+        0.17578102750030666,
+        0.1770662920007453
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "cube",
+      "setting": "h8_n20",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.3286463795011514,
+      "p95_wall_seconds": 0.3447247606000019,
+      "mean_wall_seconds": 0.3307823848194605,
+      "median_cuda_event_elapsed_seconds": 0.3286186370849609,
+      "median_context_bootstrap95": [
+        0.32724094900004275,
+        0.33211447300072905
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    },
+    {
+      "environment": "cube",
+      "setting": "h8_n40",
+      "batch_size": 1,
+      "independent_contexts": 12,
+      "measured_calls": 72,
+      "phases_per_context": 2,
+      "timing_repeats_per_phase": 3,
+      "warmup_calls": 3,
+      "median_wall_seconds": 0.6350005880003664,
+      "p95_wall_seconds": 0.6683979584995541,
+      "mean_wall_seconds": 0.6376696013331993,
+      "median_cuda_event_elapsed_seconds": 0.6349687194824218,
+      "median_context_bootstrap95": [
+        0.6327370475000862,
+        0.6370548099985172
+      ],
+      "probe_selection": "First4 contexts/category, initial and midpoint observed reference replans; no outcome filtering.",
+      "history": "Same reference previous-code candidate at a matched warm observation; actual rollouts retain each method own previous solution."
+    }
+  ],
+  "historical_reference_note": "Previously reported matched batch1 timing on same L4/software; not remeasured or retuned in this experiment. Observed-state sets differ between studies.",
+  "study_sha256": "a8362da49bf3608721f9744835c3d5905afaedbd0e0989b50217430c0438ffa5",
+  "timing_source_sha256": "e8f61a75efb751b3d85f605be13163f25be6e16bde42cb032b53e386c0e2ed15",
+  "raw_episode_data_exported": false
+}

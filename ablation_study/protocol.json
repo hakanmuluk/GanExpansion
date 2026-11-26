@@ -1,0 +1,163 @@
+{
+  "created": "2026-11-25",
+  "instructions": "User attachment 07d342df-ca14-4fd1-99a2-d5037c38b7c6/pasted-text-1.txt",
+  "original_files_may_change": false,
+  "public_repository_may_change": false,
+  "data_regeneration_exception": {
+    "authorized": true,
+    "reason": "Latest Cube raw training data was lost on Colab reset. User explicitly authorized recreation after confirming restoration unavailable.",
+    "rule": "Use recorded generation settings; compare ablations against matched controls on the same regenerated files. Do not present historical-vs-regenerated as a causal ablation.",
+    "verified_outcome": {
+      "training_episodes": 5805,
+      "train_sha256": "78c350141eeb6d18f0d68a2d807b801de5f3fd0184cd7a973a7bb40f7a1aa798",
+      "byte_identical_to_historical_training_file": true,
+      "native_prefix_replay_max_error_m": 2.977501567524854e-08
+    }
+  },
+  "loRA_only_disconnection": "Both private scalar and own skill context enter G through the extra scale/shift branch; pure removal disconnects both. Base z/style remain active.",
+  "requirements": {
+    "rq1": {
+      "scope": "Existing TwoRoom base and latest Cube base, no retraining. Fixed-state latent sweeps, signs, magnitudes, components, cross-state consistency; actual closed-loop success, mode coverage, sensitivity, trajectory diversity and figures.",
+      "status": "complete: unchanged-checkpoint fixed-eight and separate seven-value speed-axis interventions; all original scenes, actual closed-loop execution and aggregate figures."
+    },
+    "rq1_training_scheme": {
+      "scope": "Matched original full configuration vs removal of encoder-reconstruction, KL, latent cycles, known-code/latent-label and other encoder-dependent auxiliary terms. Preserve GAN, applicable nonlatent auxiliaries, warmups, data, G architecture, budgets and hyperparameters.",
+      "status": "complete: two training seeds in each environment; eight matched full/removed base evaluations and eight fixed-code diagnostics; exact recreated latest Cube training-file checksum."
+    },
+    "rq2_rank": {
+      "scope": "Both independent skills, both environments, ranks 1,2,4,8,16; only rank changes. Matched data ordering and initialization of unchanged components. Disabled-path equality, multimodality, latent recovery, active parameter counts, speed and original test protocols.",
+      "status": "complete: all40fulladaptermodels,2environments\u00d72skills\u00d75ranks\u00d72seeds, trained/evaluated under original published recipes. Per-seed success, coverage, latent recovery, efficiency and parameter counts saved."
+    },
+    "rq3_modulation": {
+      "scope": "Rank8 full vs pure removal of skill-specific hidden/output scale-shift; pretrained base modulation retained. Private code and instruction context disconnect, without replacement conditioning.",
+      "status": "complete: all8purebranch-removal models,2environments\u00d72skills\u00d72seeds, trained/evaluated; bothprivateu andnewcontext disconnected, no replacement conditioner."
+    },
+    "deliverables": {
+      "scope": "Tables, figures, checkpoints, logs, configs, reproducible commands, final report organized RQ1/RQ2/RQ3 with scope/limitations and no retuning.",
+      "status": "Experimental evidence complete. Final report generation and artifact validation are recorded separately in report_provenance.json and DELIVERY_MANIFEST.json."
+    }
+  },
+  "remote_root": "/content/cs585_ablation_20261125",
+  "remote_jobs": {
+    "reference_tworoom_s42": 119951,
+    "queue": "ablation_results/training_queue_v2.process.json",
+    "cube_raw_recreation": 113809,
+    "cube_base_recovery": 115299
+  },
+  "sources": {
+    "attachment_sha256": "518ffde9e4dfe2b4e3aacbc808a0b403a650a133cb418644cb69f27544e5fd9f"
+  },
+  "technical_corrections": [
+    {
+      "issue": "First encoder-loss ablation omitted the removed posterior noise draw, shifting the retained augmentation/prior RNG within a step.",
+      "resolution": "Retain that unused random draw; verify actual source prefixes produce identical retained augmented states, real targets, masks and prior codes for five step regimes in both environments.",
+      "old_attempt": "ablation_results/training/tworoom_base_adversarial_s42_invalid_initial_rng_attempt",
+      "excluded_from_results": true
+    },
+    {
+      "issue": "Cube base loss ablation retained known_rec_weight=10 on a zero known_z, so it was not the requested removal of the combined latent/imitation scheme.",
+      "resolution": "Disable known_rec_weight explicitly; archive all affected Cube ablation models/evaluations and derived paired summaries; rerun both complete stages for both seeds using unchanged full-reference RNG traces and datasets.",
+      "excluded_from_results": true,
+      "invalidated_jobs": [
+        "cube_original_base_adversarial_s42",
+        "cube_latest_initialize_adversarial_s42",
+        "cube_latest_base_adversarial_s42",
+        "rq1_cube_latest_adversarial_s42",
+        "original_gaussian_cube_adversarial_s42",
+        "cube_original_base_adversarial_s43",
+        "cube_latest_initialize_adversarial_s43",
+        "cube_latest_base_adversarial_s43",
+        "rq1_cube_latest_adversarial_s43",
+        "original_gaussian_cube_adversarial_s43",
+        "latent_consistency_s42",
+        "latent_consistency_second_seeds",
+        "base_side_by_side_figures_s42"
+      ],
+      "corrected_jobs": [
+        "cube_original_base_adversarial_s42_corrected_v2",
+        "cube_latest_initialize_adversarial_s42_corrected_v2",
+        "cube_latest_base_adversarial_s42_corrected_v2",
+        "rq1_cube_latest_adversarial_s42_corrected_v2",
+        "original_gaussian_cube_adversarial_s42_corrected_v2",
+        "cube_original_base_adversarial_s43_corrected_v2",
+        "cube_latest_initialize_adversarial_s43_corrected_v2",
+        "cube_latest_base_adversarial_s43_corrected_v2",
+        "rq1_cube_latest_adversarial_s43_corrected_v2",
+        "original_gaussian_cube_adversarial_s43_corrected_v2",
+        "latent_consistency_s42_corrected_v2",
+        "latent_consistency_second_seeds_corrected_v2",
+        "base_side_by_side_figures_s42_corrected_v2"
+      ],
+      "valid_unaffected": "Full Cube controls, existing-checkpoint diagnostics, TwoRoom arms and all independent adapter recipes."
+    }
+  ],
+  "rank_model_versions": {
+    "tworoom": "Original published frozen base with clean, fresh adapter recipes from seeds123/2026. The seed42 keepout history had an unavailable first-dataset pilot; it is not silently replaced by fresh training.",
+    "cube": "Original published frozen base and exact published adapter recipes: K1000+3000 with recorded feedback transition, W8000 macro training. Latest base35 is separately evaluated and retrained for base-loss RQ1."
+  },
+  "preservation_backup": {
+    "remote": "/content/cs585_ablation_first_models_backup.tar.gz",
+    "sha256": "b204725eedea0ae98f9ba666e01d2dae31a9ed45b4d760d65c0b5f7dab7ff114",
+    "files": 102,
+    "raw_observation_or_action_exports": false
+  },
+  "technical_necessities": [
+    {
+      "item": "RNG control",
+      "rule": "Consume the removed posterior noise draw without using its value; retained augmentation/targets/masks/prior codes verified exactly. Replay reference RNG at every training batch."
+    },
+    {
+      "item": "Encoder compatibility",
+      "rule": "Base no-latent trainers retain an inert serialized E to match initialization/checkpoint interfaces. No encoder-dependent training gradient remains; its legacy E diagnostics are marked inapplicable."
+    },
+    {
+      "item": "TwoRoom feedback",
+      "rule": "Original feedback requires E(demonstration) and known-style paired targets; remove with the explicitly ablated latent-supervision path. Preserve original real-data state augmentation and action smoothness."
+    },
+    {
+      "item": "Cube warmup",
+      "rule": "Preserve the500-step original GAN warmup. With all other generator losses removed, take no artificial generator update while its loss has no gradient."
+    },
+    {
+      "item": "Private E physical calibration",
+      "rule": "Preserve original512 actor-generated training trajectories and256 validation trajectories, matched context banks/code seeds,1500updates,batch64,lr.0003 and exact loss. Original code requires these trajectories to match the frozen actor checkpoint. Repeat for each actor; no actor weight updates or new expert queries."
+    }
+  ],
+  "interpretation_rules": [
+    "RQ1 removes the combined latent/imitation/synthetic-label scheme, not one individual loss.",
+    "Unsupervised latent sign/axis meanings may differ. Evaluate actual route entropy, paired paths, success and code consistency; do not infer collapse from expert-sign mismatch alone.",
+    "RQ2 keeps style-branch capacity fixed while changing LoRA factor width only; report its fixed parameter intercept.",
+    "RQ3 pure branch removal disconnects both private u and instruction context; it is not a comparison to an alternatively conditioned LoRA architecture.",
+    "Original Gaussian benchmarks and fixed-code diagnostic sweeps are separate result panels.",
+    "Keep first-seed conclusions exploratory until matched second seeds complete."
+  ],
+  "supplementary_existing_speed_axis_diagnostic": {
+    "fixed_z1": 1,
+    "z2_values": [
+      -2,
+      -1,
+      -0.25,
+      0,
+      0.25,
+      1,
+      2
+    ],
+    "checkpoints": "Unchanged original TwoRoom and latest existing Cube checkpoints",
+    "scenes": "All original256TwoRoom/150Cube test contexts",
+    "scope": "Additional one-factor diagnostic, not changed benchmark or training settings",
+    "timing_contrast": "Both endpoint codes successful in the same scene",
+    "required_initial_observation_check": "Exact equality across all seven codes within each scene"
+  },
+  "execution_completion": {
+    "valid_queue_jobs_complete": 204,
+    "failed": 0,
+    "immutable_input_files_checked": 3148,
+    "configuration_checks": 66,
+    "training_phase_receipts": 72,
+    "auxiliary_procedure_receipts": 48,
+    "selected_study_models": 56,
+    "unchanged_original_bases": 3,
+    "final_control_audit": "ablation_results/aggregate/final_control_audit.json",
+    "checkpoint_inventory": "ablation_results/aggregate/final_checkpoint_inventory.json"
+  }
+}

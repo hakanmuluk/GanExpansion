@@ -1,0 +1,14 @@
+{
+  "checkpoint": "ablation_results/engineering_variants/cube_lora_only_engineering.pt",
+  "skill": "waypoint",
+  "base": "cube/artifacts/final/base_policy.pt",
+  "contexts": "cube_addon_artifacts/data_force/waypoint/train_contexts.npz",
+  "count": 2,
+  "codes": 2,
+  "frames": 12,
+  "workers": 2,
+  "seed": 1731,
+  "out": "ablation_results/engineering_physical_variant",
+  "rollouts_only": true,
+  "macro_waypoint": false
+}

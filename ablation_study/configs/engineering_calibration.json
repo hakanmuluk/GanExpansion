@@ -1,0 +1,19 @@
+{
+  "checkpoint": "ablation_results/engineering_variants/cube_lora_only_engineering.pt",
+  "physical_train": "ablation_results/engineering_physical_variant",
+  "base": "cube/artifacts/final/base_policy.pt",
+  "val_contexts": "cube_addon_artifacts/data_force/waypoint/val_contexts.npz",
+  "skill": "waypoint",
+  "out": "ablation_results/engineering_encoder_calibration",
+  "steps": 1,
+  "batch": 64,
+  "lr": 0.0003,
+  "eval_every": 250,
+  "val_count": 2,
+  "val_codes": 2,
+  "workers": 2,
+  "seed": 42,
+  "device": "cuda",
+  "resume": null,
+  "geometry_encoder": false
+}

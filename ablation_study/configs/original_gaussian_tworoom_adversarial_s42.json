@@ -1,0 +1,11 @@
+{
+  "checkpoint": "ablation_results/training/tworoom_base_adversarial_s42/snapshots/step_005000.pt",
+  "data": "artifacts/data_v2/test.npz",
+  "out": "ablation_results/evaluation/original_gaussian_tworoom_adversarial_s42",
+  "pairs": 256,
+  "latents": 32,
+  "seed": 9001,
+  "device": "cuda",
+  "reference_count": 128,
+  "raw": false
+}

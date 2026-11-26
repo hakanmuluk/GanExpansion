@@ -1,0 +1,1303 @@
+{
+  "immutable_input_files_checked": 3148,
+  "configuration_checks": [
+    {
+      "name": "tworoom_waypoint_r4_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r8_lora_only_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r4_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r1_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r4_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r16_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r1_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r2_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r8_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r16_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r2_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r8_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r4_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r8_lora_only_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r16_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r1_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r4_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r4_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_lora_only_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_lora_only_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_lora_only_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r1_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r8_lora_only_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r8_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r2_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r8_lora_only_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r8_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r8_lora_only_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r16_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r1_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r4_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r2_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r2_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r16_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r2_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_lora_only_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r1_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r1_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r2_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r8_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r1_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r16_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r4_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r4_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r16_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r2_s42",
+      "reference": "cube_keepout_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r16_s42",
+      "reference": "cube_waypoint_r8_s42",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r1_s43_initial_1000",
+      "reference": "cube_keepout_r8_s43_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r8_lora_only_s123",
+      "reference": "tworoom_waypoint_r8_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r8_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r2_s43",
+      "reference": "cube_keepout_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r1_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_waypoint_r16_s2026",
+      "reference": "tworoom_waypoint_r8_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_waypoint_r16_s43",
+      "reference": "cube_waypoint_r8_s43",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "cube_keepout_r8_s42_initial_1000",
+      "reference": "cube_keepout_r8_s42_initial_1000",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r2_s2026",
+      "reference": "tworoom_keepout_r4_s2026",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_keepout_r4_s123",
+      "reference": "tworoom_keepout_r4_s123",
+      "only_rank_and_destination_differ": true
+    },
+    {
+      "name": "tworoom_base_adversarial_s42",
+      "reference": "tworoom_base_full_s42",
+      "same_original_hyperparameters": true
+    },
+    {
+      "name": "tworoom_base_adversarial_s123",
+      "reference": "tworoom_base_full_s123",
+      "same_original_hyperparameters": true
+    },
+    {
+      "name": "cube_original_base_adversarial_s42",
+      "reference": "cube_original_base_full_s42",
+      "same_original_hyperparameters": true
+    },
+    {
+      "name": "cube_original_base_adversarial_s43",
+      "reference": "cube_original_base_full_s43",
+      "same_original_hyperparameters": true
+    },
+    {
+      "name": "cube_latest_base_adversarial_s42",
+      "reference": "cube_latest_base_full_s42",
+      "same_original_hyperparameters": true
+    },
+    {
+      "name": "cube_latest_base_adversarial_s43",
+      "reference": "cube_latest_base_full_s43",
+      "same_original_hyperparameters": true
+    }
+  ],
+  "training_receipts": [
+    {
+      "job": "tworoom_base_adversarial_s42",
+      "verified_batches": 5000,
+      "valid": true
+    },
+    {
+      "job": "cube_original_base_full_s42",
+      "verified_batches": 4000,
+      "valid": true
+    },
+    {
+      "job": "cube_latest_base_full_s42",
+      "verified_batches": 6000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_base_full_s123",
+      "verified_batches": 5000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_base_adversarial_s123",
+      "verified_batches": 5000,
+      "valid": true
+    },
+    {
+      "job": "cube_original_base_full_s43",
+      "verified_batches": 4000,
+      "valid": true
+    },
+    {
+      "job": "cube_latest_base_full_s43",
+      "verified_batches": 6000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r4_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_original_base_adversarial_s42_corrected_v2",
+      "verified_batches": 4000,
+      "valid": true
+    },
+    {
+      "job": "cube_latest_base_adversarial_s42_corrected_v2",
+      "verified_batches": 6000,
+      "valid": true
+    },
+    {
+      "job": "cube_original_base_adversarial_s43_corrected_v2",
+      "verified_batches": 4000,
+      "valid": true
+    },
+    {
+      "job": "cube_latest_base_adversarial_s43_corrected_v2",
+      "verified_batches": 6000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r16_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r1_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r2_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r8_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r8_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r16_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r1_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r2_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r4_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r16_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r16_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r1_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r1_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r2_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r2_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r4_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r4_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r8_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r16_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r1_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r2_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r4_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_lora_only_s42_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_lora_only_s42",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r8_lora_only_s42",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r8_lora_only_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r8_lora_only_s123",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r4_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r16_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r1_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r2_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r8_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r8_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r16_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r1_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r2_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r4_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r16_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r16_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r1_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r1_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r2_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r2_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r4_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r4_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r8_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r16_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r1_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r2_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r4_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_lora_only_s43_initial_1000",
+      "verified_batches": 1000,
+      "valid": true
+    },
+    {
+      "job": "cube_keepout_r8_lora_only_s43",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "cube_waypoint_r8_lora_only_s43",
+      "verified_batches": 8000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_keepout_r8_lora_only_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_waypoint_r8_lora_only_s2026",
+      "verified_batches": 3000,
+      "valid": true
+    },
+    {
+      "job": "tworoom_base_full_s42",
+      "verified_batches": 5000,
+      "valid": true,
+      "launched_before_queue": true
+    }
+  ],
+  "auxiliary_receipts": [
+    {
+      "job": "physical_cube_keepout_r8_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r8_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r16_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r16_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r1_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r1_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r2_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r2_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r4_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r4_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r8_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r8_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r16_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r16_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r1_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r1_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r2_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r2_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r4_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r4_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r8_lora_only_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r8_lora_only_s42",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r8_lora_only_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r8_lora_only_s42",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r16_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r1_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r2_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r4_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r8_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r16_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r1_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r2_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r4_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r8_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r16_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r1_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r2_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r4_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r8_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r16_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r1_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r2_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r4_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r8_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_keepout_r8_lora_only_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "physical_cube_waypoint_r8_lora_only_s43",
+      "verified_rollouts": 512,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_keepout_r8_lora_only_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    },
+    {
+      "job": "calibrate_cube_waypoint_r8_lora_only_s43",
+      "verified_updates": 1500,
+      "physical_training_rollouts": 512,
+      "physical_validation_rollouts": 256,
+      "valid": true
+    }
+  ],
+  "job_counts": {
+    "complete": 204,
+    "running": 0,
+    "failed": 0
+  },
+  "invalidated_history": {
+    "cube_original_base_adversarial_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_original_base_adversarial_s42.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_original_base_s42.pt"
+      ],
+      "started": 1795639045.6482038,
+      "configuration_sha256": {
+        "ablation_study/configs/cube_original_base_adversarial_s42.json": "ba0ed752da3bdcb0c2d160f600619351eded7a893c38c0fb78eb83d78278f709"
+      },
+      "pid": 164376,
+      "returncode": 0,
+      "finished": 1795639291.7194366,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "cube_latest_initialize_adversarial_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.prepare_cube_stage_b",
+        "initialization",
+        "--parent",
+        "ablation_results/training/cube_original_base_adversarial_s42/best.pt",
+        "--discriminator-parent",
+        "cube/artifacts/final/training_resume.pt",
+        "--out",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s42.pt",
+        "--no-latent"
+      ],
+      "started": 1795639291.7261984,
+      "configuration_sha256": {},
+      "pid": 168758,
+      "returncode": 0,
+      "finished": 1795639295.6407895,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "cube_latest_base_adversarial_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_latest_base_adversarial_s42.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_latest_base_s42.pt"
+      ],
+      "started": 1795639705.6051009,
+      "configuration_sha256": {
+        "ablation_study/configs/cube_latest_base_adversarial_s42.json": "bd4c53f7a9adc17199c10c2b934f16d150ccaa92c3c8719a093df3f921d6b650"
+      },
+      "pid": 173192,
+      "returncode": 0,
+      "finished": 1795639968.9215977,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "rq1_cube_latest_adversarial_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_analysis",
+        "--environment",
+        "cube",
+        "--checkpoint",
+        "ablation_results/training/cube_latest_base_adversarial_s42/best.pt",
+        "--data",
+        "cube/artifacts/data",
+        "--workers",
+        "4",
+        "--out",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s42"
+      ],
+      "started": 1795639968.9284606,
+      "configuration_sha256": {},
+      "pid": 176884,
+      "returncode": 0,
+      "finished": 1795640225.391086,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "original_gaussian_cube_adversarial_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.evaluate_base",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/original_gaussian_cube_adversarial_s42.json"
+      ],
+      "started": 1795641072.4488244,
+      "configuration_sha256": {
+        "ablation_study/configs/original_gaussian_cube_adversarial_s42.json": "a44a76f73a9e6556328878b4b37bd4cf738a0ddeea3f91411fb57e5a750fa653"
+      },
+      "pid": 195877,
+      "returncode": 0,
+      "finished": 1795641258.8896763,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "cube_original_base_adversarial_s43": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_original_base_adversarial_s43.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_original_base_s43.pt"
+      ],
+      "started": 1795641999.7524152,
+      "configuration_sha256": {
+        "ablation_study/configs/cube_original_base_adversarial_s43.json": "ad766cd026c56c55530bfb891a207e00f00a9bf0218553e24846aee32790ca12"
+      },
+      "pid": 219326,
+      "returncode": 0,
+      "finished": 1795642272.8061266,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "cube_latest_initialize_adversarial_s43": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.prepare_cube_stage_b",
+        "initialization",
+        "--parent",
+        "ablation_results/training/cube_original_base_adversarial_s43/best.pt",
+        "--discriminator-parent",
+        "cube/artifacts/final/seed43/training_resume.pt",
+        "--out",
+        "ablation_results/initialization/cube_latest_initialize_adversarial_s43.pt",
+        "--no-latent"
+      ],
+      "started": 1795642272.8141809,
+      "configuration_sha256": {},
+      "pid": 225553,
+      "returncode": 0,
+      "finished": 1795642276.427913,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "base_side_by_side_figures_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.make_base_figures",
+        "--seed",
+        "42",
+        "--out",
+        "ablation_results/figures/base_side_by_side_figures_s42"
+      ],
+      "started": 1795642666.2869773,
+      "configuration_sha256": {},
+      "pid": 229826,
+      "returncode": 0,
+      "finished": 1795642668.7085762,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "cube_latest_base_adversarial_s43": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.base_ablation",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/cube_latest_base_adversarial_s43.json",
+        "--rng-trace",
+        "ablation_results/rng/cube_latest_base_s43.pt"
+      ],
+      "started": 1795642668.7155156,
+      "configuration_sha256": {
+        "ablation_study/configs/cube_latest_base_adversarial_s43.json": "d662ede8e987001d6b0e7489548a44784d8a0039ab9ee69ae06c8422113dda23"
+      },
+      "pid": 229836,
+      "returncode": 0,
+      "finished": 1795642936.6838415,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "rq1_cube_latest_adversarial_s43": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_analysis",
+        "--environment",
+        "cube",
+        "--checkpoint",
+        "ablation_results/training/cube_latest_base_adversarial_s43/best.pt",
+        "--data",
+        "cube/artifacts/data",
+        "--workers",
+        "4",
+        "--out",
+        "ablation_results/evaluation/rq1_cube_latest_adversarial_s43"
+      ],
+      "started": 1795642936.691736,
+      "configuration_sha256": {},
+      "pid": 233552,
+      "returncode": 0,
+      "finished": 1795643204.463204,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "latent_consistency_s42": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_consistency",
+        "--seed",
+        "42",
+        "--tworoom-seed",
+        "42",
+        "--out",
+        "ablation_results/aggregate/latent_consistency_s42.json"
+      ],
+      "started": 1795643448.7502108,
+      "configuration_sha256": {},
+      "pid": 250168,
+      "returncode": 0,
+      "finished": 1795643450.931775,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "latent_consistency_second_seeds": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.latent_consistency",
+        "--seed",
+        "43",
+        "--tworoom-seed",
+        "123",
+        "--out",
+        "ablation_results/aggregate/latent_consistency_second_seeds.json"
+      ],
+      "started": 1795643450.9385304,
+      "configuration_sha256": {},
+      "pid": 250179,
+      "returncode": 0,
+      "finished": 1795643453.132408,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    },
+    "original_gaussian_cube_adversarial_s43": {
+      "state": "complete",
+      "command": [
+        "python",
+        "-u",
+        "-m",
+        "ablation_study.evaluate_base",
+        "--environment",
+        "cube",
+        "--config",
+        "ablation_study/configs/original_gaussian_cube_adversarial_s43.json"
+      ],
+      "started": 1795643453.1389747,
+      "configuration_sha256": {
+        "ablation_study/configs/original_gaussian_cube_adversarial_s43.json": "839c2dd935c7f41794b6ee2f78d98479c4e548dc9e3d733f507727d6900c18a4"
+      },
+      "pid": 250190,
+      "returncode": 0,
+      "finished": 1795643643.021955,
+      "missing_expected_files": [],
+      "configuration_unchanged": true
+    }
+  },
+  "pending": [],
+  "failures": [],
+  "complete": true,
+  "scope": "Controls and execution audit; scientific interpretation still requires the actual held-out results."
+}
