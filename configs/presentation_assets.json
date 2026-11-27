@@ -1,0 +1,1081 @@
+{
+  "version": "1.2.0",
+  "bundles": {
+    "presentation-media": {
+      "archive": "presentation-media-v1.2.zip",
+      "url": "https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/presentation-media-v1.2.zip",
+      "bytes": 51472265,
+      "sha256": "0d90505dbb627143624845653b6a1a9610f24069f474122c884909e9879811ac",
+      "files": [
+        {
+          "path": "COMPLETION_AUDIT.json",
+          "bytes": 3890,
+          "sha256": "9d2c5c32fe5fe2c6d9b6c408125934c6ac42484e37b69211b8c702a049875369"
+        },
+        {
+          "path": "FINAL_VERIFICATION.json",
+          "bytes": 428,
+          "sha256": "29e9178e2513704eac4420dd6db6c0cfa08ed8f87e4351cc41fb6448c365b1d7"
+        },
+        {
+          "path": "MEDIA_MANIFEST.json",
+          "bytes": 20305,
+          "sha256": "654aeeb2810bc379acf31ad8340f444bd1c1a04a0e143cdbd4e4072cafa6b9ae"
+        },
+        {
+          "path": "PRESENTATION_GUIDE.txt",
+          "bytes": 4801,
+          "sha256": "eb57c95780454b56183090e13916351a7ee4dabb2eb72e33edcd64adf04b1b2b"
+        },
+        {
+          "path": "PUBLIC_EXPORT_MANIFEST.json",
+          "bytes": 24151,
+          "sha256": "71296ca3875a2295b3dfb7175721a96b04d5a99e2d987361c292551592525865"
+        },
+        {
+          "path": "VISUAL_QA.json",
+          "bytes": 5708,
+          "sha256": "49c5f728ec5d869c512e6b0a1826b0b0502a999fa008e81e4a07c773efc4de58"
+        },
+        {
+          "path": "images/00_overview_keyframe.png",
+          "bytes": 52062,
+          "sha256": "99ef12e8360890c8d9698d9918bb48d585e1a4e1a67295708ded17aa481ec64b"
+        },
+        {
+          "path": "images/contact_sheet_cube.jpg",
+          "bytes": 929010,
+          "sha256": "1f92f8af0da09e0f1eca252f002a3d8d464072fbe63a289e8db151f69ce7aaf4"
+        },
+        {
+          "path": "images/contact_sheet_tworoom.jpg",
+          "bytes": 862226,
+          "sha256": "00ec7d73f8a9e8f7acc1035fc62e4fd748ba326d73f9bd9cc26fd8698dfac212"
+        },
+        {
+          "path": "images/cube_base_01_keyframe.png",
+          "bytes": 166668,
+          "sha256": "28359471c46acace427047feb389cd8d520caef731859d1b924dc60b067447d9"
+        },
+        {
+          "path": "images/cube_base_01_outcome.png",
+          "bytes": 192831,
+          "sha256": "6e42159222a6c12e93c6e2084279bb3e55edc93aa4c69f8e8a1b1f6ecc4efd5e"
+        },
+        {
+          "path": "images/cube_base_01_setup.png",
+          "bytes": 165262,
+          "sha256": "efbe7a6b41bec470b17a58b7a759adc27dc0b5c98d69295657ec56fb99b01f86"
+        },
+        {
+          "path": "images/cube_base_02_keyframe.png",
+          "bytes": 191507,
+          "sha256": "0af2e1c2eb4a12c39b6dff07530b97a4898b8a181095e614963474cf938c4ad7"
+        },
+        {
+          "path": "images/cube_base_02_outcome.png",
+          "bytes": 179931,
+          "sha256": "4664843f302a0064894dc4d85bb32411752d10ee7594caade70417537e6d5e79"
+        },
+        {
+          "path": "images/cube_base_02_setup.png",
+          "bytes": 179686,
+          "sha256": "710d5f4c86b87f6711bd8c0c85a710a0d7a402e4fe32f6dd8783413b08ba0f7b"
+        },
+        {
+          "path": "images/cube_base_03_keyframe.png",
+          "bytes": 165511,
+          "sha256": "8d49c42021f2c3a18893d248d7d4ac4500c67aaf1a4a08234b199f6da47bda08"
+        },
+        {
+          "path": "images/cube_base_03_outcome.png",
+          "bytes": 194297,
+          "sha256": "1b88d23b19440e3e7b47957e4b2f2ab1fe5cec3fc3ef9ef3ad42510fdf253d44"
+        },
+        {
+          "path": "images/cube_base_03_setup.png",
+          "bytes": 172129,
+          "sha256": "f9938e8b03728b3addc684a0ea842d0fe984b721c6c2c74a522ee3bc01d97b0e"
+        },
+        {
+          "path": "images/cube_composition_conflict_01_keyframe.png",
+          "bytes": 222758,
+          "sha256": "b380fc9941bbbaac774a2a780211139a51f827f8bbd85f5ddc4c5b73af5e219d"
+        },
+        {
+          "path": "images/cube_composition_conflict_01_outcome.png",
+          "bytes": 222382,
+          "sha256": "e1660d9f9faab4a3ba669d6c903c7a67ae3dcb41e880bfb4cf089f6b15fff611"
+        },
+        {
+          "path": "images/cube_composition_conflict_01_setup.png",
+          "bytes": 220259,
+          "sha256": "444644a0c9b14f1662cd3d25c3d0d40c021a309178bf95c5bff812b803213743"
+        },
+        {
+          "path": "images/cube_composition_conflict_02_keyframe.png",
+          "bytes": 208251,
+          "sha256": "fc9dee703bde268f16ba0632eabb1780525960428c4955e276690a6305693ac7"
+        },
+        {
+          "path": "images/cube_composition_conflict_02_outcome.png",
+          "bytes": 226478,
+          "sha256": "23042a9b173e4ea5e2e7648efebba415e8fbe8bf627d49bc88b329ebe56c45ef"
+        },
+        {
+          "path": "images/cube_composition_conflict_02_setup.png",
+          "bytes": 213728,
+          "sha256": "85a140d71f31e3975b783cd5a25fd3ef65574888bd121cbe2b69c36fff12d1fb"
+        },
+        {
+          "path": "images/cube_composition_conflict_03_keyframe.png",
+          "bytes": 214456,
+          "sha256": "b6b80c42a02701b602f5395c6d7eabe22416dc310c06cfd8bbdbefec8074806a"
+        },
+        {
+          "path": "images/cube_composition_conflict_03_outcome.png",
+          "bytes": 234973,
+          "sha256": "74f69d2fe57ce241e80a58eadb55952f3e9cd974d9d144329a9c6c1b01efb9e6"
+        },
+        {
+          "path": "images/cube_composition_conflict_03_setup.png",
+          "bytes": 209882,
+          "sha256": "8136676fd7fcdc7a386aaaae456bff67c1c212d277a70ce60086e27904a54a45"
+        },
+        {
+          "path": "images/cube_composition_ood_01_keyframe.png",
+          "bytes": 198028,
+          "sha256": "c0addc0b79695d11ecb8c36bffeee345c319ba5525aca124007c080b5e5057d6"
+        },
+        {
+          "path": "images/cube_composition_ood_01_outcome.png",
+          "bytes": 227465,
+          "sha256": "706fa716af3f475c4ff46aacc1ed992ab4d91a0e474a13ba18f4b48cf3903d22"
+        },
+        {
+          "path": "images/cube_composition_ood_01_setup.png",
+          "bytes": 221954,
+          "sha256": "d240e03ac1dc24cd2b4f5decae74c0e3d8a8a8d4124bcac02c15f1dc5a5b7a95"
+        },
+        {
+          "path": "images/cube_composition_ood_02_keyframe.png",
+          "bytes": 227916,
+          "sha256": "b0bc0c17778453d55709ae542688136f789e19f7873a4fbf97c6bdb8a56e8845"
+        },
+        {
+          "path": "images/cube_composition_ood_02_outcome.png",
+          "bytes": 220316,
+          "sha256": "d0e244fb9f97584bcabb2c9a5d12c10d9b8ec953b3ab4c08e5e03aecbe477ced"
+        },
+        {
+          "path": "images/cube_composition_ood_02_setup.png",
+          "bytes": 230459,
+          "sha256": "75e6e0f6c0dd429085dd06eaa90c7db555252571a12a2aed9f438c03146c064b"
+        },
+        {
+          "path": "images/cube_composition_ood_03_keyframe.png",
+          "bytes": 225097,
+          "sha256": "3714726a902dc76ee08728ab3f9b1fa42cfef72a2ab3c035dd1094cf4a33fd60"
+        },
+        {
+          "path": "images/cube_composition_ood_03_outcome.png",
+          "bytes": 234067,
+          "sha256": "eadac94f7cd178e2b43826eb2540f02ea2f70429011d85321ff08f3171e6f110"
+        },
+        {
+          "path": "images/cube_composition_ood_03_setup.png",
+          "bytes": 212599,
+          "sha256": "bc8760265c10311f7490fb332b1dafacff18982e7c90e48836b26704360af8ae"
+        },
+        {
+          "path": "images/cube_keepout_01_keyframe.png",
+          "bytes": 212430,
+          "sha256": "108403c17d8e6ee3b63968f09ce3a7f912648060a6beef5d99ac43a49c0b611c"
+        },
+        {
+          "path": "images/cube_keepout_01_outcome.png",
+          "bytes": 216668,
+          "sha256": "480ae34283d6055b8aeb47886eb25c37d2245b1ed80ecac7073dd735867c5e81"
+        },
+        {
+          "path": "images/cube_keepout_01_setup.png",
+          "bytes": 186654,
+          "sha256": "cad376afee0db9e12e160e53ebe3215ff6acf06201ae32a8b3ab68ab764f1914"
+        },
+        {
+          "path": "images/cube_keepout_02_keyframe.png",
+          "bytes": 221252,
+          "sha256": "c90f626f476b1b86fad4b2b730800a098f64781ce89eee4b1b12e9112cf9252a"
+        },
+        {
+          "path": "images/cube_keepout_02_outcome.png",
+          "bytes": 195504,
+          "sha256": "69e8e41453bf29238797ad7672f1a238d3ef6f00a84da451b35fa45d86c61fe3"
+        },
+        {
+          "path": "images/cube_keepout_02_setup.png",
+          "bytes": 181822,
+          "sha256": "a181b0b0e52754fa3a64bc59ce2d1f4b3418f398d92a2ab76b9cd4970bd69be9"
+        },
+        {
+          "path": "images/cube_keepout_03_keyframe.png",
+          "bytes": 212796,
+          "sha256": "1fe3bd54fd34c852216b838afeec17318d961decf1105245320a93423546fc10"
+        },
+        {
+          "path": "images/cube_keepout_03_outcome.png",
+          "bytes": 211706,
+          "sha256": "3985ce57f2b7add8650e15f280f7ac147ff8687712830530977c68b33d3d669c"
+        },
+        {
+          "path": "images/cube_keepout_03_setup.png",
+          "bytes": 196809,
+          "sha256": "0616f8aab16957963f2681886e71addbbdde6365b059d36fc2bb541705c09727"
+        },
+        {
+          "path": "images/cube_matched_story_01_comparison.png",
+          "bytes": 293954,
+          "sha256": "94f47b5e71bc51fda196898c91c7cc29dd8946558b114510189f8b075547c9d6"
+        },
+        {
+          "path": "images/cube_matched_story_01_keyframe.png",
+          "bytes": 222389,
+          "sha256": "169374a3ea345e893e1ae95b969382e32cf2adeec0864cb4a734b868247aa4b4"
+        },
+        {
+          "path": "images/cube_matched_story_01_outcome.png",
+          "bytes": 293954,
+          "sha256": "94f47b5e71bc51fda196898c91c7cc29dd8946558b114510189f8b075547c9d6"
+        },
+        {
+          "path": "images/cube_matched_story_01_setup.png",
+          "bytes": 220192,
+          "sha256": "d9b6ca3072c4ab07f8bd2a26ec9aac3ce2324cbec3bf227e75ce319805f1f309"
+        },
+        {
+          "path": "images/cube_matched_story_02_comparison.png",
+          "bytes": 310921,
+          "sha256": "26b968c58d624602f29ed0745dc97fa205ec768734f602979480c65fc4fe4a28"
+        },
+        {
+          "path": "images/cube_matched_story_02_keyframe.png",
+          "bytes": 207834,
+          "sha256": "86a4f7e82e5a8e9e5b7c2024ac7aca9d5211e0a7c6c37870bc6c8962dbd356ab"
+        },
+        {
+          "path": "images/cube_matched_story_02_outcome.png",
+          "bytes": 310921,
+          "sha256": "26b968c58d624602f29ed0745dc97fa205ec768734f602979480c65fc4fe4a28"
+        },
+        {
+          "path": "images/cube_matched_story_02_setup.png",
+          "bytes": 213652,
+          "sha256": "46865ab7cf14acea47e6acfd7411500ec583644ca6d2513993a4bd6b5571f426"
+        },
+        {
+          "path": "images/cube_matched_story_03_comparison.png",
+          "bytes": 274022,
+          "sha256": "5d82fb266bbee42628c8137d8b8bdc9902cd7f089ada798f4a77d0b508661713"
+        },
+        {
+          "path": "images/cube_matched_story_03_keyframe.png",
+          "bytes": 223597,
+          "sha256": "9d96b355bf8ab0cf5d7b584f8e86b18080851deeeef011a5eef151bc6e12adb2"
+        },
+        {
+          "path": "images/cube_matched_story_03_outcome.png",
+          "bytes": 274022,
+          "sha256": "5d82fb266bbee42628c8137d8b8bdc9902cd7f089ada798f4a77d0b508661713"
+        },
+        {
+          "path": "images/cube_matched_story_03_setup.png",
+          "bytes": 202674,
+          "sha256": "069d4469dca68606f555abe5c7ca20abe26cd6ebbbe85e58327d9e99d1feacbf"
+        },
+        {
+          "path": "images/cube_waypoint_01_keyframe.png",
+          "bytes": 199172,
+          "sha256": "2f395924108ec2b1ffd60cdf81c8495cdadecf0e9711babf2c85e383e3e61862"
+        },
+        {
+          "path": "images/cube_waypoint_01_outcome.png",
+          "bytes": 211130,
+          "sha256": "10d61b58559b8adb21aa6ba2a4d48a126943544d6e0cf2db9ba61d86f80fc554"
+        },
+        {
+          "path": "images/cube_waypoint_01_setup.png",
+          "bytes": 185610,
+          "sha256": "b98bcb1e0ccba4ba549b86449b39e636c885327f81e9318bbb842ac006ca36a0"
+        },
+        {
+          "path": "images/cube_waypoint_02_keyframe.png",
+          "bytes": 204426,
+          "sha256": "30280f94495c9fe99e635c4fce6b305aa64fa9050b6422700fada4d7b30045e7"
+        },
+        {
+          "path": "images/cube_waypoint_02_outcome.png",
+          "bytes": 196119,
+          "sha256": "c331be4ab813c316a4f5aeadb62d682af50cbbd555ecd0e6a94dfa5477f02e3d"
+        },
+        {
+          "path": "images/cube_waypoint_02_setup.png",
+          "bytes": 181576,
+          "sha256": "6ec2605bab624a6ad33bc1760bd2157d2d3f1abba8e629d8fa2a5e33a5dc9d9c"
+        },
+        {
+          "path": "images/cube_waypoint_03_keyframe.png",
+          "bytes": 219354,
+          "sha256": "b3f553896e895e86b2bc19430e392b5e654439c50681c8406c0804dcb1b938b4"
+        },
+        {
+          "path": "images/cube_waypoint_03_outcome.png",
+          "bytes": 212530,
+          "sha256": "45b130219b2c35e7d6a07d09bd8975454051dc6961dde0c993662d2bc625afd1"
+        },
+        {
+          "path": "images/cube_waypoint_03_setup.png",
+          "bytes": 192113,
+          "sha256": "ee18df40da81bc68f4c9a0321264d67544711320ec0a2d79c31161b6b31f8b36"
+        },
+        {
+          "path": "images/tworoom_base_01_keyframe.png",
+          "bytes": 96493,
+          "sha256": "f2b212f13541ab1d8c915e9c26f589a2892513e6dad2f1dca4ab5e72841a8bf8"
+        },
+        {
+          "path": "images/tworoom_base_01_outcome.png",
+          "bytes": 86866,
+          "sha256": "b4fa2ac4f8f2f71696229e69dfffd158c1b728f3e129516509b37d0bb5e84f78"
+        },
+        {
+          "path": "images/tworoom_base_01_setup.png",
+          "bytes": 95558,
+          "sha256": "90aaba23122833d8501944229190a8eceea4ea0da974854eb80c9807e497532d"
+        },
+        {
+          "path": "images/tworoom_base_02_keyframe.png",
+          "bytes": 97846,
+          "sha256": "857173cfed35d4a88fd760fb68c63f1841cda73cc24ae145a8b025c3135c8cb0"
+        },
+        {
+          "path": "images/tworoom_base_02_outcome.png",
+          "bytes": 89319,
+          "sha256": "8efaa82b5744cea5a19b6054a49b7de64a2b0cc71f89ed1b5529240040338068"
+        },
+        {
+          "path": "images/tworoom_base_02_setup.png",
+          "bytes": 95444,
+          "sha256": "26c212e3b6ce24a6e37d801f55881455db3751022f8ac5e9b5cfa09cf374f67c"
+        },
+        {
+          "path": "images/tworoom_base_03_keyframe.png",
+          "bytes": 97457,
+          "sha256": "a801817e1256907eea6299704e79ec55c12d21321628f6a92587bd0fd1939670"
+        },
+        {
+          "path": "images/tworoom_base_03_outcome.png",
+          "bytes": 88069,
+          "sha256": "770b5b8b892fc76ac44aad07a9038e936c51446f0d18415b08cf54ea6eeb3c25"
+        },
+        {
+          "path": "images/tworoom_base_03_setup.png",
+          "bytes": 94876,
+          "sha256": "a72d87b0e189c11a77c37b54fe3ca5be364493a95dfcc2b2a874680431ce9efe"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_01_keyframe.png",
+          "bytes": 118274,
+          "sha256": "09e8b7ee11e41023c72b51f7772bcf379618b1b822059ac1049353fd72efc313"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_01_outcome.png",
+          "bytes": 107225,
+          "sha256": "7dbb184a9918b3abe1392913042573550ba9271b94c062bac26d490e7ab774da"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_01_setup.png",
+          "bytes": 116296,
+          "sha256": "e2666af16972331e3fdaa111827d4916c7f80a5e8a92715571ebc462e8534525"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_02_keyframe.png",
+          "bytes": 118372,
+          "sha256": "a7854e7606fcb16c88cdba233c0068dec3315bfb1b25f7cf3080a933940d9b83"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_02_outcome.png",
+          "bytes": 107702,
+          "sha256": "bf70d6f239741adc6209a579fe76551ac7572b0462d83f3d11cbe381b5207ceb"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_02_setup.png",
+          "bytes": 116072,
+          "sha256": "99b2628a435338324bb668b8428f7b19f237fa7a43637182abf67b40114bc493"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_03_keyframe.png",
+          "bytes": 118362,
+          "sha256": "d755fcb68205438f292af911e871cf3cc859c159e0c04fad31402b2be7a47700"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_03_outcome.png",
+          "bytes": 107861,
+          "sha256": "4fd4e33d7e987c2aa3dd4dda0d6c202051c58e8fd4842d567f0aac492773a1a9"
+        },
+        {
+          "path": "images/tworoom_composition_conflict_03_setup.png",
+          "bytes": 116767,
+          "sha256": "7e148d3e6c08a1b5afd6941cf23f09f2f41d0e57ce95c3cb81532b402ff459e1"
+        },
+        {
+          "path": "images/tworoom_composition_ood_01_keyframe.png",
+          "bytes": 117113,
+          "sha256": "dae744ceea461a7803287bf20c98cbc55aafa2326f2cb4d2ad29ffec07b94340"
+        },
+        {
+          "path": "images/tworoom_composition_ood_01_outcome.png",
+          "bytes": 106107,
+          "sha256": "10afe7e96b833b8ee027503fa802b46d735954f86936046eb0a25e2c50dd4528"
+        },
+        {
+          "path": "images/tworoom_composition_ood_01_setup.png",
+          "bytes": 115412,
+          "sha256": "04b5b761ad137700c1142c241713565c168e6e7ce510d4ca809caa7d44aceed6"
+        },
+        {
+          "path": "images/tworoom_composition_ood_02_keyframe.png",
+          "bytes": 117168,
+          "sha256": "162706204243c7066190a8a028c856a4da3ac87fd744bb808f3eb842515a2d9d"
+        },
+        {
+          "path": "images/tworoom_composition_ood_02_outcome.png",
+          "bytes": 105473,
+          "sha256": "a65a82d7de4e4f5f1d4f0020a77f8bb6635794358d469f03f850079e2c1265b9"
+        },
+        {
+          "path": "images/tworoom_composition_ood_02_setup.png",
+          "bytes": 115137,
+          "sha256": "28abe2a6259016854ac9aab3cef85ed5f955d594fc59bca01f4fe56767d43f42"
+        },
+        {
+          "path": "images/tworoom_keepout_01_keyframe.png",
+          "bytes": 110402,
+          "sha256": "664ffbe9c6c2702194012f5355b34e02fbc7d3f2ecb6aadcfea429a12c63d0ae"
+        },
+        {
+          "path": "images/tworoom_keepout_01_outcome.png",
+          "bytes": 100095,
+          "sha256": "0fbc84f63ac389e9bda92535bf94a4c06005470303e83cc192fcd08735a4a39e"
+        },
+        {
+          "path": "images/tworoom_keepout_01_setup.png",
+          "bytes": 107133,
+          "sha256": "b4b7917955232b70ef8f6e31afcfd9c5f7e2f84cc68a4eac68be1a9b20d4462c"
+        },
+        {
+          "path": "images/tworoom_keepout_02_keyframe.png",
+          "bytes": 109223,
+          "sha256": "731cf87cc5ffa84573ac02276f0a2e646fd4f8f2f4e05f39fb326b77c6c200f8"
+        },
+        {
+          "path": "images/tworoom_keepout_02_outcome.png",
+          "bytes": 99958,
+          "sha256": "3ceee8b844403f2717ba0efb1419de07db6d1eff332933a3811960f789a834d7"
+        },
+        {
+          "path": "images/tworoom_keepout_02_setup.png",
+          "bytes": 106828,
+          "sha256": "4645df4e02c7eb7abfeab431658d3c42e3d6a8fa2d7f9bda84ca6c212cf054e0"
+        },
+        {
+          "path": "images/tworoom_keepout_03_keyframe.png",
+          "bytes": 109696,
+          "sha256": "4ff5086e67257bd8932805cd262177c92995b834ff24455b46e11020470c1841"
+        },
+        {
+          "path": "images/tworoom_keepout_03_outcome.png",
+          "bytes": 100199,
+          "sha256": "6d104deead5396f4ff89d44d0c4ebee6564f21c37ad3b296fee424e81cca42d4"
+        },
+        {
+          "path": "images/tworoom_keepout_03_setup.png",
+          "bytes": 107935,
+          "sha256": "a5948832243af3104bcf4b294502391c8a5a754eed898289d657397d98f8fba4"
+        },
+        {
+          "path": "images/tworoom_matched_story_01_comparison.png",
+          "bytes": 158434,
+          "sha256": "6862006a1564b7ab10ed86589886941788a292cb9a39622336184983d2b5c390"
+        },
+        {
+          "path": "images/tworoom_matched_story_01_keyframe.png",
+          "bytes": 118512,
+          "sha256": "9228af53fe9f0c83c0f1a5295c1b212b9ac19aa18bd10b457972f0c8a289c0e7"
+        },
+        {
+          "path": "images/tworoom_matched_story_01_outcome.png",
+          "bytes": 158434,
+          "sha256": "6862006a1564b7ab10ed86589886941788a292cb9a39622336184983d2b5c390"
+        },
+        {
+          "path": "images/tworoom_matched_story_01_setup.png",
+          "bytes": 116883,
+          "sha256": "63d94846228532978aed82e589cd098a0bd61293cfb5b1a3761ee72c740c2b63"
+        },
+        {
+          "path": "images/tworoom_matched_story_02_comparison.png",
+          "bytes": 158525,
+          "sha256": "6e41d5f5990ba684fd560b1b27df1b398484a3d73d353b27eb66dd99baf87212"
+        },
+        {
+          "path": "images/tworoom_matched_story_02_keyframe.png",
+          "bytes": 118604,
+          "sha256": "accb4f674881de1cffb25c4046ccacce9e92623dee2978a7af1b44eac024f941"
+        },
+        {
+          "path": "images/tworoom_matched_story_02_outcome.png",
+          "bytes": 158525,
+          "sha256": "6e41d5f5990ba684fd560b1b27df1b398484a3d73d353b27eb66dd99baf87212"
+        },
+        {
+          "path": "images/tworoom_matched_story_02_setup.png",
+          "bytes": 116577,
+          "sha256": "68226a33eb33f95db4ff705a517b4407c9ad351470935315f8c3532aea679998"
+        },
+        {
+          "path": "images/tworoom_matched_story_03_comparison.png",
+          "bytes": 157408,
+          "sha256": "cb1dc3f6840aa5872c9dd0be985b57b5aae4e88cd62003f06e4f0ab8a7c7b08b"
+        },
+        {
+          "path": "images/tworoom_matched_story_03_keyframe.png",
+          "bytes": 117796,
+          "sha256": "06768555db0007d7efcf40ea2e8d37817fba6cf479ea4a095e8282af1e184d29"
+        },
+        {
+          "path": "images/tworoom_matched_story_03_outcome.png",
+          "bytes": 157408,
+          "sha256": "cb1dc3f6840aa5872c9dd0be985b57b5aae4e88cd62003f06e4f0ab8a7c7b08b"
+        },
+        {
+          "path": "images/tworoom_matched_story_03_setup.png",
+          "bytes": 115658,
+          "sha256": "f913935f0658067a6beac433d8d6660ca5bfdc2784f816712f72ea915ff4fd54"
+        },
+        {
+          "path": "images/tworoom_waypoint_01_keyframe.png",
+          "bytes": 111716,
+          "sha256": "6530522cd80be8bc39979eb0f952d4af12c3a0ef544e9431ca1701756fd2e9b5"
+        },
+        {
+          "path": "images/tworoom_waypoint_01_outcome.png",
+          "bytes": 100468,
+          "sha256": "f2a6ef4eddff31583ab0bd8e46227465c8fe62c1d8e8d451eb77e97851183cbd"
+        },
+        {
+          "path": "images/tworoom_waypoint_01_setup.png",
+          "bytes": 108486,
+          "sha256": "f55c812b88179659c1955a311d7ee2f0ad562b9ce00a781a0dd7d6440813763f"
+        },
+        {
+          "path": "images/tworoom_waypoint_02_keyframe.png",
+          "bytes": 111523,
+          "sha256": "65bd515e3e3d5e7f21f47adfdb9a2235c1160df5515d5b17c7dba4394944f9e0"
+        },
+        {
+          "path": "images/tworoom_waypoint_02_outcome.png",
+          "bytes": 100289,
+          "sha256": "cc3c5c91ebe931aff46ae9ba56753086001bdec5c6406ebb667cc7d1e7b360f6"
+        },
+        {
+          "path": "images/tworoom_waypoint_02_setup.png",
+          "bytes": 108571,
+          "sha256": "d6be70d0572d14c9ad422cc5c51a94fd0079638844a8987828cb00c785374425"
+        },
+        {
+          "path": "images/tworoom_waypoint_03_keyframe.png",
+          "bytes": 113009,
+          "sha256": "fb07a189ffc4a1f696cc73194829dfc834894c6d1978c865c2a514e62d859dc8"
+        },
+        {
+          "path": "images/tworoom_waypoint_03_outcome.png",
+          "bytes": 102070,
+          "sha256": "04db68953d6250bfb7283a32043af8512ca0336563192e5dc914c4377c7f0448"
+        },
+        {
+          "path": "images/tworoom_waypoint_03_setup.png",
+          "bytes": 109304,
+          "sha256": "74f6ee1f0300177e79e4bf527b5dcd10e8ccccf8dde8bcb3d50af613b987ed48"
+        },
+        {
+          "path": "index.html",
+          "bytes": 29220,
+          "sha256": "454d06ac24922e63dd3f064e330b88dde2d7f0e11061e239944f1c6b541ccfed"
+        },
+        {
+          "path": "qa/TECHNICAL_QA.json",
+          "bytes": 14066,
+          "sha256": "5fbb403fdc6bb5594ada4b7b8a0d3c335208458f77b041303d0d26f9c89faf9a"
+        },
+        {
+          "path": "qa/storyboards/00_overview.jpg",
+          "bytes": 197196,
+          "sha256": "3026bda3920c92b5235307b7b44bf8690e204b0c90609d0036160c38abc4251b"
+        },
+        {
+          "path": "qa/storyboards/cube_base_01.jpg",
+          "bytes": 187915,
+          "sha256": "bc5ae198e229c64ead7861a89eccbc5434e7fbd94cc49df9dd9a940ca37f7df1"
+        },
+        {
+          "path": "qa/storyboards/cube_base_02.jpg",
+          "bytes": 188338,
+          "sha256": "069e94a7c5f070efaaa3b744cc5f1e3755d797f16bf6c2303941db79b5906c92"
+        },
+        {
+          "path": "qa/storyboards/cube_base_03.jpg",
+          "bytes": 189261,
+          "sha256": "7138ec5411d62b7af74a9c8460ba4e0bae6bbc9f987d811d5df63e78622b44ab"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_conflict_01.jpg",
+          "bytes": 245815,
+          "sha256": "6cf0e683d98d9f28c8879332443a6bfcc494a321278f2ffa8799a6eeea2294d2"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_conflict_02.jpg",
+          "bytes": 243270,
+          "sha256": "8f8c3f3332308f33adbf34c6b0f24d2b7a9b6001b947d13124b63b3305d1daf8"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_conflict_03.jpg",
+          "bytes": 245304,
+          "sha256": "366638aa88c867e8145ee137f4354173a9445a7f54bbff5a97ad2c951e14e9a7"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_ood_01.jpg",
+          "bytes": 244644,
+          "sha256": "37b75acc58b07b7c5d3704e2033041a159a8cf9d839cd1bd541ce1ae8a464a5b"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_ood_02.jpg",
+          "bytes": 246945,
+          "sha256": "70cb880677c813a36fe1f8bfdfa5e45ef276c056184ac51b7f4819aa9b8b94ed"
+        },
+        {
+          "path": "qa/storyboards/cube_composition_ood_03.jpg",
+          "bytes": 248816,
+          "sha256": "4fca31755789c0e24168855be798a92810874a79f7425ca8257871fd54d4c180"
+        },
+        {
+          "path": "qa/storyboards/cube_keepout_01.jpg",
+          "bytes": 221380,
+          "sha256": "16626fb90ba85543b532bfcc2da20ffa2f67243ad5c274248eb7d6b14dd197ae"
+        },
+        {
+          "path": "qa/storyboards/cube_keepout_02.jpg",
+          "bytes": 218480,
+          "sha256": "71edc7a30f26cc9f9fad3194b65ef50ea3e04b4dafd2d3c54ea993d494c42a2f"
+        },
+        {
+          "path": "qa/storyboards/cube_keepout_03.jpg",
+          "bytes": 221719,
+          "sha256": "a536afd9e1ae51bff7022ca0b2bddabdfc471c1c48cc3dfa3d1d80c5ea04f63c"
+        },
+        {
+          "path": "qa/storyboards/cube_matched_story_01.jpg",
+          "bytes": 251333,
+          "sha256": "bc6a697f351af0eaa46b5ce74c94ae51ee8bdf44fe85dc97be1a9049c0f85b67"
+        },
+        {
+          "path": "qa/storyboards/cube_matched_story_02.jpg",
+          "bytes": 250096,
+          "sha256": "81683518b006ff11c9c8dedbf09fe0c34814bc3d9362f188980b20d48f49305d"
+        },
+        {
+          "path": "qa/storyboards/cube_matched_story_03.jpg",
+          "bytes": 249364,
+          "sha256": "d9a4341f4e949d963bba76328be56f0ffc4553f7f4a4687274c8ac0675e9e272"
+        },
+        {
+          "path": "qa/storyboards/cube_waypoint_01.jpg",
+          "bytes": 220227,
+          "sha256": "ca02bc6d08289269680bd41bd382bca8bf8445f07af8fc28af766be4968e39fe"
+        },
+        {
+          "path": "qa/storyboards/cube_waypoint_02.jpg",
+          "bytes": 218873,
+          "sha256": "09f6a3c557562d52f7532131451269b38a2359e2d385f722dca9676470a313a3"
+        },
+        {
+          "path": "qa/storyboards/cube_waypoint_03.jpg",
+          "bytes": 222922,
+          "sha256": "946abda97c32f83d1e34ec99abb356368e6befd151523a63c0cef034f9a1f194"
+        },
+        {
+          "path": "qa/storyboards/tworoom_base_01.jpg",
+          "bytes": 183725,
+          "sha256": "8cfbfd0d22447eb28c99445dc8b96c8e7f2bd4e7290a7e6e9225fbb7a1d53d44"
+        },
+        {
+          "path": "qa/storyboards/tworoom_base_02.jpg",
+          "bytes": 186534,
+          "sha256": "928b6a0dc655009e8236483c918ec409c359161e65bccd02318cc3101f549b33"
+        },
+        {
+          "path": "qa/storyboards/tworoom_base_03.jpg",
+          "bytes": 186128,
+          "sha256": "b32b3a8d310a643f7a692d7ceaec09d888a7f442522d03b31788e39beb69d941"
+        },
+        {
+          "path": "qa/storyboards/tworoom_composition_conflict_01.jpg",
+          "bytes": 243578,
+          "sha256": "b2bb8ee6edb6370cd8552583a0bcd4fbf0c468a537dd8ae6ce3055abda10abf9"
+        },
+        {
+          "path": "qa/storyboards/tworoom_composition_conflict_02.jpg",
+          "bytes": 244856,
+          "sha256": "cb739262addfbdefc2ed6c5b9d40940d4a12d0f4f8a8e8e8824b8755ad99c7a0"
+        },
+        {
+          "path": "qa/storyboards/tworoom_composition_conflict_03.jpg",
+          "bytes": 244565,
+          "sha256": "00609fdcc9389c92d463899282f70c86106edf580596ff21058f24800590ad48"
+        },
+        {
+          "path": "qa/storyboards/tworoom_composition_ood_01.jpg",
+          "bytes": 242623,
+          "sha256": "ae4f0103d68ccc9a66a1d82e2f0a34cb8ca5ef8178ffb466f54273daea4258e4"
+        },
+        {
+          "path": "qa/storyboards/tworoom_composition_ood_02.jpg",
+          "bytes": 241730,
+          "sha256": "6bfe3690059f4f9109eb8f18f183ad885118965428e6466e5f01b74b3e4824ae"
+        },
+        {
+          "path": "qa/storyboards/tworoom_keepout_01.jpg",
+          "bytes": 218498,
+          "sha256": "322e8638c707f456cc5939f50c6a898c61caef9e0398ee7e64febf310977a663"
+        },
+        {
+          "path": "qa/storyboards/tworoom_keepout_02.jpg",
+          "bytes": 217267,
+          "sha256": "4723e29b1a17baedcbcf015df0afd1214eb91ff26c7c00bc6cd164867f12a572"
+        },
+        {
+          "path": "qa/storyboards/tworoom_keepout_03.jpg",
+          "bytes": 218043,
+          "sha256": "11394ce392ae6164fd709fd5ac72e34e031bd5e3f7c1eca2865dc5df29ff5926"
+        },
+        {
+          "path": "qa/storyboards/tworoom_matched_story_01.jpg",
+          "bytes": 253805,
+          "sha256": "07b0375af128c9e6fbbc8c8242122a30cc608647de5ccfce015dfd3c6ccc4cf9"
+        },
+        {
+          "path": "qa/storyboards/tworoom_matched_story_02.jpg",
+          "bytes": 254854,
+          "sha256": "0d10c4ca2777fc1246e0c004fc9c486ddf401fd7a15f319e52e0b8968384586a"
+        },
+        {
+          "path": "qa/storyboards/tworoom_matched_story_03.jpg",
+          "bytes": 254082,
+          "sha256": "b38a88a334273e4908cc294043528192164ce3e8634568a4f2ee1f2b9719238a"
+        },
+        {
+          "path": "qa/storyboards/tworoom_waypoint_01.jpg",
+          "bytes": 216327,
+          "sha256": "068dc51192e8c512a283dc20e72de1d50af4b3990b7f26f864985f9199f2104c"
+        },
+        {
+          "path": "qa/storyboards/tworoom_waypoint_02.jpg",
+          "bytes": 216005,
+          "sha256": "9e5e42221b5fc86535ee8d87fe823e02f675992c54cf7016125b8a4d6a281fea"
+        },
+        {
+          "path": "qa/storyboards/tworoom_waypoint_03.jpg",
+          "bytes": 215485,
+          "sha256": "58905dfbf534ce570e7f1526a3ddb839195bc495fbf01cff06b4f94bbf8d4d7f"
+        },
+        {
+          "path": "source/CURATED_TASK_COVERAGE.json",
+          "bytes": 1870,
+          "sha256": "8b6e53bd4778fafd882d31a1c8de1f1ee4c4c0dcf40e0c762ba01f8856daa561"
+        },
+        {
+          "path": "source/__init__.py",
+          "bytes": 82,
+          "sha256": "de5f9e16129b795cc6694831cc5b4bd91ffccbd57a31c0753d34d9f934fab414"
+        },
+        {
+          "path": "source/clean_captions.py",
+          "bytes": 4414,
+          "sha256": "553860f8e5f0ad53b01081022eb028368f0079be9f0226110c7358a23618fdc4"
+        },
+        {
+          "path": "source/collect_base.py",
+          "bytes": 4723,
+          "sha256": "456e55256120901164913eac1737bd43bfeaf62bb31a9f9f76b574e3443c89a9"
+        },
+        {
+          "path": "source/common.py",
+          "bytes": 1825,
+          "sha256": "4dd11b772716fc784a3578038f8f4d383388862521c32f5119e043a4bccca975"
+        },
+        {
+          "path": "source/delta.py",
+          "bytes": 4386,
+          "sha256": "eb7f4d3363b039d3a4b834463d63c1b366766139c2a93a78bfafc011bfea4148"
+        },
+        {
+          "path": "source/design.py",
+          "bytes": 12604,
+          "sha256": "a586cde38fe0c1bcd3decc01b416d837bcc076aff326ee2e68420916bb50e87b"
+        },
+        {
+          "path": "source/export_media.py",
+          "bytes": 2452,
+          "sha256": "a67928aa39a0aa94b13a345845da8b64f95926ecf2ed4942a6e9fa3fec1549e4"
+        },
+        {
+          "path": "source/finish.py",
+          "bytes": 1757,
+          "sha256": "efd52fde064bf9c48406856ae3319afe6e3b0374da220a3b9e2fe2457a6a235e"
+        },
+        {
+          "path": "source/gallery.py",
+          "bytes": 12178,
+          "sha256": "78ceb3f658d2e2f94a35f6a283864c8881b54488d46ada3adf25d7641e3d4c13"
+        },
+        {
+          "path": "source/overview.py",
+          "bytes": 2995,
+          "sha256": "086a78aa95a0828486df8a18682d25429b675466ef0b59840b8d40281544a322"
+        },
+        {
+          "path": "source/preview.py",
+          "bytes": 1045,
+          "sha256": "6e7bfab26f5ff2229669bfa819cb0798568566adcbb4657f1ecceac7c2306819"
+        },
+        {
+          "path": "source/progress.py",
+          "bytes": 1000,
+          "sha256": "7be11961b8ef13ebc549c4ee9c11099643edc11337ffa7edc52e9cb27ce347b7"
+        },
+        {
+          "path": "source/qa.py",
+          "bytes": 5214,
+          "sha256": "ddf9b2ae501a3b004ad95587f724848a8bf515e300c1a1c265b43f39626328b9"
+        },
+        {
+          "path": "source/receive.py",
+          "bytes": 2423,
+          "sha256": "c211f583ed7758294ffb60233a89a9d30b9d9160a00d8abf8b71a95fe5dd61d1"
+        },
+        {
+          "path": "source/render.py",
+          "bytes": 10642,
+          "sha256": "8483f6c2293b08e6b86bb62094f47e4e9034dada7ae587838fde819118370e3f"
+        },
+        {
+          "path": "source/select.py",
+          "bytes": 4487,
+          "sha256": "9992034bfe0333a519ac14459f6af014de8ed223c31bf584ec018b64f5a9e5f3"
+        },
+        {
+          "path": "source/supervise.py",
+          "bytes": 1705,
+          "sha256": "7dabb473367bdf4e2cc97d1a3ca390c7e1c664e8a65707193123a1ad113f911f"
+        },
+        {
+          "path": "videos/00_overview.mp4",
+          "bytes": 2521196,
+          "sha256": "b858eb2699d568c738c6d70e7fa4773349cd3f06703731865312246b009cc1ae"
+        },
+        {
+          "path": "videos/cube/base/cube_base_01.mp4",
+          "bytes": 419465,
+          "sha256": "fad72f972c042df7cc853489378804402d077fbd409fc9b89bc6e88d207c71f6"
+        },
+        {
+          "path": "videos/cube/base/cube_base_02.mp4",
+          "bytes": 423403,
+          "sha256": "1e10c4e77d4ca6837ece161bff00698298ad23b07f91ff0166d16307cc6e3acb"
+        },
+        {
+          "path": "videos/cube/base/cube_base_03.mp4",
+          "bytes": 413892,
+          "sha256": "18c450f8a8ded0a8f0df475424d481293b10d9c19045e4f70e87f33666318f01"
+        },
+        {
+          "path": "videos/cube/composition_conflict/cube_composition_conflict_01.mp4",
+          "bytes": 681621,
+          "sha256": "3dc411b4620cd4e63a45294199e3b6b4bd4cfce2668d61bb667cf6e3e55a6016"
+        },
+        {
+          "path": "videos/cube/composition_conflict/cube_composition_conflict_02.mp4",
+          "bytes": 678296,
+          "sha256": "03807024daa3bd849b548b35e75c29ff37f30a3b9bf0d970eb734d0d62e961ba"
+        },
+        {
+          "path": "videos/cube/composition_conflict/cube_composition_conflict_03.mp4",
+          "bytes": 635592,
+          "sha256": "5eadbbd152c3e95d3074f71df7bc2e0d1525c120bc1b4ca8575c986297cb6946"
+        },
+        {
+          "path": "videos/cube/composition_ood/cube_composition_ood_01.mp4",
+          "bytes": 784219,
+          "sha256": "587ba143fad456e51981760d729bcd33600d8518e52ecd66be96f6311baacdfe"
+        },
+        {
+          "path": "videos/cube/composition_ood/cube_composition_ood_02.mp4",
+          "bytes": 672186,
+          "sha256": "7084eda6b007b6e36898cd88222e127a1d019930a85e15a21995d4bac1916398"
+        },
+        {
+          "path": "videos/cube/composition_ood/cube_composition_ood_03.mp4",
+          "bytes": 704940,
+          "sha256": "4928e1b94c7bc41139d68f9227276e690980b4bcf920006756a5dd3dc7aefbca"
+        },
+        {
+          "path": "videos/cube/keepout/cube_keepout_01.mp4",
+          "bytes": 734299,
+          "sha256": "46555f7e0dc78e8d0f11665cd8acc17100ccfb52b9e4ba95dd6a7c2dc913ddf8"
+        },
+        {
+          "path": "videos/cube/keepout/cube_keepout_02.mp4",
+          "bytes": 734239,
+          "sha256": "05e77f46643fd8fc4019200a4d50f57a618cd2616a30cadd36f4f9fd3000cd6b"
+        },
+        {
+          "path": "videos/cube/keepout/cube_keepout_03.mp4",
+          "bytes": 740309,
+          "sha256": "72299c7d009dcde4409a921f55953682fb6dd62e6315e0f38713bd12b889f8d3"
+        },
+        {
+          "path": "videos/cube/matched_comparison/cube_matched_story_01.mp4",
+          "bytes": 2013658,
+          "sha256": "7597b09948540851952fe587e6bcb4e845e72b487d29989275b8b447435669d8"
+        },
+        {
+          "path": "videos/cube/matched_comparison/cube_matched_story_02.mp4",
+          "bytes": 2120371,
+          "sha256": "92752cff4e35de619a0fa7da36605d3ab8e0d7b60e9362d91fe6544f5b1f8863"
+        },
+        {
+          "path": "videos/cube/matched_comparison/cube_matched_story_03.mp4",
+          "bytes": 1893796,
+          "sha256": "3257ac45e39e5e052cd650905dd208b3714e6a1c9ff2b1c1058d080acbf35118"
+        },
+        {
+          "path": "videos/cube/waypoint/cube_waypoint_01.mp4",
+          "bytes": 637793,
+          "sha256": "1d02ac0875f097b7b0f8bd7704956e565814ddf60f1502047803a53d800014a3"
+        },
+        {
+          "path": "videos/cube/waypoint/cube_waypoint_02.mp4",
+          "bytes": 634126,
+          "sha256": "89631052278295680684ab6875a0b35508aa9539dc7f118ab4ad1ece82f09722"
+        },
+        {
+          "path": "videos/cube/waypoint/cube_waypoint_03.mp4",
+          "bytes": 798853,
+          "sha256": "8cb4b7b473962cfe57b94b8b5591221dc7994fe658d73c2e145afd3eefdd49e5"
+        },
+        {
+          "path": "videos/tworoom/base/tworoom_base_01.mp4",
+          "bytes": 145151,
+          "sha256": "27b818d60e7e902e2a68d616913d98dcb0a6a7e43204de925af8eda3244c4796"
+        },
+        {
+          "path": "videos/tworoom/base/tworoom_base_02.mp4",
+          "bytes": 164720,
+          "sha256": "239ed2953101dce85248c010d6320bdb83fec49fe4fbd748124cdd6023ef50e7"
+        },
+        {
+          "path": "videos/tworoom/base/tworoom_base_03.mp4",
+          "bytes": 115355,
+          "sha256": "b0b46ba5c900c540f13611b96c6c74f28cda2e87557631c21f8a27d1592e643e"
+        },
+        {
+          "path": "videos/tworoom/composition_conflict/tworoom_composition_conflict_01.mp4",
+          "bytes": 229816,
+          "sha256": "d60bc9aac03a5b8d99b3b83f5c3711f8ad51391b1a6a8eed82be938406f11542"
+        },
+        {
+          "path": "videos/tworoom/composition_conflict/tworoom_composition_conflict_02.mp4",
+          "bytes": 248078,
+          "sha256": "e6d15f69c3ec550ad01d7d9f97b731366f04bfd1e7cd063ae711591d03acebed"
+        },
+        {
+          "path": "videos/tworoom/composition_conflict/tworoom_composition_conflict_03.mp4",
+          "bytes": 234867,
+          "sha256": "81cfed047f40726a42c6cd6dc098dbe04ee077a9fdc768466f7142fd0095170c"
+        },
+        {
+          "path": "videos/tworoom/composition_ood/tworoom_composition_ood_01.mp4",
+          "bytes": 227250,
+          "sha256": "b663374fc4dd821aae5e17ee95ffe2696d98413f0a56704eb00b1a90e1a06ec5"
+        },
+        {
+          "path": "videos/tworoom/composition_ood/tworoom_composition_ood_02.mp4",
+          "bytes": 225534,
+          "sha256": "fd22aba00ee0068acd448ba2b7f15da57e23855ebe3e565632d020c01ba4b0bc"
+        },
+        {
+          "path": "videos/tworoom/keepout/tworoom_keepout_01.mp4",
+          "bytes": 208119,
+          "sha256": "fb3939834805760e41c528ebdaa2b6511e5860868fccfaa032e7c652af25338c"
+        },
+        {
+          "path": "videos/tworoom/keepout/tworoom_keepout_02.mp4",
+          "bytes": 132384,
+          "sha256": "aa49ebcccaaa2585fa4e4da9a18eda84e3e508822981f5ab7e3b6976deffe6fa"
+        },
+        {
+          "path": "videos/tworoom/keepout/tworoom_keepout_03.mp4",
+          "bytes": 130135,
+          "sha256": "83c71ed2651240db7144e93c8fa877a3735d3078f9a8121d7128153e43a645cc"
+        },
+        {
+          "path": "videos/tworoom/matched_comparison/tworoom_matched_story_01.mp4",
+          "bytes": 652368,
+          "sha256": "06c6b8363ed9119d12aea0a474cb1e9ae864d24751a43d5631d5925f2c0b9bb7"
+        },
+        {
+          "path": "videos/tworoom/matched_comparison/tworoom_matched_story_02.mp4",
+          "bytes": 779660,
+          "sha256": "e42d9faa4b3a7fe0a772d68b96b56c233fe6d42dffeba266668a85669d89b1fd"
+        },
+        {
+          "path": "videos/tworoom/matched_comparison/tworoom_matched_story_03.mp4",
+          "bytes": 642485,
+          "sha256": "91b2418d0841452b60621f56f4afe83c75075eefa2712a13e8bfdfe91560d2aa"
+        },
+        {
+          "path": "videos/tworoom/waypoint/tworoom_waypoint_01.mp4",
+          "bytes": 235637,
+          "sha256": "53c8c775fa71bbbd9ec433f1b5586c22525e0bf94370142c71ca390e620f5bf4"
+        },
+        {
+          "path": "videos/tworoom/waypoint/tworoom_waypoint_02.mp4",
+          "bytes": 199037,
+          "sha256": "b5ec33f9c67ad97739be9a99b9179eb7885ec0eb525c399ec43cf925e2e44aa6"
+        },
+        {
+          "path": "videos/tworoom/waypoint/tworoom_waypoint_03.mp4",
+          "bytes": 195871,
+          "sha256": "3e92bf52aacc66a9e781b023d8520c4a5a453cf8d84c06e2a2a0f4938f497b97"
+        }
+      ]
+    }
+  },
+  "selections": {
+    "presentation": [
+      "presentation-media"
+    ],
+    "all": [
+      "presentation-media"
+    ]
+  }
+}

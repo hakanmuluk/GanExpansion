@@ -6,6 +6,27 @@ GanExpansion studies generative policies and independent skill addition in two e
 
 The repository contains source, tests, configurations, and this guide. Original pretrained models and benchmark inputs remain in [v1.0.0](https://github.com/hakanmuluk/GanExpansion/releases/tag/v1.0.0). The [v1.1.0 release](https://github.com/hakanmuluk/GanExpansion/releases/tag/v1.1.0) adds current composition weights, the completed base/adapter study models, aggregate evidence, and editable reports. Downloads are checksum verified and install into separate paths.
 
+## Presentation videos and images
+
+The [presentation media release](https://github.com/hakanmuluk/GanExpansion/releases/tag/v1.2.0) contains **36 silent 1080p videos and 114 images**, with an offline gallery: base policies, each independent adapter, conflict/OOD composition, and six matched comparisons. Start with the [overview video](https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/overview.mp4), then the [Cube comparison](https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/cube-matched-comparison.mp4) or [TwoRoom comparison](https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/tworoom-matched-comparison.mp4).
+
+| TwoRoom: same scene, three policies | Cube: same reset, three policies |
+|---|---|
+| [![TwoRoom matched comparison](docs/presentation/tworoom_comparison.png)](https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/tworoom-matched-comparison.mp4) | [![Cube matched comparison](docs/presentation/cube_comparison.png)](https://github.com/hakanmuluk/GanExpansion/releases/download/v1.2.0/cube-matched-comparison.mp4) |
+
+Blue is the agent/carried cube, gold the goal, red keepout, and green the waypoint. A matched story shows keepout alone missing the waypoint, waypoint alone violating keepout, and composition meeting both constraints. Markers only decorate the native renderer; the frozen models and physics are unchanged. Cube keepout concerns the transported cube, not the whole arm.
+
+These are **curated illustrations of the latest single-Gaussian experiment below**, not a new experiment or success-rate estimate. The clips use 20 Adam updates in TwoRoom and 40 in Cube. Aggregate coupled/OOD success at those budgets is only **2.6% / 40.1%**; the selected successes do not imply general OOD reliability. Planning-compute delays are omitted from playback.
+
+Download directly to a drive with enough space, then open `index.html` in the destination. No GPU is needed to watch. Archive and individual-file checksums are verified by the existing downloader.
+
+~~~bash
+python scripts/download_assets.py --manifest configs/presentation_assets.json \
+  --bundle presentation --root "/path/on/external-drive/GanExpansion-media"
+~~~
+
+[Media guide and rendering instructions](docs/PRESENTATION_MEDIA.txt) · [Native rendering source](presentation_visuals) · [Verification and media index](configs/presentation_assets.json)
+
 ## Quick start
 
 **Recommended:** a Linux machine or Colab runtime with a GPU, Python 3.10+, and an existing CUDA-enabled PyTorch installation. Python 3.11 is a convenient choice for a new environment. The TwoRoom examples also work on CPU.
@@ -439,6 +460,7 @@ These fresh-training examples are runnable starting recipes. Exact original Cube
 | single_gaussian_study | Latest matched single-start experiment, audits, timing and analysis |
 | ablation_study | Controlled base-loss, adapter-rank and conditioning studies |
 | examples/compose.py | Current inference and native composition demo entrypoint |
+| presentation_visuals | Native replay, render-only region markers, presentation videos and verification |
 
 ~~~bash
 # After setup and downloading the base/adapter assets:

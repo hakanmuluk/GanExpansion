@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ganexpansion"
-version = "1.1.0"
+version = "1.2.0"
 description = "Generative trajectory policies, independent skill adapters, and latent composition for TwoRoom and native Cube manipulation"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -22,7 +22,7 @@ license-files = ["THIRD_PARTY_NOTICES.txt", "third_party/stable-worldmodel.LICEN
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["tworoom_gan*", "tworoom_addons*", "tworoom_composition*", "cube", "cube.cube_gan*", "cube_addons*", "cube_composition*", "cube_agreement*", "independent_composition*", "ablation_study*", "composition_ablation_study*", "single_gaussian_study*"]
+include = ["tworoom_gan*", "tworoom_addons*", "tworoom_composition*", "cube", "cube.cube_gan*", "cube_addons*", "cube_composition*", "cube_agreement*", "independent_composition*", "ablation_study*", "composition_ablation_study*", "single_gaussian_study*", "presentation_visuals*"]
 exclude = ["*tests*", "*artifacts*", "*__pycache__*"]
 
 [tool.pytest.ini_options]

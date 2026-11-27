@@ -1,0 +1,122 @@
+Presentation media — 2026-11-27
+
+WATCH OR DOWNLOAD
+
+Release: https://github.com/hakanmuluk/GanExpansion/releases/tag/v1.2.0
+The overview and one matched comparison per environment are available as
+individual MP4s. The complete ZIP contains the offline gallery, 36 videos,
+114 presentation images, 36 encoded-frame storyboards, native/technical
+verification, model hashes, and the recorded source used to prepare them.
+There are no raw episode arrays or model checkpoints in this media archive.
+Weights remain downloadable from the original and v1.1.0 model releases.
+
+From the cloned repository, download directly to your chosen drive:
+
+python scripts/download_assets.py --manifest configs/presentation_assets.json \
+  --bundle presentation --root "/path/on/external-drive/GanExpansion-media"
+
+Open that folder's index.html. It works offline and filters by environment
+and task. PNG setup/keyframe/outcome/comparison images are under images/.
+The downloader stages and verifies on the chosen drive, not the internal
+drive. Allow about 160 MB free during download and verified extraction.
+Use the same command with --verify-only to recheck every installed file.
+Existing modified files require --force before replacement.
+
+CONTENTS AND SUGGESTED ORDER
+
+                         TwoRoom   Cube
+Base                         3       3
+Keepout adapter              3       3
+Waypoint adapter             3       3
+Conflict composition         3       3
+Coupled/OOD composition      2       3
+Matched three-policy story   3       3
+Plus one overview: 36 videos total.
+
+Start with 00_overview, then cube_matched_story_01 and
+tworoom_matched_story_01. Stories _01/_02 use conflict scenes; _03 uses
+coupled/OOD. Each story shows the same reset/goal/regions/base code with
+keepout alone, waypoint alone, and composition. The named single skill
+succeeds but misses or violates the other constraint; composition succeeds
+at both. A single adapter receives only its own context.
+
+Blue = agent/carried cube; gold = original goal; red = keepout;
+green = waypoint. Dashed red boundaries show conservative center clearance.
+Cube markers are virtual decorations, not new native collision objects.
+Cube keepout applies to the transported cube, using its complete-body
+bounding sphere; it does not enforce whole-arm obstacle avoidance.
+The side plot is a projection, while native monitors determine outcomes.
+
+METHOD AND LIMITS
+
+All actors use the existing frozen base generator and independent action
+adapters. Composition is the latest single-Gaussian method: 20 Adam updates
+per replan in TwoRoom, 40 in Cube, with previous selected inputs warm-started
+at later replans. No new network, training, or benchmark experiment was added.
+This media collection is not an evaluation sample or a success-rate estimate.
+Aggregate coupled/OOD joint success is 2.6% / 40.1% at these respective budgets.
+TwoRoom had only two distinct saved OOD successes at the fixed budget, so
+two are shown rather than repeating a scene as a third example.
+
+Policies still take numerical features, not images: 10/47 base-state inputs
+and 12/20 own-skill context inputs. They predict 16 actions and execute 8
+before re-observing. Cube footage uses simulated time at 20 controls/s;
+TwoRoom is shown at 10 logical steps/s. Planning-compute delays are omitted.
+All videos are silent H.264/yuv420p, 1920x1080, 30 fps.
+
+VERIFICATION
+
+Every task action sequence was independently replayed in its original native
+environment. Saved positions match the native replay; render calls preserve
+integration state. Goal and own-skill outcomes were independently checked,
+including Cube release/settling and transport support. All six matched
+stories were checked for the claimed cross-skill violation and joint success.
+Six model file hashes remained unchanged. All 36 videos were fully decoded;
+six encoded frames per video and all six full-size comparison images were
+visually reviewed. Checksums were independently verified after HDD transfer.
+See qa/TECHNICAL_QA.json, VISUAL_QA.json, and FINAL_VERIFICATION.json in the ZIP.
+
+RENDERING SOURCE
+
+The repository's presentation_visuals package contains the native rendering,
+selection, replay and QA code. Recorded historical helper scripts are also
+preserved in the ZIP's source/ directory. Public source changes only replace
+machine-specific output/protocol paths with environment variables and use
+the checkout as the worker directory. The scientific models are unchanged.
+
+Re-rendering needs a Linux EGL runtime, the pinned environments from setup,
+ffmpeg/ffprobe on PATH, matching model weights, and locally regenerated or
+restored native study outputs. The media download itself does not contain
+those raw actions/observations/poses or private selection records. The v1.1.0
+single-Gaussian reproduction bundle explains running the study and regenerating
+the banks. Both study descriptors must point to real local checkpoints and
+completed local job folders; update archived absolute paths to your layout.
+The reference descriptor supplies the existing independent-skill diagnostic
+runs on the same banks. Exact replay requires the original simulator versions.
+
+Run from the repository root, using fresh output paths:
+
+export MUJOCO_GL=egl
+export OMP_NUM_THREADS=1
+export OPENBLAS_NUM_THREADS=1
+export GANEXPANSION_PRESENTATION_ROOT="/path/on/large-drive/render-work"
+export GANEXPANSION_SINGLE_STUDY="/path/to/completed/single/study.json"
+export GANEXPANSION_REFERENCE_STUDY="/path/to/completed/reference/study.json"
+python -m presentation_visuals.select
+python -m presentation_visuals.collect_base
+python -m presentation_visuals.supervise
+python -m presentation_visuals.overview
+python -m presentation_visuals.qa
+python -m presentation_visuals.gallery
+python -m presentation_visuals.export_media \
+  --out "$GANEXPANSION_PRESENTATION_ROOT/render-export" --final
+
+The base collector uses CUDA. The supervisor runs two independent render
+workers; keep its source fixed until both finish. Do not run the following
+stages until it exits successfully. Selection is outcome-curated and fails
+if there are too few distinct valid examples; it never fabricates solutions.
+Rendering replays the saved learned controls; it does not substitute expert
+controls. Fresh rendering already uses the corrected MISSED waypoint caption;
+the historical clean_captions helper is a record of a one-time caption fix
+and should not be reapplied. Manually inspect encoded storyboards/full-size
+images after rendering; a technical QA pass alone is not visual review.
